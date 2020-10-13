@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
-  m_Name: Sponge Infrastructure
+  m_Name: Infraestructura_Esponja
   m_EditorClassIdentifier: 
   cardName: 'Infraestructura Esponja '
   cardDescription: "La idea de ciudad esponja marca un cambio significativo, que

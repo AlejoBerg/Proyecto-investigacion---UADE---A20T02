@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
-  m_Name: Renewable Energy
+  m_Name: Recliclado_de_Agua
   m_EditorClassIdentifier: 
-  cardName: Energia Renovable
-  cardDescription: Esta es la descripcion de energia renovable
+  cardName: Reciclado de Agua
+  cardDescription: descripcion de Reciclado de Agua
   cardBackground: {fileID: 0}
   cardArtwork: {fileID: 0}
-  moneyCost: 5
-  timeCost: 5
-  peopleHappiness: 5
+  moneyCost: 0
+  timeCost: 0
+  peopleHappiness: 0
