@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
+  m_Name: Recuperacion_de_nutrientes
+  m_EditorClassIdentifier: 
+  cardName: Recoleccion de nutrientes
+  cardDescription: descripcion de Recoleccion de nutrientes
+  cardBackground: {fileID: 0}
+  cardArtwork: {fileID: 0}
+  moneyCost: 1
+  timeCost: 5
+  peopleHappiness: 3
