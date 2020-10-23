@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - DragParent
+  - Blue
+  - Yellow
+  - Green
   layers:
   - Default
   - TransparentFX
