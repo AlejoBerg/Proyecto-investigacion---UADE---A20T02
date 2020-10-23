@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager  : MonoBehaviour
+public class GameManager  <T>: MonoBehaviour
 {
     
-    protected static List<Card> cards = new List<Card>();
+    protected static List<T> cards = new List<T>();
     
-    public static List<Card> Cards { get => cards; set => cards = value; }
+    public static List<T> Cards { get => cards; set => cards = value; }
 }
 
 

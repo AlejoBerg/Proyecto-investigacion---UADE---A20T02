@@ -29,6 +29,5 @@ public class ItemPool : MonoBehaviour, IDropHandler
         {
             DragUI.itemDragging.transform.SetParent(tableroAmarrillo);
         }
-        
     }
 }
