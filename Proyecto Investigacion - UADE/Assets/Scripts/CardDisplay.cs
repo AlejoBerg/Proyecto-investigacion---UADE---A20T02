@@ -10,7 +10,6 @@ public class CardDisplay : MonoBehaviour
     [SerializeField] private Text cardNameText;
     [SerializeField] private Text cardDescriptionText;
     [SerializeField] private Image cardBackgroundImage;
-    [SerializeField] private Image cardArtworkImage;
     [SerializeField] private Text moneyCostText;
     [SerializeField] private Text timeCostText;
     [SerializeField] private Text peopleHappinessText;
@@ -20,7 +19,6 @@ public class CardDisplay : MonoBehaviour
         cardNameText.text = card.CardName;
         cardDescriptionText.text = card.CardDescription;
         cardBackgroundImage.sprite = card.CardBackground;
-        cardArtworkImage.sprite = card.CardArtwork;
         moneyCostText.text = card.MoneyCost.ToString(); 
         timeCostText.text = card.TimeCost.ToString(); 
         peopleHappinessText.text = card.PeopleHappiness.ToString(); 

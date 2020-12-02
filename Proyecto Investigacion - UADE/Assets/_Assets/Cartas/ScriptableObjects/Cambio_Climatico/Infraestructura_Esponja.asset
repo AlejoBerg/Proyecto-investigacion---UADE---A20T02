@@ -22,8 +22,7 @@ MonoBehaviour:
     sequ\xEDa. Por lo tanto, las t\xE9cnicas de ciudad esponja tienen m\xFAltiples
     beneficios. Pueden ayudar a disminuir el impacto de las inundaciones, mejorar
     la calidad y el suministro del agua, y solucionar problemas medioambientales."
-  cardBackground: {fileID: 0}
-  cardArtwork: {fileID: 0}
+  cardBackground: {fileID: 21300000, guid: e2fd468ef7a83b34cb5e40ddeb4e700e, type: 3}
   moneyCost: 5
   timeCost: 5
   peopleHappiness: 5

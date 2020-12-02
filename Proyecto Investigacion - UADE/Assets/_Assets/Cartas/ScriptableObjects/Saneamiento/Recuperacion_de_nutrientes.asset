@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Recoleccion de nutrientes
   cardDescription: descripcion de Recoleccion de nutrientes
-  cardBackground: {fileID: 0}
-  cardArtwork: {fileID: 0}
+  cardBackground: {fileID: 21300000, guid: e5a895d2128611d419fbdb757babcb27, type: 3}
   moneyCost: 1
   timeCost: 5
   peopleHappiness: 3

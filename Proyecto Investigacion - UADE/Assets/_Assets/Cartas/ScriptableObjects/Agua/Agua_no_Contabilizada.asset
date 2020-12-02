@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Agua no Contabilizada
   cardDescription: Descripcion de agua no contabilizada
-  cardBackground: {fileID: 0}
-  cardArtwork: {fileID: 0}
+  cardBackground: {fileID: 21300000, guid: ac4b265425b970b4ea581e01e030eb9d, type: 3}
   moneyCost: 4
   timeCost: 5
   peopleHappiness: 4
