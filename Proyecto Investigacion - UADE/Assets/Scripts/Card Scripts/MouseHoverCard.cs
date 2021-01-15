@@ -1,0 +1,48 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
+public class MouseHoverCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+{
+    [SerializeField] private float _zoomScaleAmount = 2;
+    [SerializeField] private Canvas _mainCanvasRef;
+    [SerializeField] private Transform _zoomCardPosition;
+    [SerializeField] private Text _zoomCardDescriptionText;
+
+    private GameObject _zoomedCard;
+    private string _zoomedCardDescription;
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if(_zoomedCard == null)
+        {
+            InitializeZoomedCard();
+        }
+
+        SetDescriptionText(_zoomedCardDescription);
+        _zoomedCard.SetActive(true);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        SetDescriptionText("");
+        _zoomedCard.SetActive(false);
+    }
+
+    private void InitializeZoomedCard()
+    {
+        _zoomedCard = Instantiate(this.gameObject, _zoomCardPosition.localPosition, Quaternion.identity);
+        _zoomedCard.transform.localScale = new Vector3(transform.localScale.x * _zoomScaleAmount, transform.localScale.y * _zoomScaleAmount, transform.localScale.z * _zoomScaleAmount);
+        _zoomedCard.transform.SetParent(_mainCanvasRef.transform, false);
+
+        _zoomedCardDescription = _zoomedCard.GetComponent<CardDisplay>().CardDescriptionText.text;
+        Destroy(_zoomedCard.GetComponent<MouseHoverCard>());
+    }
+
+    private void SetDescriptionText(string newText)
+    {
+        _zoomCardDescriptionText.text = newText;
+    }
+}

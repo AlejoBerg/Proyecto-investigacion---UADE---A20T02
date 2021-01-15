@@ -14,6 +14,8 @@ public class CardDisplay : MonoBehaviour
     [SerializeField] private Text timeCostText;
     [SerializeField] private Text peopleHappinessText;
 
+    public Text CardDescriptionText { get => cardDescriptionText;}
+
     private void Start()
     {
         cardNameText.text = card.CardName;
