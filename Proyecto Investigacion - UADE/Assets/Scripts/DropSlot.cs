@@ -7,7 +7,6 @@ using UnityEngine;
 public class DropSlot : MonoBehaviour, IDropHandler
 {
     public GameObject item;
-   // [SerializeField] private DragUI itemDragging;
 
     public void OnDrop(PointerEventData eventData)
     {

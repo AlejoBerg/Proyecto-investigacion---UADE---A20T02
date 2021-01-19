@@ -9,5 +9,3 @@ public class GameManager  <T>: MonoBehaviour
     
     public static List<T> Cards { get => cards; set => cards = value; }
 }
-
-
