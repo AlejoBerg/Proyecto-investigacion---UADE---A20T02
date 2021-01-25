@@ -16,7 +16,7 @@ public class EndGameButton : MonoBehaviour
     {
         for (int i = 0; i < _progressBars.Length; i++)
         {
-            _progressBars[i].GetCurrentFill(10);
+            _progressBars[i].AssignValue(Random.Range(0, 100));
         }
     }
 }

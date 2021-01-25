@@ -7,24 +7,25 @@ public class ProgressBar : MonoBehaviour
 {
     [SerializeField] private float _minimum;
     [SerializeField] private float _maximum;
-    [SerializeField] private float _lerpSpeed = 0.1f;
+    [SerializeField] private float _lerpSpeed = 2f;
     [SerializeField] private Image _mask;
 
-    private float _current = 0;
-    //private void Update()
-    //{
-    //    GetCurrentFill(10);
-    //}
+    private float _fillAmount = 0;
+    private bool _shouldLerp = false;
 
-    public void GetCurrentFill(float progressBarValue)
+    private void Update()
     {
-        _current = progressBarValue;
-        float currentOffset = _current - _minimum;
-        float maximumOffset = _maximum - _minimum;
-        float fillAmount = (float)currentOffset / (float)maximumOffset;
-        print($"currentOffset = {currentOffset} , maximumOffset = {maximumOffset} y fillAmount = {fillAmount}");
+        if(_shouldLerp == true)
+        {
+            _mask.fillAmount = Mathf.Lerp(_mask.fillAmount, _fillAmount, Time.deltaTime);
+        }
+    }
 
-        _mask.fillAmount = fillAmount;
-        //_mask.fillAmount = Mathf.Lerp(_minimum, fillAmount, Time.deltaTime * _lerpSpeed);
+    public void AssignValue(float finalValue)
+    {
+        float currentOffset = finalValue - _minimum;
+        float maximumOffset = _maximum - _minimum;
+        _fillAmount = (float)currentOffset / (float)maximumOffset;
+        _shouldLerp = true;
     }
 }
