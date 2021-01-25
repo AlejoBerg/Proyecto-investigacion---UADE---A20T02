@@ -2,19 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CardDisplay : MonoBehaviour
 {
     //Le paso las referencias solamente de los textos para que en start visualmente se seteen
     [SerializeField] private Card card;
-    [SerializeField] private Text cardNameText;
-    [SerializeField] private Text cardDescriptionText;
+    [SerializeField] private TextMeshProUGUI cardNameText;
+    [SerializeField] private TextMeshProUGUI cardDescriptionText;
     [SerializeField] private Image cardBackgroundImage;
-    [SerializeField] private Text moneyCostText;
-    [SerializeField] private Text timeCostText;
-    [SerializeField] private Text peopleHappinessText;
+    [SerializeField] private TextMeshProUGUI moneyCostText;
+    [SerializeField] private TextMeshProUGUI timeCostText;
+    [SerializeField] private TextMeshProUGUI peopleHappinessText;
 
-    public Text CardDescriptionText { get => cardDescriptionText;}
+    public TextMeshProUGUI CardDescriptionText { get => cardDescriptionText;}
 
     private void Start()
     {
