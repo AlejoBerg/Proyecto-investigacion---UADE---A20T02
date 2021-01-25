@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 
 public class MouseHoverCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private float _zoomScaleAmount = 2;
     [SerializeField] private Canvas _mainCanvasRef;
     [SerializeField] private Transform _zoomCardPosition;
-    [SerializeField] private Text _zoomCardDescriptionText;
+    [SerializeField] private TextMeshProUGUI _zoomCardDescriptionText;
 
     private GameObject _zoomedCard;
     private string _zoomedCardDescription;
