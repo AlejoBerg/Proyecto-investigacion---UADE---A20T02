@@ -450,6 +450,9 @@ GameObject:
   - component: {fileID: 8756731389805061416}
   - component: {fileID: 6192412687399872065}
   - component: {fileID: 3695232340980967250}
+  - component: {fileID: 2140289543}
+  - component: {fileID: 2140289541}
+  - component: {fileID: 2140289542}
   m_Layer: 5
   m_Name: Potabilizacion_Prefab   1
   m_TagString: Untagged
@@ -466,7 +469,7 @@ RectTransform:
   m_GameObject: {fileID: 2019660015580180259}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7943577, y: 0.7943577, z: 0.7943577}
   m_Children:
   - {fileID: 5501859840193350004}
   - {fileID: 8910954962703886548}
@@ -514,10 +517,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0d0d6b4a8966db449dc483851ba9935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _zoomScaleAmount: 2
+  _zoomScaleAmount: 2.5
   _mainCanvasRef: {fileID: 0}
   _zoomCardPosition: {fileID: 0}
   _zoomCardDescriptionText: {fileID: 0}
+--- !u!225 &2140289543
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019660015580180259}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &2140289541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019660015580180259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 100
+  m_PreferredHeight: 100
+  m_FlexibleWidth: 0
+  m_FlexibleHeight: 0
+  m_LayoutPriority: 1
+--- !u!114 &2140289542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019660015580180259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa719c8c9c396e34dbf3c416fcaf6e20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5722113655277976807
 GameObject:
   m_ObjectHideFlags: 0

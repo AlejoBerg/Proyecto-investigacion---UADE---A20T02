@@ -241,6 +241,9 @@ GameObject:
   - component: {fileID: 8717648078275288013}
   - component: {fileID: 8155034877055947039}
   - component: {fileID: 9139194848837026139}
+  - component: {fileID: 61183024}
+  - component: {fileID: 61183022}
+  - component: {fileID: 61183023}
   m_Layer: 5
   m_Name: 'Recuperacion_de_Nutrientes_Prefab  '
   m_TagString: Untagged
@@ -257,7 +260,7 @@ RectTransform:
   m_GameObject: {fileID: 5220049345112482104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.24999997, y: 0.24999997, z: 0.24999997}
+  m_LocalScale: {x: 0.19858938, y: 0.19858938, z: 0.19858938}
   m_Children:
   - {fileID: 3747350316379815549}
   - {fileID: 389904518856742930}
@@ -305,10 +308,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0d0d6b4a8966db449dc483851ba9935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _zoomScaleAmount: 2
+  _zoomScaleAmount: 2.5
   _mainCanvasRef: {fileID: 0}
   _zoomCardPosition: {fileID: 0}
   _zoomCardDescriptionText: {fileID: 0}
+--- !u!225 &61183024
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5220049345112482104}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &61183022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5220049345112482104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 100
+  m_PreferredHeight: 100
+  m_FlexibleWidth: 0
+  m_FlexibleHeight: 0
+  m_LayoutPriority: 1
+--- !u!114 &61183023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5220049345112482104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa719c8c9c396e34dbf3c416fcaf6e20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5389179574008898255
 GameObject:
   m_ObjectHideFlags: 0
