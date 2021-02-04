@@ -34,9 +34,7 @@ public class MouseHoverCard : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     private void InitializeZoomedCard()
     {
-        print("la posicion del _zoomCardPosition.localPosition = " + _zoomCardPosition.localPosition);
         _zoomedCard = Instantiate(this.gameObject, _zoomCardPosition.localPosition, Quaternion.identity);
-        print("la posicion de la nueva carta es = " + _zoomedCard.transform.localPosition);
         _zoomedCard.transform.localScale = new Vector3(transform.localScale.x * _zoomScaleAmount, transform.localScale.y * _zoomScaleAmount, transform.localScale.z * _zoomScaleAmount);
         _zoomedCard.transform.SetParent(_zoomCardPosition.parent, false);
 
