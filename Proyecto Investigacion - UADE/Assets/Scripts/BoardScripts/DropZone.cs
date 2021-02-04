@@ -18,8 +18,6 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        print("entro");
-
         if (eventData.pointerDrag == null) return;
 
         _draggeable = eventData.pointerDrag.GetComponent<Draggable>();
