@@ -12,6 +12,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         //Draggable draggable = eventData.pointerDrag.GetComponent<Draggable>();
         if (_draggeable != null)
         {
+            print("el nuevo parent es = " + this.transform.name);
             _draggeable.ChangeParent(this.transform);
         }
     }

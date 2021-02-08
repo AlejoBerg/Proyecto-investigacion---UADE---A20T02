@@ -31,7 +31,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         this.transform.position = Input.mousePosition;
         _placeHolder.transform.SetParent(_placeHolderParent);
 
-        SwapCardsWhenNecessary();
+        //SwapCardsWhenNecessary();
     }
 
     public void OnEndDrag(PointerEventData eventData)
