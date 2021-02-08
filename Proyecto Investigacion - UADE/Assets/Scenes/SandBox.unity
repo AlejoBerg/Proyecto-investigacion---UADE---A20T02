@@ -488,6 +488,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Redes_de_Recoleccion_Prefab '
       objectReference: {fileID: 0}
+    - target: {fileID: 8297792152228975843, guid: ddeca9872d60b0e4d8b6204fbf05cf12, type: 3}
+      propertyPath: _mainCanvasRef
+      value: 
+      objectReference: {fileID: 1792199438}
+    - target: {fileID: 8297792152228975843, guid: ddeca9872d60b0e4d8b6204fbf05cf12, type: 3}
+      propertyPath: _zoomCardPosition
+      value: 
+      objectReference: {fileID: 1882114966}
+    - target: {fileID: 8297792152228975843, guid: ddeca9872d60b0e4d8b6204fbf05cf12, type: 3}
+      propertyPath: _zoomCardDescriptionText
+      value: 
+      objectReference: {fileID: 1118418175}
+    - target: {fileID: 8297792152228975843, guid: ddeca9872d60b0e4d8b6204fbf05cf12, type: 3}
+      propertyPath: _showExtraInfoCard
+      value: 
+      objectReference: {fileID: 416907818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddeca9872d60b0e4d8b6204fbf05cf12, type: 3}
 --- !u!1 &134560173
@@ -1419,6 +1435,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394116052}
   m_CullTransparentMesh: 0
+--- !u!1 &416907816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 416907817}
+  - component: {fileID: 416907818}
+  m_Layer: 0
+  m_Name: Card_Description
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &416907817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416907816}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -756, y: 317, z: 0}
+  m_LocalScale: {x: 1.2588788, y: 1.2588788, z: 1.2588788}
+  m_Children: []
+  m_Father: {fileID: 1792199439}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &416907818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416907816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9ffbe700801d54bb5a3f3739e4fba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectDescriptionText: {fileID: 1118418175}
 --- !u!1 &417332302
 GameObject:
   m_ObjectHideFlags: 0
@@ -1853,6 +1913,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 119250348}
     m_Modifications:
+    - target: {fileID: 1194603788348998259, guid: 474f6103417312748aa0c35d0bdd6fd7, type: 3}
+      propertyPath: _mainCanvasRef
+      value: 
+      objectReference: {fileID: 1792199438}
+    - target: {fileID: 1194603788348998259, guid: 474f6103417312748aa0c35d0bdd6fd7, type: 3}
+      propertyPath: _zoomCardPosition
+      value: 
+      objectReference: {fileID: 1882114966}
+    - target: {fileID: 1194603788348998259, guid: 474f6103417312748aa0c35d0bdd6fd7, type: 3}
+      propertyPath: _zoomCardDescriptionText
+      value: 
+      objectReference: {fileID: 1118418175}
+    - target: {fileID: 1194603788348998259, guid: 474f6103417312748aa0c35d0bdd6fd7, type: 3}
+      propertyPath: _showExtraInfoCard
+      value: 
+      objectReference: {fileID: 416907818}
     - target: {fileID: 3330865414333796476, guid: 474f6103417312748aa0c35d0bdd6fd7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3301,7 +3377,7 @@ RectTransform:
   - {fileID: 1642090719}
   - {fileID: 1955354343}
   m_Father: {fileID: 1792199439}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -3441,6 +3517,22 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6366418042946119548, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
+      propertyPath: _mainCanvasRef
+      value: 
+      objectReference: {fileID: 1792199438}
+    - target: {fileID: 6366418042946119548, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
+      propertyPath: _zoomCardPosition
+      value: 
+      objectReference: {fileID: 1882114966}
+    - target: {fileID: 6366418042946119548, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
+      propertyPath: _zoomCardDescriptionText
+      value: 
+      objectReference: {fileID: 1118418175}
+    - target: {fileID: 6366418042946119548, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
+      propertyPath: _showExtraInfoCard
+      value: 
+      objectReference: {fileID: 416907818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
 --- !u!1001 &934288829
@@ -3538,6 +3630,22 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2954784070151569907, guid: 15cce0cb097b8a54ba948f44e2de27f4, type: 3}
+      propertyPath: _mainCanvasRef
+      value: 
+      objectReference: {fileID: 1792199438}
+    - target: {fileID: 2954784070151569907, guid: 15cce0cb097b8a54ba948f44e2de27f4, type: 3}
+      propertyPath: _zoomCardPosition
+      value: 
+      objectReference: {fileID: 1882114966}
+    - target: {fileID: 2954784070151569907, guid: 15cce0cb097b8a54ba948f44e2de27f4, type: 3}
+      propertyPath: _zoomCardDescriptionText
+      value: 
+      objectReference: {fileID: 1118418175}
+    - target: {fileID: 2954784070151569907, guid: 15cce0cb097b8a54ba948f44e2de27f4, type: 3}
+      propertyPath: _showExtraInfoCard
+      value: 
+      objectReference: {fileID: 416907818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15cce0cb097b8a54ba948f44e2de27f4, type: 3}
 --- !u!1 &943090790
@@ -4023,6 +4131,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Calidad_del_Servicio_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 8829295430819065717, guid: b82c2ed43e72d934195a7a8a0026c62e, type: 3}
+      propertyPath: _mainCanvasRef
+      value: 
+      objectReference: {fileID: 1792199438}
+    - target: {fileID: 8829295430819065717, guid: b82c2ed43e72d934195a7a8a0026c62e, type: 3}
+      propertyPath: _zoomCardPosition
+      value: 
+      objectReference: {fileID: 1882114966}
+    - target: {fileID: 8829295430819065717, guid: b82c2ed43e72d934195a7a8a0026c62e, type: 3}
+      propertyPath: _zoomCardDescriptionText
+      value: 
+      objectReference: {fileID: 1118418175}
+    - target: {fileID: 8829295430819065717, guid: b82c2ed43e72d934195a7a8a0026c62e, type: 3}
+      propertyPath: _showExtraInfoCard
+      value: 
+      objectReference: {fileID: 416907818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82c2ed43e72d934195a7a8a0026c62e, type: 3}
 --- !u!1 &1091013623
@@ -5014,6 +5138,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1163996936}
     m_Modifications:
+    - target: {fileID: 533983381889803815, guid: 2f0fde8a59daee646a69b04c6c6a121e, type: 3}
+      propertyPath: _mainCanvasRef
+      value: 
+      objectReference: {fileID: 1792199438}
+    - target: {fileID: 533983381889803815, guid: 2f0fde8a59daee646a69b04c6c6a121e, type: 3}
+      propertyPath: _zoomCardPosition
+      value: 
+      objectReference: {fileID: 1882114966}
+    - target: {fileID: 533983381889803815, guid: 2f0fde8a59daee646a69b04c6c6a121e, type: 3}
+      propertyPath: _zoomCardDescriptionText
+      value: 
+      objectReference: {fileID: 1118418175}
+    - target: {fileID: 533983381889803815, guid: 2f0fde8a59daee646a69b04c6c6a121e, type: 3}
+      propertyPath: _showExtraInfoCard
+      value: 
+      objectReference: {fileID: 416907818}
     - target: {fileID: 772650258521269592, guid: 2f0fde8a59daee646a69b04c6c6a121e, type: 3}
       propertyPath: m_Name
       value: 'Infraestructura_Esponja_Prefab  '
@@ -5399,6 +5539,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 119250348}
     m_Modifications:
+    - target: {fileID: 2065314328203478712, guid: 11dd727a7c47b3441aee38e5937cc9d5, type: 3}
+      propertyPath: _mainCanvasRef
+      value: 
+      objectReference: {fileID: 1792199438}
+    - target: {fileID: 2065314328203478712, guid: 11dd727a7c47b3441aee38e5937cc9d5, type: 3}
+      propertyPath: _zoomCardPosition
+      value: 
+      objectReference: {fileID: 1882114966}
+    - target: {fileID: 2065314328203478712, guid: 11dd727a7c47b3441aee38e5937cc9d5, type: 3}
+      propertyPath: _zoomCardDescriptionText
+      value: 
+      objectReference: {fileID: 1118418175}
+    - target: {fileID: 2065314328203478712, guid: 11dd727a7c47b3441aee38e5937cc9d5, type: 3}
+      propertyPath: _showExtraInfoCard
+      value: 
+      objectReference: {fileID: 416907818}
     - target: {fileID: 5223950905786990789, guid: 11dd727a7c47b3441aee38e5937cc9d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5584,6 +5740,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Micromedicion_Prefab '
       objectReference: {fileID: 0}
+    - target: {fileID: 4659962746343109046, guid: 3848d93086d1e5b4cad0afe3f5857523, type: 3}
+      propertyPath: _mainCanvasRef
+      value: 
+      objectReference: {fileID: 1792199438}
+    - target: {fileID: 4659962746343109046, guid: 3848d93086d1e5b4cad0afe3f5857523, type: 3}
+      propertyPath: _zoomCardPosition
+      value: 
+      objectReference: {fileID: 1882114966}
+    - target: {fileID: 4659962746343109046, guid: 3848d93086d1e5b4cad0afe3f5857523, type: 3}
+      propertyPath: _zoomCardDescriptionText
+      value: 
+      objectReference: {fileID: 1118418175}
+    - target: {fileID: 4659962746343109046, guid: 3848d93086d1e5b4cad0afe3f5857523, type: 3}
+      propertyPath: _showExtraInfoCard
+      value: 
+      objectReference: {fileID: 416907818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3848d93086d1e5b4cad0afe3f5857523, type: 3}
 --- !u!1 &1504574267
@@ -5950,6 +6122,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Potabilizacion_Prefab  '
       objectReference: {fileID: 0}
+    - target: {fileID: 3695232340980967250, guid: d001942406bd4db4a90552fb1df54050, type: 3}
+      propertyPath: _mainCanvasRef
+      value: 
+      objectReference: {fileID: 1792199438}
+    - target: {fileID: 3695232340980967250, guid: d001942406bd4db4a90552fb1df54050, type: 3}
+      propertyPath: _zoomCardPosition
+      value: 
+      objectReference: {fileID: 1882114966}
+    - target: {fileID: 3695232340980967250, guid: d001942406bd4db4a90552fb1df54050, type: 3}
+      propertyPath: _zoomCardDescriptionText
+      value: 
+      objectReference: {fileID: 1118418175}
+    - target: {fileID: 3695232340980967250, guid: d001942406bd4db4a90552fb1df54050, type: 3}
+      propertyPath: _showExtraInfoCard
+      value: 
+      objectReference: {fileID: 416907818}
     - target: {fileID: 8756731389805061416, guid: d001942406bd4db4a90552fb1df54050, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6328,6 +6516,22 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9139194848837026139, guid: a9bfd25bac50b2d4bb3c3d276ac28627, type: 3}
+      propertyPath: _mainCanvasRef
+      value: 
+      objectReference: {fileID: 1792199438}
+    - target: {fileID: 9139194848837026139, guid: a9bfd25bac50b2d4bb3c3d276ac28627, type: 3}
+      propertyPath: _zoomCardPosition
+      value: 
+      objectReference: {fileID: 1882114966}
+    - target: {fileID: 9139194848837026139, guid: a9bfd25bac50b2d4bb3c3d276ac28627, type: 3}
+      propertyPath: _zoomCardDescriptionText
+      value: 
+      objectReference: {fileID: 1118418175}
+    - target: {fileID: 9139194848837026139, guid: a9bfd25bac50b2d4bb3c3d276ac28627, type: 3}
+      propertyPath: _showExtraInfoCard
+      value: 
+      objectReference: {fileID: 416907818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9bfd25bac50b2d4bb3c3d276ac28627, type: 3}
 --- !u!1 &1705546838
@@ -6695,6 +6899,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Energia_Renovable_Prefab '
       objectReference: {fileID: 0}
+    - target: {fileID: 1310121782569034337, guid: 78d8f479a4e142e459f3f30ebfcb9c8b, type: 3}
+      propertyPath: _mainCanvasRef
+      value: 
+      objectReference: {fileID: 1792199438}
+    - target: {fileID: 1310121782569034337, guid: 78d8f479a4e142e459f3f30ebfcb9c8b, type: 3}
+      propertyPath: _zoomCardPosition
+      value: 
+      objectReference: {fileID: 1882114966}
+    - target: {fileID: 1310121782569034337, guid: 78d8f479a4e142e459f3f30ebfcb9c8b, type: 3}
+      propertyPath: _zoomCardDescriptionText
+      value: 
+      objectReference: {fileID: 1118418175}
+    - target: {fileID: 1310121782569034337, guid: 78d8f479a4e142e459f3f30ebfcb9c8b, type: 3}
+      propertyPath: _showExtraInfoCard
+      value: 
+      objectReference: {fileID: 416907818}
     - target: {fileID: 8702308518905416267, guid: 78d8f479a4e142e459f3f30ebfcb9c8b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6950,6 +7170,7 @@ RectTransform:
   - {fileID: 32966666}
   - {fileID: 749794809}
   - {fileID: 118190532}
+  - {fileID: 416907817}
   - {fileID: 851909992}
   - {fileID: 1801321698}
   m_Father: {fileID: 0}
@@ -6990,7 +7211,7 @@ RectTransform:
   m_LocalScale: {x: 0.84289056, y: 0.95510036, z: 0.84289056}
   m_Children: []
   m_Father: {fileID: 1792199439}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -7545,6 +7766,22 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2209084962968553540, guid: c4504b85a3bfae1488e1b0f54b4ddacb, type: 3}
+      propertyPath: _mainCanvasRef
+      value: 
+      objectReference: {fileID: 1792199438}
+    - target: {fileID: 2209084962968553540, guid: c4504b85a3bfae1488e1b0f54b4ddacb, type: 3}
+      propertyPath: _zoomCardPosition
+      value: 
+      objectReference: {fileID: 1882114966}
+    - target: {fileID: 2209084962968553540, guid: c4504b85a3bfae1488e1b0f54b4ddacb, type: 3}
+      propertyPath: _zoomCardDescriptionText
+      value: 
+      objectReference: {fileID: 1118418175}
+    - target: {fileID: 2209084962968553540, guid: c4504b85a3bfae1488e1b0f54b4ddacb, type: 3}
+      propertyPath: _showExtraInfoCard
+      value: 
+      objectReference: {fileID: 416907818}
     - target: {fileID: 7168194285240879817, guid: c4504b85a3bfae1488e1b0f54b4ddacb, type: 3}
       propertyPath: m_Name
       value: Tratamiento_de_Efluentes_Prefab
@@ -8094,6 +8331,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Agua_no_Contabilizada_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 8608820690247088603, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
+      propertyPath: _mainCanvasRef
+      value: 
+      objectReference: {fileID: 1792199438}
+    - target: {fileID: 8608820690247088603, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
+      propertyPath: _zoomCardPosition
+      value: 
+      objectReference: {fileID: 1882114966}
+    - target: {fileID: 8608820690247088603, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
+      propertyPath: _zoomCardDescriptionText
+      value: 
+      objectReference: {fileID: 1118418175}
+    - target: {fileID: 8608820690247088603, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
+      propertyPath: _showExtraInfoCard
+      value: 
+      objectReference: {fileID: 416907818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
 --- !u!224 &2119653884 stripped

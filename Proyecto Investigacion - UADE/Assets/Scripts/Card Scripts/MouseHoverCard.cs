@@ -9,8 +9,7 @@ public class MouseHoverCard : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 {
     [SerializeField] private float _zoomScaleAmount = 2;
     [SerializeField] private Canvas _mainCanvasRef;
-    [SerializeField] private Transform _zoomCardPosition;
-    [SerializeField] private TextMeshProUGUI _zoomCardDescriptionText;
+    [SerializeField] private ShowExtraInfo _showExtraInfoCard;
 
     private GameObject _zoomedCard;
     private string _zoomedCardDescription;
@@ -22,28 +21,23 @@ public class MouseHoverCard : MonoBehaviour, IPointerEnterHandler, IPointerExitH
             InitializeZoomedCard();
         }
 
-        SetDescriptionText(_zoomedCardDescription);
-        _zoomedCard.SetActive(true);
+        _showExtraInfoCard.ChangeShowingObject(_zoomedCard);
+        _showExtraInfoCard.ChangeObjectDescription(_zoomedCardDescription);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        SetDescriptionText("");
-        _zoomedCard.SetActive(false);
     }
 
     private void InitializeZoomedCard()
     {
-        _zoomedCard = Instantiate(this.gameObject, _zoomCardPosition.localPosition, Quaternion.identity);
+        _zoomedCard = Instantiate(this.gameObject, transform.localPosition, Quaternion.identity);
         _zoomedCard.transform.localScale = new Vector3(transform.localScale.x * _zoomScaleAmount, transform.localScale.y * _zoomScaleAmount, transform.localScale.z * _zoomScaleAmount);
-        _zoomedCard.transform.SetParent(_zoomCardPosition.parent, false);
+        _zoomedCard.transform.SetParent(transform.parent, false);
 
         _zoomedCardDescription = _zoomedCard.GetComponent<CardDisplay>().CardDescriptionText.text;
         Destroy(_zoomedCard.GetComponent<MouseHoverCard>());
-    }
 
-    private void SetDescriptionText(string newText)
-    {
-        _zoomCardDescriptionText.text = newText;
+        _zoomedCard.SetActive(false);
     }
 }

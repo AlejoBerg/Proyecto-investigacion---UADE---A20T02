@@ -21,9 +21,10 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         if (eventData.pointerDrag == null) return;
 
         _draggeable = eventData.pointerDrag.GetComponent<Draggable>();
+
         if (_draggeable != null)
         {
-            _draggeable.ChangePlaceHolderParent(this.transform); // I am changing just the placeholder parent because if I change parent too, if y didnt wanted to leave the card on the other drop zone it will leave it anyway
+            _draggeable.ChangePlaceHolderParent(this.transform.parent); // I am changing just the placeholder parent because if I change parent too, if y didnt wanted to leave the card on the other drop zone it will leave it anyway
         }
     }
 
