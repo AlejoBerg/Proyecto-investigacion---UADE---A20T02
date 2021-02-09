@@ -6,6 +6,7 @@ using TMPro;
 public class ShowExtraInfo : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _objectDescriptionText;
+    [SerializeField] private Transform _zoomCardParent;
     private GameObject _currentShowingObject;
 
     private void Awake()
@@ -17,8 +18,10 @@ public class ShowExtraInfo : MonoBehaviour
     {
         _currentShowingObject.SetActive(false);
         _currentShowingObject = newObject;
-        _currentShowingObject.transform.position = this.transform.position;
         _currentShowingObject.transform.SetParent(transform, false);
+        _currentShowingObject.transform.position = this.transform.position;
+        print($"La posicion del showExtraInfo es {transform.position} y en el parent {transform.parent.name}");
+        print($"zoomeando en la posicion {_currentShowingObject.transform.position} y en el parent {_currentShowingObject.transform.parent.name}");
         _currentShowingObject.SetActive(true);
     }
     
@@ -30,6 +33,6 @@ public class ShowExtraInfo : MonoBehaviour
     private void IntializeDummyObject()
     {
         _currentShowingObject = new GameObject();
-        _currentShowingObject.transform.SetParent(transform, false);
+        _currentShowingObject.transform.SetParent(_zoomCardParent, false);
     }
 }

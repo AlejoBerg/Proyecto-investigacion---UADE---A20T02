@@ -259,7 +259,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1882114966}
   - {fileID: 1910732161}
   - {fileID: 1594029491}
   - {fileID: 532109256}
@@ -1332,6 +1331,10 @@ PrefabInstance:
       propertyPath: _zoomScaleAmount
       value: 1.27
       objectReference: {fileID: 0}
+    - target: {fileID: 2209084962968553540, guid: c4504b85a3bfae1488e1b0f54b4ddacb, type: 3}
+      propertyPath: _zoomCardParent
+      value: 
+      objectReference: {fileID: 118190532}
     - target: {fileID: 2575889727068254921, guid: c4504b85a3bfae1488e1b0f54b4ddacb, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 3
@@ -1450,6 +1453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _objectDescriptionText: {fileID: 1118418175}
+  _zoomCardParent: {fileID: 118190532}
 --- !u!1 &417332302
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,7 +1881,7 @@ RectTransform:
   m_Children:
   - {fileID: 1134918370}
   m_Father: {fileID: 118190532}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -2386,6 +2390,10 @@ PrefabInstance:
       propertyPath: _zoomScaleAmount
       value: 1.27
       objectReference: {fileID: 0}
+    - target: {fileID: 2065314328203478712, guid: 11dd727a7c47b3441aee38e5937cc9d5, type: 3}
+      propertyPath: _zoomCardParent
+      value: 
+      objectReference: {fileID: 118190532}
     - target: {fileID: 4614275669339018300, guid: 11dd727a7c47b3441aee38e5937cc9d5, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 3
@@ -3590,6 +3598,10 @@ PrefabInstance:
       propertyPath: _zoomScaleAmount
       value: 1.27
       objectReference: {fileID: 0}
+    - target: {fileID: 1194603788348998259, guid: 474f6103417312748aa0c35d0bdd6fd7, type: 3}
+      propertyPath: _zoomCardParent
+      value: 
+      objectReference: {fileID: 118190532}
     - target: {fileID: 1844180843517687935, guid: 474f6103417312748aa0c35d0bdd6fd7, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 3
@@ -4104,7 +4116,7 @@ RectTransform:
   - {fileID: 1642090719}
   - {fileID: 1955354343}
   m_Father: {fileID: 1792199439}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -4348,6 +4360,10 @@ PrefabInstance:
       propertyPath: _zoomScaleAmount
       value: 1.27
       objectReference: {fileID: 0}
+    - target: {fileID: 9139194848837026139, guid: a9bfd25bac50b2d4bb3c3d276ac28627, type: 3}
+      propertyPath: _zoomCardParent
+      value: 
+      objectReference: {fileID: 118190532}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9bfd25bac50b2d4bb3c3d276ac28627, type: 3}
 --- !u!224 &899776555 stripped
@@ -4518,6 +4534,10 @@ PrefabInstance:
       propertyPath: _zoomScaleAmount
       value: 1.27
       objectReference: {fileID: 0}
+    - target: {fileID: 4659962746343109046, guid: 3848d93086d1e5b4cad0afe3f5857523, type: 3}
+      propertyPath: _zoomCardParent
+      value: 
+      objectReference: {fileID: 118190532}
     - target: {fileID: 7877872715017945452, guid: 3848d93086d1e5b4cad0afe3f5857523, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 13
@@ -5098,6 +5118,10 @@ PrefabInstance:
       propertyPath: _zoomScaleAmount
       value: 1.27
       objectReference: {fileID: 0}
+    - target: {fileID: 6366418042946119548, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
+      propertyPath: _zoomCardParent
+      value: 
+      objectReference: {fileID: 118190532}
     - target: {fileID: 7599064437131614250, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 3
@@ -5944,6 +5968,10 @@ PrefabInstance:
       propertyPath: _zoomScaleAmount
       value: 1.27
       objectReference: {fileID: 0}
+    - target: {fileID: 8608820690247088603, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
+      propertyPath: _zoomCardParent
+      value: 
+      objectReference: {fileID: 118190532}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
 --- !u!1 &1257969805
@@ -6335,6 +6363,10 @@ PrefabInstance:
       propertyPath: _zoomScaleAmount
       value: 1.27
       objectReference: {fileID: 0}
+    - target: {fileID: 3695232340980967250, guid: d001942406bd4db4a90552fb1df54050, type: 3}
+      propertyPath: _zoomCardParent
+      value: 
+      objectReference: {fileID: 118190532}
     - target: {fileID: 5403868665877019022, guid: d001942406bd4db4a90552fb1df54050, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 14
@@ -7132,6 +7164,10 @@ PrefabInstance:
       propertyPath: _zoomScaleAmount
       value: 1.27
       objectReference: {fileID: 0}
+    - target: {fileID: 2954784070151569907, guid: 15cce0cb097b8a54ba948f44e2de27f4, type: 3}
+      propertyPath: _zoomCardParent
+      value: 
+      objectReference: {fileID: 118190532}
     - target: {fileID: 3163367782110129447, guid: 15cce0cb097b8a54ba948f44e2de27f4, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 3
@@ -7287,7 +7323,7 @@ RectTransform:
   - {fileID: 705051273}
   - {fileID: 1554428064}
   m_Father: {fileID: 118190532}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7482,6 +7518,10 @@ PrefabInstance:
       propertyPath: _zoomScaleAmount
       value: 1.27
       objectReference: {fileID: 0}
+    - target: {fileID: 8297792152228975843, guid: ddeca9872d60b0e4d8b6204fbf05cf12, type: 3}
+      propertyPath: _zoomCardParent
+      value: 
+      objectReference: {fileID: 118190532}
     - target: {fileID: 8907864545861233577, guid: ddeca9872d60b0e4d8b6204fbf05cf12, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 3
@@ -8226,6 +8266,7 @@ RectTransform:
   - {fileID: 749794809}
   - {fileID: 118190532}
   - {fileID: 416907817}
+  - {fileID: 1882114966}
   - {fileID: 851909992}
   - {fileID: 1801321698}
   m_Father: {fileID: 0}
@@ -8266,7 +8307,7 @@ RectTransform:
   m_LocalScale: {x: 0.84289056, y: 0.95510036, z: 0.84289056}
   m_Children: []
   m_Father: {fileID: 1792199439}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -8649,11 +8690,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882114965}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -685.2, y: 351.5, z: 0}
+  m_LocalPosition: {x: -685.2, y: 296.50003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 118190532}
-  m_RootOrder: 0
+  m_Father: {fileID: 1792199439}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1910732160
 GameObject:
@@ -8684,7 +8725,7 @@ RectTransform:
   m_Children:
   - {fileID: 502203949}
   m_Father: {fileID: 118190532}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9019,6 +9060,10 @@ PrefabInstance:
       propertyPath: _zoomScaleAmount
       value: 1.27
       objectReference: {fileID: 0}
+    - target: {fileID: 1310121782569034337, guid: 78d8f479a4e142e459f3f30ebfcb9c8b, type: 3}
+      propertyPath: _zoomCardParent
+      value: 
+      objectReference: {fileID: 118190532}
     - target: {fileID: 2544058118141658832, guid: 78d8f479a4e142e459f3f30ebfcb9c8b, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 17
@@ -9441,6 +9486,10 @@ PrefabInstance:
       propertyPath: _zoomScaleAmount
       value: 1.27
       objectReference: {fileID: 0}
+    - target: {fileID: 533983381889803815, guid: 2f0fde8a59daee646a69b04c6c6a121e, type: 3}
+      propertyPath: _zoomCardParent
+      value: 
+      objectReference: {fileID: 118190532}
     - target: {fileID: 772650258521269592, guid: 2f0fde8a59daee646a69b04c6c6a121e, type: 3}
       propertyPath: m_Name
       value: 'Infraestructura_Esponja_Prefab  '
@@ -9815,6 +9864,10 @@ PrefabInstance:
       propertyPath: _zoomScaleAmount
       value: 1.27
       objectReference: {fileID: 0}
+    - target: {fileID: 8829295430819065717, guid: b82c2ed43e72d934195a7a8a0026c62e, type: 3}
+      propertyPath: _zoomCardParent
+      value: 
+      objectReference: {fileID: 118190532}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82c2ed43e72d934195a7a8a0026c62e, type: 3}
 --- !u!1 &2140322144

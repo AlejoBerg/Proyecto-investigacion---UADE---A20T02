@@ -31,9 +31,9 @@ public class MouseHoverCard : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     private void InitializeZoomedCard()
     {
-        _zoomedCard = Instantiate(this.gameObject, transform.localPosition, Quaternion.identity);
+        _zoomedCard = Instantiate(this.gameObject, transform.position, Quaternion.identity);
         _zoomedCard.transform.localScale = new Vector3(transform.localScale.x * _zoomScaleAmount, transform.localScale.y * _zoomScaleAmount, transform.localScale.z * _zoomScaleAmount);
-        _zoomedCard.transform.SetParent(transform.parent, false);
+        //_zoomedCard.transform.SetParent(transform.parent, false);
 
         _zoomedCardDescription = _zoomedCard.GetComponent<CardDisplay>().CardDescriptionText.text;
         Destroy(_zoomedCard.GetComponent<MouseHoverCard>());
