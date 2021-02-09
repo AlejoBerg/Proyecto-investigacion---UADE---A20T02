@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 
 public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    [SerializeField] private Transform _parentWhileDragging;
+
     private Transform _parentToReturnTo = null;
     private CanvasGroup _canvasGroup = null;
     private GameObject _placeHolder; //PlaceHolder position after moving the card
@@ -18,11 +20,12 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        _parentToReturnTo = this.transform.parent;
+        _parentToReturnTo = this.transform.parent; 
+        print("el parentToReturn to es " + _parentToReturnTo.name);
 
         InitPlaceholder();
 
-        this.transform.SetParent(this.transform.parent.parent);
+        this.transform.SetParent(_parentWhileDragging);
         _canvasGroup.blocksRaycasts = false;
     }
 
@@ -37,10 +40,11 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public void OnEndDrag(PointerEventData eventData)
     {
         this.transform.SetParent(_parentToReturnTo);
+
         this.transform.SetSiblingIndex(_placeHolder.transform.GetSiblingIndex());
         _canvasGroup.blocksRaycasts = true;
 
-        _placeHolder.SetActive(false); //Hacer que cachee en el awake este placeholder y que lo desactive. Todo lo relacionado con este placeholder metelo en una funcion tipo "InitCardPlaceholder" y despues a la carta le pisas los valores
+        _placeHolder.SetActive(false); 
     }
 
     private void SwapCardsWhenNecessary()
