@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Potabilizacion
   m_EditorClassIdentifier: 
+  cardID: 104
+  balance: 
+  element: 0
   cardName: Potabilizacion
   cardDescription: descripcion de Potabilizacion
   cardBackground: {fileID: 21300000, guid: 4d504d17dec73ca4aa29336d5d47f51c, type: 3}

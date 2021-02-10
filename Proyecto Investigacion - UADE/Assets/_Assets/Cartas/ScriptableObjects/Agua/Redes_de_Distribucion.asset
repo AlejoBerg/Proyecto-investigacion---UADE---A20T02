@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Redes_de_Distribucion
   m_EditorClassIdentifier: 
+  cardID: 106
+  balance: 
+  element: 0
   cardName: Redes de Distribucion
   cardDescription: descripcion de Redes de Distribucion
   cardBackground: {fileID: 21300000, guid: f37861af897ac1c45a35523df471c22d, type: 3}

@@ -24,6 +24,6 @@ public class CardDisplay : MonoBehaviour
         cardBackgroundImage.sprite = card.CardBackground;
         moneyCostText.text = card.MoneyCost.ToString(); 
         timeCostText.text = card.TimeCost.ToString(); 
-        peopleHappinessText.text = card.PeopleHappiness.ToString(); 
+        peopleHappinessText.text = card.PeopleHappiness.ToString();
     }
 }

@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Agua_no_Contabilizada
   m_EditorClassIdentifier: 
+  cardID: 100
+  balance: 
+  element: 0
   cardName: Agua no Contabilizada
   cardDescription: Descripcion de agua no contabilizada
   cardBackground: {fileID: 21300000, guid: ac4b265425b970b4ea581e01e030eb9d, type: 3}

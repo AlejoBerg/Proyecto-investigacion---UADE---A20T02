@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Micromedicion
   m_EditorClassIdentifier: 
+  cardID: 103
+  balance: 
+  element: 0
   cardName: Micromedicion
   cardDescription: descripcion de Micromedicion
   cardBackground: {fileID: 21300000, guid: 0151950a260a714429378cddeeb821f8, type: 3}

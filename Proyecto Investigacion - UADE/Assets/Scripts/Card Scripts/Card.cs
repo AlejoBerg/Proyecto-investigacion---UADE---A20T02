@@ -5,9 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Card", menuName = "Card")]
 public class Card: ScriptableObject
 {
-    [SerializeField] private int _IDCard;
-    [SerializeField] private string element = "";
+    private enum ElementSlots { WATER, CLIMATECHANGE, DRAINAGE };
+
+    [SerializeField] private int cardID;
     [SerializeField] private string balance = "";
+    [SerializeField] private ElementSlots element = ElementSlots.WATER;
 
     [SerializeField] private string cardName = "";
     [SerializeField] private string cardDescription = "";
@@ -15,6 +17,10 @@ public class Card: ScriptableObject
     [SerializeField] private int moneyCost = 0;
     [SerializeField] private int timeCost = 0;
     [SerializeField] private int peopleHappiness = 0;
+
+    public int CardID { get => cardID; }
+    public string Balance { get => balance; }
+    private ElementSlots Element { get => element; }
 
     public int PeopleHappiness { get => peopleHappiness;}
     public int TimeCost { get => timeCost;}

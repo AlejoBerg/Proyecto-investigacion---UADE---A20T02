@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Recuperacion_de_nutrientes
   m_EditorClassIdentifier: 
+  cardID: 301
+  balance: 
+  element: 0
   cardName: Recoleccion de nutrientes
   cardDescription: descripcion de Recoleccion de nutrientes
   cardBackground: {fileID: 21300000, guid: e5a895d2128611d419fbdb757babcb27, type: 3}

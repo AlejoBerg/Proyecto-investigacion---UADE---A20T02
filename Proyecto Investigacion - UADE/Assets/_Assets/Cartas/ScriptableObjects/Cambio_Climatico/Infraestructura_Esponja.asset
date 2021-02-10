@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Infraestructura_Esponja
   m_EditorClassIdentifier: 
+  cardID: 201
+  balance: 
+  element: 0
   cardName: 'Infraestructura Esponja '
   cardDescription: "La idea de ciudad esponja marca un cambio significativo, que
     se aleja de la \u201Cinfraestructura gris\u201D tradicional (como tuber\xEDas

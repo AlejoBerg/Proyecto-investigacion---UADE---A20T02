@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Control_del_Recurso
   m_EditorClassIdentifier: 
+  cardID: 102
+  balance: 
+  element: 0
   cardName: Control del Recurso
   cardDescription: descripcion de Control del Recurso
   cardBackground: {fileID: 21300000, guid: 1bc3c5b4dcd3a854ca792fb339b01080, type: 3}

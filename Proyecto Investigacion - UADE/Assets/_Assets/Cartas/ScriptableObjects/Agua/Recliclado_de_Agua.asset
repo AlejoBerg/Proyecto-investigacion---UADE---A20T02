@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Recliclado_de_Agua
   m_EditorClassIdentifier: 
+  cardID: 105
+  balance: 
+  element: 0
   cardName: Reciclado de Agua
   cardDescription: descripcion de Reciclado de Agua
   cardBackground: {fileID: 21300000, guid: a68142048ddd88448aae32c7a5fcbffe, type: 3}

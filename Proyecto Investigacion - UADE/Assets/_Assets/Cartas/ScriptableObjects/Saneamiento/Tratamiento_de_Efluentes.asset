@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Tratamiento_de_Efluentes
   m_EditorClassIdentifier: 
+  cardID: 303
+  balance: 
+  element: 0
   cardName: Tratamientos de Efluentes
   cardDescription: descripcion de Tratamientos de Efluentes
   cardBackground: {fileID: 21300000, guid: 58a9440da9edb5246b70825adce82f8c, type: 3}

@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Energia_Renovable
   m_EditorClassIdentifier: 
+  cardID: 200
+  balance: 
+  element: 0
   cardName: Energia Renovable
   cardDescription: "Se denomina energ\xEDa renovable a la energ\xEDa que se obtiene
     de fuentes naturales virtualmente inagotables, ya sea por la inmensa cantidad

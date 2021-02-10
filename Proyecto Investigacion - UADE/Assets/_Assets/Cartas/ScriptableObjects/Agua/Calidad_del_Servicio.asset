@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Calidad_del_Servicio
   m_EditorClassIdentifier: 
+  cardID: 101
+  balance: 
+  element: 0
   cardName: Calidad del servicio
   cardDescription: descripcion de Calidad del servicio
   cardBackground: {fileID: 21300000, guid: ba2b6d5eccb6c28458e801861cfc32ff, type: 3}

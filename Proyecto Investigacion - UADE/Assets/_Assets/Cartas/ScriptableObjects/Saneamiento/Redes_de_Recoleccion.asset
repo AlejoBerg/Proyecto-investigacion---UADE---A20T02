@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Redes_de_Recoleccion
   m_EditorClassIdentifier: 
+  cardID: 302
+  balance: 
+  element: 0
   cardName: Redes de Recoleccion
   cardDescription: descripcion de Redes de Recoleccion
   cardBackground: {fileID: 21300000, guid: bd6ae42f45d157c40a202f5fb6443129, type: 3}
