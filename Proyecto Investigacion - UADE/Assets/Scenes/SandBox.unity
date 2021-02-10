@@ -5288,7 +5288,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.000030517578}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -277.73462, y: -394.13525}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1118418174
 MonoBehaviour:
@@ -5303,7 +5303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
-  m_VerticalFit: 2
+  m_VerticalFit: 0
 --- !u!114 &1118418175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5395,7 +5395,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -138.91919, y: -183.5718, z: -138.9191, w: 173.6489}
   m_textInfo:
     textComponent: {fileID: 1118418175}
     characterCount: 0
