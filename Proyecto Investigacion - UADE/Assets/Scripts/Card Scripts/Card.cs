@@ -5,6 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Card", menuName = "Card")]
 public class Card: ScriptableObject
 {
+    [SerializeField] private int _IDCard;
+    [SerializeField] private string element = "";
+    [SerializeField] private string balance = "";
+
     [SerializeField] private string cardName = "";
     [SerializeField] private string cardDescription = "";
     [SerializeField] private Sprite cardBackground = null; //Blue - Green - Yellow
