@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+[ExecuteInEditMode]
 public class CardDisplay : MonoBehaviour
 {
     //Le paso las referencias solamente de los textos para que en start visualmente se seteen
