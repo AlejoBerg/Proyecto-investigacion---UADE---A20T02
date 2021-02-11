@@ -21,7 +21,6 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public void OnBeginDrag(PointerEventData eventData)
     {
         _parentToReturnTo = this.transform.parent; 
-        print("el parentToReturn to es " + _parentToReturnTo.name);
 
         InitPlaceholder();
 
