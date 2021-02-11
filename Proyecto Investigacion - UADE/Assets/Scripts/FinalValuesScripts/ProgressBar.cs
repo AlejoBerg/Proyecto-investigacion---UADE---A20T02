@@ -21,11 +21,17 @@ public class ProgressBar : MonoBehaviour
         }
     }
 
-    public void AssignValue(float finalValue)
+    public void AssignValueLerp(float finalValue)
     {
         float currentOffset = finalValue - _minimum;
         float maximumOffset = _maximum - _minimum;
         _fillAmount = (float)currentOffset / (float)maximumOffset;
         _shouldLerp = true;
+    }
+
+    public void ResetProgressBar()
+    {
+        _mask.fillAmount = 0;
+        _fillAmount = 0;
     }
 }

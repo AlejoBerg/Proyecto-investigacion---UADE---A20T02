@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EndGameButton : MonoBehaviour
+public class GraphManager : MonoBehaviour
 {
     [SerializeField] private ProgressBar[] _progressBars;
 
@@ -16,7 +16,15 @@ public class EndGameButton : MonoBehaviour
     {
         for (int i = 0; i < _progressBars.Length; i++)
         {
-            _progressBars[i].AssignValue(Random.Range(0, 100));
+            _progressBars[i].AssignValueLerp(Random.Range(0, 100));
+        }
+    }
+
+    public void ResetGraphs()
+    {
+        for (int i = 0; i < _progressBars.Length; i++)
+        {
+            _progressBars[i].ResetProgressBar();
         }
     }
 }
