@@ -1231,6 +1231,10 @@ PrefabInstance:
       propertyPath: _parentWhileDragging
       value: 
       objectReference: {fileID: 1792199439}
+    - target: {fileID: 673056793, guid: c4504b85a3bfae1488e1b0f54b4ddacb, type: 3}
+      propertyPath: _perspectiveCameraCanvas
+      value: 
+      objectReference: {fileID: 1792199438}
     - target: {fileID: 1924983296357338950, guid: c4504b85a3bfae1488e1b0f54b4ddacb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1241,7 +1245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1924983296357338950, guid: c4504b85a3bfae1488e1b0f54b4ddacb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1058.199
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1924983296357338950, guid: c4504b85a3bfae1488e1b0f54b4ddacb, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1946,8 +1950,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 501383590}
   m_HandleRect: {fileID: 501383589}
   m_Direction: 0
-  m_Value: 0.5
-  m_Size: 0.56844074
+  m_Value: 0.5000039
+  m_Size: 0.5684403
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2268,7 +2272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035156, y: 3}
+  m_AnchoredPosition: {x: -0.0033569336, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &565857302
@@ -2370,6 +2374,10 @@ PrefabInstance:
       propertyPath: _parentWhileDragging
       value: 
       objectReference: {fileID: 1792199439}
+    - target: {fileID: 39750103, guid: 11dd727a7c47b3441aee38e5937cc9d5, type: 3}
+      propertyPath: _perspectiveCameraCanvas
+      value: 
+      objectReference: {fileID: 1792199438}
     - target: {fileID: 207251707630846959, guid: 11dd727a7c47b3441aee38e5937cc9d5, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 3
@@ -2436,7 +2444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5223950905786990789, guid: 11dd727a7c47b3441aee38e5937cc9d5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1058.199
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5223950905786990789, guid: 11dd727a7c47b3441aee38e5937cc9d5, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3238,6 +3246,89 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719423528}
   m_CullTransparentMesh: 0
+--- !u!1 &732478472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 732478475}
+  - component: {fileID: 732478474}
+  - component: {fileID: 732478473}
+  m_Layer: 0
+  m_Name: PerspectiveUI_Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &732478473
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732478472}
+  m_Enabled: 0
+--- !u!20 &732478474
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732478472}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 3
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 4.7
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 32
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &732478475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732478472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 808.6516, y: 469.9561, z: 376.6583}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &736540255
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,6 +3831,10 @@ PrefabInstance:
       propertyPath: _parentWhileDragging
       value: 
       objectReference: {fileID: 1792199439}
+    - target: {fileID: 1842401073, guid: 474f6103417312748aa0c35d0bdd6fd7, type: 3}
+      propertyPath: _perspectiveCameraCanvas
+      value: 
+      objectReference: {fileID: 1792199438}
     - target: {fileID: 1194603788348998259, guid: 474f6103417312748aa0c35d0bdd6fd7, type: 3}
       propertyPath: _mainCanvasRef
       value: 
@@ -3790,7 +3885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3330865414333796476, guid: 474f6103417312748aa0c35d0bdd6fd7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1058.199
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3330865414333796476, guid: 474f6103417312748aa0c35d0bdd6fd7, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4334,6 +4429,10 @@ PrefabInstance:
       propertyPath: _parentWhileDragging
       value: 
       objectReference: {fileID: 1792199439}
+    - target: {fileID: 61183023, guid: a9bfd25bac50b2d4bb3c3d276ac28627, type: 3}
+      propertyPath: _perspectiveCameraCanvas
+      value: 
+      objectReference: {fileID: 1792199438}
     - target: {fileID: 424149445301433823, guid: a9bfd25bac50b2d4bb3c3d276ac28627, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 3
@@ -4416,7 +4515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8717648078275288013, guid: a9bfd25bac50b2d4bb3c3d276ac28627, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1058.199
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8717648078275288013, guid: a9bfd25bac50b2d4bb3c3d276ac28627, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4544,6 +4643,10 @@ PrefabInstance:
       propertyPath: _parentWhileDragging
       value: 
       objectReference: {fileID: 1792199439}
+    - target: {fileID: 2091324508, guid: 3848d93086d1e5b4cad0afe3f5857523, type: 3}
+      propertyPath: _perspectiveCameraCanvas
+      value: 
+      objectReference: {fileID: 1792199438}
     - target: {fileID: 838284397226504333, guid: 3848d93086d1e5b4cad0afe3f5857523, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 3
@@ -4586,7 +4689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1619664286158513884, guid: 3848d93086d1e5b4cad0afe3f5857523, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1058.199
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1619664286158513884, guid: 3848d93086d1e5b4cad0afe3f5857523, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5128,6 +5231,10 @@ PrefabInstance:
       propertyPath: _parentWhileDragging
       value: 
       objectReference: {fileID: 1792199439}
+    - target: {fileID: 1814590482, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
+      propertyPath: _perspectiveCameraCanvas
+      value: 
+      objectReference: {fileID: 1792199438}
     - target: {fileID: 2580823346250826062, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
       propertyPath: m_Name
       value: Control_de_Recursos_Prefab
@@ -5142,7 +5249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2580823346250826063, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1058.199
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2580823346250826063, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5509,9 +5616,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
-  m_SizeDelta: {x: -277.73462, y: -394.13525}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0024871826, y: 0.005584717}
+  m_SizeDelta: {x: -277.73462, y: 0}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1118418174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5525,7 +5632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
-  m_VerticalFit: 0
+  m_VerticalFit: 2
 --- !u!114 &1118418175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5617,7 +5724,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -138.91919, y: -183.5718, z: -138.9191, w: 173.6489}
+  m_margin: {x: -138.91919, y: 13.494949, z: -138.9191, w: -56.658665}
   m_textInfo:
     textComponent: {fileID: 1118418175}
     characterCount: 0
@@ -6090,6 +6197,10 @@ PrefabInstance:
       propertyPath: _parentWhileDragging
       value: 
       objectReference: {fileID: 1792199439}
+    - target: {fileID: 1716287180, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
+      propertyPath: _perspectiveCameraCanvas
+      value: 
+      objectReference: {fileID: 1792199438}
     - target: {fileID: 1561311455735949437, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6100,7 +6211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1561311455735949437, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1058.199
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1561311455735949437, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6601,6 +6712,10 @@ PrefabInstance:
       propertyPath: _parentWhileDragging
       value: 
       objectReference: {fileID: 1792199439}
+    - target: {fileID: 2140289542, guid: d001942406bd4db4a90552fb1df54050, type: 3}
+      propertyPath: _perspectiveCameraCanvas
+      value: 
+      objectReference: {fileID: 1792199438}
     - target: {fileID: 664132215413513904, guid: d001942406bd4db4a90552fb1df54050, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 3
@@ -6703,7 +6818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8756731389805061416, guid: d001942406bd4db4a90552fb1df54050, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1058.199
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8756731389805061416, guid: d001942406bd4db4a90552fb1df54050, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7428,6 +7543,10 @@ PrefabInstance:
       propertyPath: _parentWhileDragging
       value: 
       objectReference: {fileID: 1792199439}
+    - target: {fileID: 1407386946, guid: 15cce0cb097b8a54ba948f44e2de27f4, type: 3}
+      propertyPath: _perspectiveCameraCanvas
+      value: 
+      objectReference: {fileID: 1792199438}
     - target: {fileID: 278127020764410677, guid: 15cce0cb097b8a54ba948f44e2de27f4, type: 3}
       propertyPath: m_Name
       value: 'Descentralizacion_Prefab  '
@@ -7458,7 +7577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2427552951648840564, guid: 15cce0cb097b8a54ba948f44e2de27f4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1058.199
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2427552951648840564, guid: 15cce0cb097b8a54ba948f44e2de27f4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7923,6 +8042,10 @@ PrefabInstance:
       propertyPath: _parentWhileDragging
       value: 
       objectReference: {fileID: 1792199439}
+    - target: {fileID: 791907673, guid: ddeca9872d60b0e4d8b6204fbf05cf12, type: 3}
+      propertyPath: _perspectiveCameraCanvas
+      value: 
+      objectReference: {fileID: 1792199438}
     - target: {fileID: 294626967122627025, guid: ddeca9872d60b0e4d8b6204fbf05cf12, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7933,7 +8056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 294626967122627025, guid: ddeca9872d60b0e4d8b6204fbf05cf12, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1058.199
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 294626967122627025, guid: ddeca9872d60b0e4d8b6204fbf05cf12, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8185,7 +8308,7 @@ MonoBehaviour:
   m_Content: {fileID: 1118418173}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -8194,7 +8317,7 @@ MonoBehaviour:
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 1940321173}
   m_HorizontalScrollbarVisibility: 0
-  m_VerticalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 1
   m_HorizontalScrollbarSpacing: 0
   m_VerticalScrollbarSpacing: 0
   m_OnValueChanged:
@@ -8815,8 +8938,8 @@ Canvas:
   m_GameObject: {fileID: 1792199435}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 732478474}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -9440,8 +9563,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1391866225}
   m_HandleRect: {fileID: 1391866223}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 1
+  m_Value: 0
+  m_Size: 0.9999931
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9608,6 +9731,10 @@ PrefabInstance:
       propertyPath: _parentWhileDragging
       value: 
       objectReference: {fileID: 1792199439}
+    - target: {fileID: 960427350, guid: 78d8f479a4e142e459f3f30ebfcb9c8b, type: 3}
+      propertyPath: _perspectiveCameraCanvas
+      value: 
+      objectReference: {fileID: 1792199438}
     - target: {fileID: 131010679814325752, guid: 78d8f479a4e142e459f3f30ebfcb9c8b, type: 3}
       propertyPath: m_Name
       value: 'Energia_Renovable_Prefab '
@@ -9714,7 +9841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8702308518905416267, guid: 78d8f479a4e142e459f3f30ebfcb9c8b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1058.199
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702308518905416267, guid: 78d8f479a4e142e459f3f30ebfcb9c8b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -10117,6 +10244,10 @@ PrefabInstance:
       propertyPath: _parentWhileDragging
       value: 
       objectReference: {fileID: 1792199439}
+    - target: {fileID: 144562573, guid: 2f0fde8a59daee646a69b04c6c6a121e, type: 3}
+      propertyPath: _perspectiveCameraCanvas
+      value: 
+      objectReference: {fileID: 1792199438}
     - target: {fileID: 533983381889803815, guid: 2f0fde8a59daee646a69b04c6c6a121e, type: 3}
       propertyPath: _mainCanvasRef
       value: 
@@ -10155,7 +10286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2631437952557389370, guid: 2f0fde8a59daee646a69b04c6c6a121e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1058.199
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2631437952557389370, guid: 2f0fde8a59daee646a69b04c6c6a121e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -10327,6 +10458,10 @@ PrefabInstance:
       propertyPath: _parentWhileDragging
       value: 
       objectReference: {fileID: 1792199439}
+    - target: {fileID: 1820180801, guid: b82c2ed43e72d934195a7a8a0026c62e, type: 3}
+      propertyPath: _perspectiveCameraCanvas
+      value: 
+      objectReference: {fileID: 1792199438}
     - target: {fileID: 1265165050475255826, guid: b82c2ed43e72d934195a7a8a0026c62e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10337,7 +10472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1265165050475255826, guid: b82c2ed43e72d934195a7a8a0026c62e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1058.199
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1265165050475255826, guid: b82c2ed43e72d934195a7a8a0026c62e, type: 3}
       propertyPath: m_LocalRotation.x

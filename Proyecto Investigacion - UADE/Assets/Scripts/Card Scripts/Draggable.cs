@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     [SerializeField] private Transform _parentWhileDragging;
+    [SerializeField] private Canvas _perspectiveCameraCanvas;
 
     private Transform _parentToReturnTo = null;
     private CanvasGroup _canvasGroup = null;
@@ -15,13 +16,12 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     private void Awake()
     {
-        _canvasGroup = GetComponent<CanvasGroup>();    
+        _canvasGroup = GetComponent<CanvasGroup>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        _parentToReturnTo = this.transform.parent; 
-
+        _parentToReturnTo = this.transform.parent;
         InitPlaceholder();
 
         this.transform.SetParent(_parentWhileDragging);
@@ -30,9 +30,14 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnDrag(PointerEventData eventData)
     {
-        this.transform.position = Input.mousePosition;
-        _placeHolder.transform.SetParent(_placeHolderParent);
+        Vector3 screenPos = Input.mousePosition;
+        screenPos.z = _perspectiveCameraCanvas.planeDistance; //planeDistance = how far away from the camera is the canvas generated
+        Camera renderCamera = _perspectiveCameraCanvas.worldCamera; // Sizing the camera based on world camera
+        Vector3 canvasPos = renderCamera.ScreenToWorldPoint(screenPos); //Creates a screen space based on world space
 
+        this.transform.position = canvasPos;
+        _placeHolder.transform.SetParent(_placeHolderParent);
+        
         //SwapCardsWhenNecessary();
     }
 
