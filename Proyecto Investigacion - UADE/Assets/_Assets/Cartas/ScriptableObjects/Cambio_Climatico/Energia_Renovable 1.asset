@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Energia_Renovable 1
   m_EditorClassIdentifier: 
-  cardID: 62
+  cardID: 61
   balance: U5
   element: 1
   cardName: Impuesto al carbono / Precio

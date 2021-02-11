@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
-  m_Name: Energia_Renovable
+  m_Name: Energia_Renovable 5
   m_EditorClassIdentifier: 
-  cardID: 60
+  cardID: 65
   balance: U5
   element: 1
-  cardName: "Reducir el consumo total de energ\xEDa"
-  cardDescription: "Optimizaci\xF3n de operaciones en plantas de tratamiento y redes
-    de distribuci\xF3n. Los sistemas inteligentes que permiten la recopilaci\xF3n
-    y el an\xE1lisis de datos pueden ser herramientas \xFAtiles para identificar
-    el potencial de mejora"
+  cardName: "Legislaci\xF3n de eficiencia energ\xE9tica (sistemas de distribuci\xF3n)"
+  cardDescription: "Regulaci\xF3n. Electricidad y calor producidos a partir de sistemas
+    de distribuci\xF3n. Legislaci\xF3n estatal y nacional relacionada con la eficiencia
+    energ\xE9tica. Subsidios del gobierno. Financiamiento del gobierno. Impuesto
+    sobre el carbono"
   cardBackground: {fileID: 21300000, guid: 6473f286c4d4d73419ee1d35db488ec5, type: 3}
   moneyCost: 3
   timeCost: 10

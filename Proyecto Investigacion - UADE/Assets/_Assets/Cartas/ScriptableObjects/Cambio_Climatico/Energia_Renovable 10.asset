@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
-  m_Name: Energia_Renovable
+  m_Name: Energia_Renovable 10
   m_EditorClassIdentifier: 
-  cardID: 60
-  balance: U5
+  cardID: 70
+  balance: U8
   element: 1
-  cardName: "Reducir el consumo total de energ\xEDa"
-  cardDescription: "Optimizaci\xF3n de operaciones en plantas de tratamiento y redes
-    de distribuci\xF3n. Los sistemas inteligentes que permiten la recopilaci\xF3n
-    y el an\xE1lisis de datos pueden ser herramientas \xFAtiles para identificar
-    el potencial de mejora"
+  cardName: Costo de manejo alternativo
+  cardDescription: "Mercado. Bios\xF3lidos para la producci\xF3n de energ\xEDa. Costo
+    de rutas alternativas de manejo / eliminaci\xF3n. Reducci\xF3n del costo de los
+    vertederos al desviar los desechos org\xE1nicos a la digesti\xF3n. Bios\xF3lidos
+    estabilizados para su reutilizaci\xF3n"
   cardBackground: {fileID: 21300000, guid: 6473f286c4d4d73419ee1d35db488ec5, type: 3}
   moneyCost: 3
   timeCost: 10
