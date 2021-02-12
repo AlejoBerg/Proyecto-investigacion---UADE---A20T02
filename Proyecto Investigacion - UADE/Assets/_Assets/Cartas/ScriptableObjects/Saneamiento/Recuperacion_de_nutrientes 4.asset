@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
+  m_Name: Recuperacion_de_nutrientes 4
+  m_EditorClassIdentifier: 
+  cardID: 33
+  balance: M3
+  element: 2
+  cardName: "Garantizar la seguridad de la reutilizaci\xF3n en la legislaci\xF3n"
+  cardDescription: "Regulaci\xF3n. Garantizar la seguridad mediante la inclusi\xF3n
+    de la reutilizaci\xF3n en la legislaci\xF3n. Cambiar los est\xE1ndares de fertilizantes,
+    ya que son muy altos e incluso la mayor\xEDa de los fertilizantes minerales rara
+    vez los cumplen"
+  cardBackground: {fileID: 21300000, guid: e5a895d2128611d419fbdb757babcb27, type: 3}
+  moneyCost: 1
+  timeCost: 5
+  peopleHappiness: 3

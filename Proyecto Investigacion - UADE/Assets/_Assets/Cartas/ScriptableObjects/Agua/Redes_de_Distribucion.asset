@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Redes_de_Distribucion
   m_EditorClassIdentifier: 
-  cardID: 106
-  balance: 
+  cardID: 13
+  balance: W4
   element: 0
-  cardName: Redes de Distribucion
-  cardDescription: descripcion de Redes de Distribucion
+  cardName: Aguas grises para agricultura y acuicultura
+  cardDescription: "Ahorra costos de agua y fertilizantes, agua m\xE1s barata y rica
+    en nutrientes usada para riego. Excluye las aguas grises ricas en detergente
+    de lavavajillas, lavadoras y fregaderos de cocina"
   cardBackground: {fileID: 21300000, guid: f37861af897ac1c45a35523df471c22d, type: 3}
   moneyCost: 4
   timeCost: 5

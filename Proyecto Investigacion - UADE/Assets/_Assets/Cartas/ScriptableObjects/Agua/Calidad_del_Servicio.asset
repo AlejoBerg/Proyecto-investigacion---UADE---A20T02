@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Calidad_del_Servicio
   m_EditorClassIdentifier: 
-  cardID: 101
-  balance: 
+  cardID: 26
+  balance: W7
   element: 0
-  cardName: Calidad del servicio
-  cardDescription: descripcion de Calidad del servicio
+  cardName: "Aceptabilidad del consumidor para la reutilizaci\xF3n potable directa"
+  cardDescription: "Mercado. La aceptabilidad del consumidor es fundamental para
+    la reutilizaci\xF3n potable directa. Existen barreras significativas con respecto
+    a la aceptaci\xF3n y las regulaciones del consumidor"
   cardBackground: {fileID: 21300000, guid: ba2b6d5eccb6c28458e801861cfc32ff, type: 3}
   moneyCost: 4
   timeCost: 1

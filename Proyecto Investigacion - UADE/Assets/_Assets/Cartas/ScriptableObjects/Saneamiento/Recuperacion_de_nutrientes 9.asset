@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
+  m_Name: Recuperacion_de_nutrientes 9
+  m_EditorClassIdentifier: 
+  cardID: 49
+  balance: M15
+  element: 2
+  cardName: "Categorizaci\xF3n de un producto: residuo o recurso"
+  cardDescription: "Regulaci\xF3n. Prote\xEDnas y piensos. Modificar la categorizaci\xF3n
+    de un producto como residuo o recurso."
+  cardBackground: {fileID: 21300000, guid: e5a895d2128611d419fbdb757babcb27, type: 3}
+  moneyCost: 1
+  timeCost: 5
+  peopleHappiness: 3

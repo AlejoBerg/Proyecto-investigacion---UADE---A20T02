@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
+  m_Name: Tratamiento_de_Efluentes 2
+  m_EditorClassIdentifier: 
+  cardID: 39
+  balance: M3
+  element: 2
+  cardName: "Reciclaje de lodos de la producci\xF3n de agua potable"
+  cardDescription: "Lodos de agua potable para agricultura o industria. Incentivar
+    el reciclaje de lodos procedentes de la producci\xF3n de agua potable. Proporcionar
+    agua adicional y tambi\xE9n otra fuente de ingresos por la venta de productos
+    qu\xEDmicos b\xE1sicos. La cantidad var\xEDa seg\xFAn el tipo de agua que se
+    est\xE9 tratando y el tipo de tratamiento, especialmente la coagulaci\xF3n con
+    hierro y aluminio."
+  cardBackground: {fileID: 21300000, guid: 58a9440da9edb5246b70825adce82f8c, type: 3}
+  moneyCost: 1
+  timeCost: 8
+  peopleHappiness: 5

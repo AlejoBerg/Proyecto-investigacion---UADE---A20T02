@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
+  m_Name: Recliclado_de_Agua 2
+  m_EditorClassIdentifier: 
+  cardID: 12
+  balance: W3
+  element: 0
+  cardName: "Incentivos para reciclar aguas grises a trav\xE9s de precios"
+  cardDescription: "Mercado. Creando demanda de los consumidores. Incentivos para
+    reciclar aguas grises a trav\xE9s de precios. Los sistemas dom\xE9sticos de recolecci\xF3n
+    y tratamiento deben ser rentables, con un tiempo de recuperaci\xF3n corto"
+  cardBackground: {fileID: 21300000, guid: a68142048ddd88448aae32c7a5fcbffe, type: 3}
+  moneyCost: 0
+  timeCost: 0
+  peopleHappiness: 0

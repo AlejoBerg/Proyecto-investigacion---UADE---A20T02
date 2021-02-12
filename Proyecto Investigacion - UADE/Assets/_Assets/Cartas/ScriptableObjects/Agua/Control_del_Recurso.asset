@@ -12,11 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Control_del_Recurso
   m_EditorClassIdentifier: 
-  cardID: 102
-  balance: 
+  cardID: 1
+  balance: E1
   element: 0
-  cardName: Control del Recurso
-  cardDescription: descripcion de Control del Recurso
+  cardName: "Conservaci\xF3n. Medidas de control de la contaminaci\xF3n"
+  cardDescription: "Reducci\xF3n de los gastos operativos relacionados con los procesos
+    de tratamiento. minimizaci\xF3n de sedimentos, regulaci\xF3n de la escorrent\xEDa
+    de aguas pluviales, reducci\xF3n de impactos de inundaciones, secuestro de carbono,
+    producci\xF3n de alimentos, purificaci\xF3n de agua, control de temperatura del
+    agua"
   cardBackground: {fileID: 21300000, guid: 1bc3c5b4dcd3a854ca792fb339b01080, type: 3}
   moneyCost: 5
   timeCost: 3

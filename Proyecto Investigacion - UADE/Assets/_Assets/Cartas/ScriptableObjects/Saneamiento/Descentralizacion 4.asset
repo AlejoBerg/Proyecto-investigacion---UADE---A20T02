@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
+  m_Name: Descentralizacion 4
+  m_EditorClassIdentifier: 
+  cardID: 53
+  balance: M17
+  element: 2
+  cardName: Recursos recuperados para productos de salud humana
+  cardDescription: "Productos para la salud humana. Recursos utilizados recuperados
+    para fines farmac\xE9uticos y m\xE9dicos, suplementos y productos de bienestar.
+    Un desaf\xEDo importante es que cada industria tiene diferentes indicadores,
+    y la racionalizaci\xF3n facilitar\xEDa el desarrollo de un mercado."
+  cardBackground: {fileID: 21300000, guid: 3fd79bec8e10c414c94d3b633616c915, type: 3}
+  moneyCost: 1
+  timeCost: 2
+  peopleHappiness: 3

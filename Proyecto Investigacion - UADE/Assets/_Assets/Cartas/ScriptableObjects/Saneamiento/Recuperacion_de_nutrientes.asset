@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Recuperacion_de_nutrientes
   m_EditorClassIdentifier: 
-  cardID: 301
-  balance: 
-  element: 0
-  cardName: Recoleccion de nutrientes
-  cardDescription: descripcion de Recoleccion de nutrientes
+  cardID: 50
+  balance: M15
+  element: 2
+  cardName: "Ventaja de mercado. Producci\xF3n renovable"
+  cardDescription: "Mercado. Prote\xEDnas y piensos. Pureza y alta densidad proteica.
+    El producto tiene una ventaja de mercado ya que la prote\xEDna proviene de producci\xF3n
+    renovable."
   cardBackground: {fileID: 21300000, guid: e5a895d2128611d419fbdb757babcb27, type: 3}
   moneyCost: 1
   timeCost: 5

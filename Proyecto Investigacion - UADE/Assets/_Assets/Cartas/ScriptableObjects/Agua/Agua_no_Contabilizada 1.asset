@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
+  m_Name: Agua_no_Contabilizada 1
+  m_EditorClassIdentifier: 
+  cardID: 28
+  balance: W14
+  element: 0
+  cardName: "ROI para reducir la p\xE9rdida de agua"
+  cardDescription: "Mercado. Las empresas de servicios p\xFAblicos necesitan un ROI
+    para reducir la p\xE9rdida de agua y mantener niveles bajos. Modelos innovadores
+    de contrataci\xF3n y asociaci\xF3n que recompensan la reducci\xF3n de p\xE9rdidas
+    que cumple o supera los objetivos acordados"
+  cardBackground: {fileID: 21300000, guid: ac4b265425b970b4ea581e01e030eb9d, type: 3}
+  moneyCost: 4
+  timeCost: 5
+  peopleHappiness: 4

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
+  m_Name: Tratamiento_de_Efluentes 3
+  m_EditorClassIdentifier: 
+  cardID: 40
+  balance: M3
+  element: 2
+  cardName: "Producci\xF3n de qu\xEDmicos en plantas de tratamiento"
+  cardDescription: "Mercado. Lodos de agua potable para agricultura o industria.
+    Encontrar nichos de mercado adecuados. Producci\xF3n de agua y qu\xEDmicos en
+    plantas de tratamiento."
+  cardBackground: {fileID: 21300000, guid: 58a9440da9edb5246b70825adce82f8c, type: 3}
+  moneyCost: 1
+  timeCost: 8
+  peopleHappiness: 5

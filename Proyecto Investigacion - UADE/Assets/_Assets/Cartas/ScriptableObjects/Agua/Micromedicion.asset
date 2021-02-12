@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Micromedicion
   m_EditorClassIdentifier: 
-  cardID: 103
-  balance: 
+  cardID: 5
+  balance: W1
   element: 0
-  cardName: Micromedicion
-  cardDescription: descripcion de Micromedicion
+  cardName: "Reducci\xF3n del consumo de agua"
+  cardDescription: "Regulaci\xF3n. Tarifas que apoyan el uso eficiente y sostenible
+    del agua. Las empresas de servicios p\xFAblicos se asocian con la industria para
+    brindar servicios de asesoramiento relacionados con los electrodom\xE9sticos
+    que ahorran agua"
   cardBackground: {fileID: 21300000, guid: 0151950a260a714429378cddeeb821f8, type: 3}
   moneyCost: 2
   timeCost: 9

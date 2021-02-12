@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
   m_Name: Potabilizacion
   m_EditorClassIdentifier: 
-  cardID: 104
-  balance: 
+  cardID: 9
+  balance: E2
   element: 0
-  cardName: Potabilizacion
-  cardDescription: descripcion de Potabilizacion
+  cardName: "Recolecci\xF3n y tratamiento dom\xE9stico"
+  cardDescription: "Mercado. Necesidad de crear demanda de los consumidores; Los
+    sistemas dom\xE9sticos de recolecci\xF3n y tratamiento deben ser rentables, con
+    un tiempo de recuperaci\xF3n corto."
   cardBackground: {fileID: 21300000, guid: 4d504d17dec73ca4aa29336d5d47f51c, type: 3}
   moneyCost: 9
   timeCost: 9
