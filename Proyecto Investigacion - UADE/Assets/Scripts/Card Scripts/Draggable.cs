@@ -9,10 +9,13 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     [SerializeField] private Transform _parentWhileDragging;
     [SerializeField] private Canvas _perspectiveCameraCanvas;
 
+    private bool _played = false;
     private Transform _parentToReturnTo = null;
     private CanvasGroup _canvasGroup = null;
     private GameObject _placeHolder; //PlaceHolder position after moving the card
     private Transform _placeHolderParent; //PlaceHolder parent used for returning when changing dop zones
+
+    public bool Played { get => _played; set => _played = value; }
 
     private void Awake()
     {
@@ -37,18 +40,16 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
         this.transform.position = canvasPos;
         _placeHolder.transform.SetParent(_placeHolderParent);
-        
         //SwapCardsWhenNecessary();
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         this.transform.SetParent(_parentToReturnTo);
-
         this.transform.SetSiblingIndex(_placeHolder.transform.GetSiblingIndex());
         _canvasGroup.blocksRaycasts = true;
 
-        _placeHolder.SetActive(false); 
+        _placeHolder.SetActive(false);
     }
 
     private void SwapCardsWhenNecessary()
@@ -98,6 +99,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public void ChangeParent(Transform newParent)
     {
         _parentToReturnTo = newParent;
+
     }
 
     public void ChangePlaceHolderParent(Transform newPlaceholderParent)

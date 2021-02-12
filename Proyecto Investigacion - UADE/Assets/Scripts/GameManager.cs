@@ -2,10 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager  <T>: MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    
-    protected static List<T> cards = new List<T>();
-    
-    public static List<T> Cards { get => cards; set => cards = value; }
+    private float _currentCoins = 100;
+
+    public void ChangeCoins(float coinsAmount)
+    {
+        if(_currentCoins + coinsAmount >= 0)
+        {
+            _currentCoins += coinsAmount;
+        }
+        else { _currentCoins = 0; }
+    }
 }

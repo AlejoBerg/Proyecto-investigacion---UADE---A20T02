@@ -12,7 +12,7 @@ public class ItemPool : MonoBehaviour, IDropHandler
     {
         if (DragUI.itemDragging.CompareTag("Cards"))
         {
-            GameManager<DragUI>.Cards.Remove(itemDragging);
+            //GameManager<DragUI>.Cards.Remove(itemDragging);
             Debug.Log("carta removida");
             DragUI.itemDragging.transform.SetParent(tablero);
         }
