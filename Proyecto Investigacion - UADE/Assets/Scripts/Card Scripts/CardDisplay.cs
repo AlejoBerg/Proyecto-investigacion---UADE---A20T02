@@ -17,6 +17,7 @@ public class CardDisplay : MonoBehaviour
     [SerializeField] private TextMeshProUGUI peopleHappinessText;
 
     public TextMeshProUGUI CardDescriptionText { get => cardDescriptionText;}
+    public float CardCost { get => card.MoneyCost; }
 
     private void Start()
     {
