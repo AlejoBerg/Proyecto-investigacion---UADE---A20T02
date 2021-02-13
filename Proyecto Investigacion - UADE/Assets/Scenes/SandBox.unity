@@ -155,7 +155,7 @@ Transform:
   - {fileID: 556388491}
   - {fileID: 780025175}
   m_Father: {fileID: 1792199439}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &36451439
 GameObject:
@@ -189,7 +189,7 @@ RectTransform:
   - {fileID: 118190532}
   - {fileID: 1882114966}
   m_Father: {fileID: 1792199439}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1896,12 +1896,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 749794809}
-  m_RootOrder: 4
+  m_Father: {fileID: 1792199439}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 833, y: 542}
+  m_AnchoredPosition: {x: 833, y: 483.00003}
   m_SizeDelta: {x: 236.65305, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &517935094
@@ -2935,7 +2935,7 @@ Transform:
   - {fileID: 1705546839}
   - {fileID: 1749564214}
   m_Father: {fileID: 1792199439}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!225 &672239026
 CanvasGroup:
@@ -3683,7 +3683,6 @@ Transform:
   - {fileID: 417332303}
   - {fileID: 1446397369}
   - {fileID: 851909992}
-  - {fileID: 517935093}
   m_Father: {fileID: 36451440}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5833,7 +5832,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0024871826, y: -0.0013580322}
+  m_AnchoredPosition: {x: 0.0024871826, y: -0.0026245117}
   m_SizeDelta: {x: -277.73462, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1118418174
@@ -8257,6 +8256,7 @@ MonoBehaviour:
   - {fileID: 705051272}
   - {fileID: 1554428063}
   _playerDeckOfCards: {fileID: 565857300}
+  _gameManagerRef: {fileID: 915211628}
 --- !u!224 &1607228385 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8756731389805061416, guid: d001942406bd4db4a90552fb1df54050, type: 3}
@@ -9192,6 +9192,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 517935093}
   - {fileID: 36451440}
   - {fileID: 672239025}
   - {fileID: 32966666}
@@ -9794,8 +9795,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1391866225}
   m_HandleRect: {fileID: 1391866223}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.9999955
+  m_Value: 1
+  m_Size: 0.9999941
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

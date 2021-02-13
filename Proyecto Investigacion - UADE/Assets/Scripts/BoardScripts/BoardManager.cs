@@ -6,6 +6,7 @@ public class BoardManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] _boardLines;//TopLine and Button line 
     [SerializeField] private GameObject _playerDeckOfCards;//TopLine and Button line 
+    [SerializeField] private GameManager _gameManagerRef;
 
     private List<GameObject> _cardsPlayed;
 
@@ -37,6 +38,11 @@ public class BoardManager : MonoBehaviour
         foreach (var card in _cardsPlayed)
         {
             card.transform.parent = _playerDeckOfCards.transform;
+
+            card.GetComponent<Draggable>().Played = false;
+            float cardCost = card.GetComponent<CardDisplay>().CardCost;
+
+            _gameManagerRef.ChangeCoins(cardCost);
         }
     }
 }
