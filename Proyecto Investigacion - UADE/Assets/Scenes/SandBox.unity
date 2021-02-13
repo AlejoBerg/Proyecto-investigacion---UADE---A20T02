@@ -1232,6 +1232,10 @@ PrefabInstance:
       propertyPath: _perspectiveCameraCanvas
       value: 
       objectReference: {fileID: 1792199438}
+    - target: {fileID: 673056793, guid: c4504b85a3bfae1488e1b0f54b4ddacb, type: 3}
+      propertyPath: _gameManagerRef
+      value: 
+      objectReference: {fileID: 915211628}
     - target: {fileID: 1924983296357338950, guid: c4504b85a3bfae1488e1b0f54b4ddacb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2116,8 +2120,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 501383590}
   m_HandleRect: {fileID: 501383589}
   m_Direction: 0
-  m_Value: 0.5000029
-  m_Size: 0.5684395
+  m_Value: 0.50000376
+  m_Size: 0.56843996
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2546,6 +2550,10 @@ PrefabInstance:
       propertyPath: _perspectiveCameraCanvas
       value: 
       objectReference: {fileID: 1792199438}
+    - target: {fileID: 39750103, guid: 11dd727a7c47b3441aee38e5937cc9d5, type: 3}
+      propertyPath: _gameManagerRef
+      value: 
+      objectReference: {fileID: 915211628}
     - target: {fileID: 207251707630846959, guid: 11dd727a7c47b3441aee38e5937cc9d5, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 3
@@ -4007,6 +4015,10 @@ PrefabInstance:
       propertyPath: _perspectiveCameraCanvas
       value: 
       objectReference: {fileID: 1792199438}
+    - target: {fileID: 1842401073, guid: 474f6103417312748aa0c35d0bdd6fd7, type: 3}
+      propertyPath: _gameManagerRef
+      value: 
+      objectReference: {fileID: 915211628}
     - target: {fileID: 1194603788348998259, guid: 474f6103417312748aa0c35d0bdd6fd7, type: 3}
       propertyPath: _mainCanvasRef
       value: 
@@ -4606,6 +4618,10 @@ PrefabInstance:
       propertyPath: _perspectiveCameraCanvas
       value: 
       objectReference: {fileID: 1792199438}
+    - target: {fileID: 61183023, guid: a9bfd25bac50b2d4bb3c3d276ac28627, type: 3}
+      propertyPath: _gameManagerRef
+      value: 
+      objectReference: {fileID: 915211628}
     - target: {fileID: 424149445301433823, guid: a9bfd25bac50b2d4bb3c3d276ac28627, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 3
@@ -4863,6 +4879,10 @@ PrefabInstance:
       propertyPath: _perspectiveCameraCanvas
       value: 
       objectReference: {fileID: 1792199438}
+    - target: {fileID: 2091324508, guid: 3848d93086d1e5b4cad0afe3f5857523, type: 3}
+      propertyPath: _gameManagerRef
+      value: 
+      objectReference: {fileID: 915211628}
     - target: {fileID: 838284397226504333, guid: 3848d93086d1e5b4cad0afe3f5857523, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 3
@@ -5451,6 +5471,10 @@ PrefabInstance:
       propertyPath: _perspectiveCameraCanvas
       value: 
       objectReference: {fileID: 1792199438}
+    - target: {fileID: 1814590482, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
+      propertyPath: _gameManagerRef
+      value: 
+      objectReference: {fileID: 915211628}
     - target: {fileID: 2580823346250826062, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
       propertyPath: m_Name
       value: Control_de_Recursos_Prefab
@@ -5832,7 +5856,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0024871826, y: -0.0026245117}
+  m_AnchoredPosition: {x: 0.0024871826, y: 0.006668091}
   m_SizeDelta: {x: -277.73462, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1118418174
@@ -6429,6 +6453,10 @@ PrefabInstance:
       propertyPath: _perspectiveCameraCanvas
       value: 
       objectReference: {fileID: 1792199438}
+    - target: {fileID: 1716287180, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
+      propertyPath: _gameManagerRef
+      value: 
+      objectReference: {fileID: 915211628}
     - target: {fileID: 1561311455735949437, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6944,6 +6972,10 @@ PrefabInstance:
       propertyPath: _perspectiveCameraCanvas
       value: 
       objectReference: {fileID: 1792199438}
+    - target: {fileID: 2140289542, guid: d001942406bd4db4a90552fb1df54050, type: 3}
+      propertyPath: _gameManagerRef
+      value: 
+      objectReference: {fileID: 915211628}
     - target: {fileID: 664132215413513904, guid: d001942406bd4db4a90552fb1df54050, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 3
@@ -7777,6 +7809,10 @@ PrefabInstance:
       propertyPath: _perspectiveCameraCanvas
       value: 
       objectReference: {fileID: 1792199438}
+    - target: {fileID: 1407386946, guid: 15cce0cb097b8a54ba948f44e2de27f4, type: 3}
+      propertyPath: _gameManagerRef
+      value: 
+      objectReference: {fileID: 915211628}
     - target: {fileID: 278127020764410677, guid: 15cce0cb097b8a54ba948f44e2de27f4, type: 3}
       propertyPath: m_Name
       value: 'Descentralizacion_Prefab  '
@@ -8277,6 +8313,10 @@ PrefabInstance:
       propertyPath: _perspectiveCameraCanvas
       value: 
       objectReference: {fileID: 1792199438}
+    - target: {fileID: 791907673, guid: ddeca9872d60b0e4d8b6204fbf05cf12, type: 3}
+      propertyPath: _gameManagerRef
+      value: 
+      objectReference: {fileID: 915211628}
     - target: {fileID: 294626967122627025, guid: ddeca9872d60b0e4d8b6204fbf05cf12, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9795,8 +9835,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1391866225}
   m_HandleRect: {fileID: 1391866223}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.9999941
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9967,6 +10007,10 @@ PrefabInstance:
       propertyPath: _perspectiveCameraCanvas
       value: 
       objectReference: {fileID: 1792199438}
+    - target: {fileID: 960427350, guid: 78d8f479a4e142e459f3f30ebfcb9c8b, type: 3}
+      propertyPath: _gameManagerRef
+      value: 
+      objectReference: {fileID: 915211628}
     - target: {fileID: 131010679814325752, guid: 78d8f479a4e142e459f3f30ebfcb9c8b, type: 3}
       propertyPath: m_Name
       value: 'Energia_Renovable_Prefab '
@@ -10480,6 +10524,10 @@ PrefabInstance:
       propertyPath: _perspectiveCameraCanvas
       value: 
       objectReference: {fileID: 1792199438}
+    - target: {fileID: 144562573, guid: 2f0fde8a59daee646a69b04c6c6a121e, type: 3}
+      propertyPath: _gameManagerRef
+      value: 
+      objectReference: {fileID: 915211628}
     - target: {fileID: 533983381889803815, guid: 2f0fde8a59daee646a69b04c6c6a121e, type: 3}
       propertyPath: _mainCanvasRef
       value: 
@@ -10694,6 +10742,10 @@ PrefabInstance:
       propertyPath: _perspectiveCameraCanvas
       value: 
       objectReference: {fileID: 1792199438}
+    - target: {fileID: 1820180801, guid: b82c2ed43e72d934195a7a8a0026c62e, type: 3}
+      propertyPath: _gameManagerRef
+      value: 
+      objectReference: {fileID: 915211628}
     - target: {fileID: 1265165050475255826, guid: b82c2ed43e72d934195a7a8a0026c62e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

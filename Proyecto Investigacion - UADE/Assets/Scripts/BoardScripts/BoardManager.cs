@@ -42,7 +42,7 @@ public class BoardManager : MonoBehaviour
             card.GetComponent<Draggable>().Played = false;
             float cardCost = card.GetComponent<CardDisplay>().CardCost;
 
-            _gameManagerRef.ChangeCoins(cardCost);
+            _gameManagerRef.ChangeCoins(_cardsPlayed.Count * cardCost);
         }
     }
 }

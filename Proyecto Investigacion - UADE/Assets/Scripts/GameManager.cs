@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private float _currentCoins = 100;
+    private float _currentCoins = 5;
     
     public event Action OnCoinsChange;
     public float CurrentCoins { get => _currentCoins; }
