@@ -1,10 +1,15 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     private float _currentCoins = 100;
+    
+    public event Action OnCoinsChange;
+    public float CurrentCoins { get => _currentCoins; }
+
 
     public void ChangeCoins(float coinsAmount)
     {
@@ -13,5 +18,7 @@ public class GameManager : MonoBehaviour
             _currentCoins += coinsAmount;
         }
         else { _currentCoins = 0; }
+
+        OnCoinsChange?.Invoke();
     }
 }
