@@ -18,7 +18,7 @@ MonoBehaviour:
   cardName: "Costo de disposici\xF3n y metal recuperado"
   cardDescription: "Mercado. Metales y Minerales. Minimizar el costo de disposici\xF3n
     y costo recuperado en el metal recuperado. Garant\xEDa de calidad constante"
-  cardBackground: {fileID: 21300000, guid: bd6ae42f45d157c40a202f5fb6443129, type: 3}
+  cardBackground: {fileID: 21300000, guid: 5ceca0ccf6e867b4ba77e435934e8e08, type: 3}
   moneyCost: 3
   timeCost: 3
   peopleHappiness: 5

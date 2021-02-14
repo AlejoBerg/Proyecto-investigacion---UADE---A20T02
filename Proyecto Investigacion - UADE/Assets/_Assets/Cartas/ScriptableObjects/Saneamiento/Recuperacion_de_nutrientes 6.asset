@@ -21,7 +21,7 @@ MonoBehaviour:
     pueden impulsar un mayor uso de la agricultura. Los fertilizantes y otros productos
     de f\xF3sforo del agua usada deben ser una soluci\xF3n de bajo costo para que
     los agricultores consideren el uso de bios\xF3lidos."
-  cardBackground: {fileID: 21300000, guid: e5a895d2128611d419fbdb757babcb27, type: 3}
+  cardBackground: {fileID: 21300000, guid: 5ceca0ccf6e867b4ba77e435934e8e08, type: 3}
   moneyCost: 1
   timeCost: 5
   peopleHappiness: 3

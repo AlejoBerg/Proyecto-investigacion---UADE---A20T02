@@ -20,7 +20,7 @@ MonoBehaviour:
     para reducir la p\xE9rdida de agua y mantener niveles bajos. Modelos innovadores
     de contrataci\xF3n y asociaci\xF3n que recompensan la reducci\xF3n de p\xE9rdidas
     que cumple o supera los objetivos acordados"
-  cardBackground: {fileID: 21300000, guid: ac4b265425b970b4ea581e01e030eb9d, type: 3}
+  cardBackground: {fileID: 21300000, guid: e218739f4a7d75144abb075cbe71ed0a, type: 3}
   moneyCost: 4
   timeCost: 5
   peopleHappiness: 4

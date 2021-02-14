@@ -19,7 +19,7 @@ MonoBehaviour:
   cardDescription: "Regulaci\xF3n. Metales y Minerales. Negociar l\xEDmites de residuos
     en la descarga a alcantarillado. Limitaci\xF3n de la eliminaci\xF3n de metales
     pesados \u200B\u200Ben vertederos"
-  cardBackground: {fileID: 21300000, guid: bd6ae42f45d157c40a202f5fb6443129, type: 3}
+  cardBackground: {fileID: 21300000, guid: 9ada4e440e14b914bbbaa64068458109, type: 3}
   moneyCost: 3
   timeCost: 3
   peopleHappiness: 5

@@ -19,7 +19,7 @@ MonoBehaviour:
   cardDescription: "Regulaci\xF3n. Bios\xF3lidos para la producci\xF3n de energ\xEDa.
     Legislaci\xF3n estatal y nacional relacionada con la eficiencia energ\xE9tica.
     Impuesto sobre el carbono"
-  cardBackground: {fileID: 21300000, guid: 6473f286c4d4d73419ee1d35db488ec5, type: 3}
+  cardBackground: {fileID: 21300000, guid: c3d66c776b8e89d4f9a8e5ebf3c3a761, type: 3}
   moneyCost: 3
   timeCost: 10
   peopleHappiness: 8

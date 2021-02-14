@@ -19,7 +19,7 @@ MonoBehaviour:
   cardDescription: "Regulaci\xF3n. Eficiencia de recursos. Requisitos / est\xE1ndares
     relacionados con la higiene del producto final (a menudo innecesariamente altos).
     Certificados an\xE1logos al producto primario"
-  cardBackground: {fileID: 21300000, guid: e5a895d2128611d419fbdb757babcb27, type: 3}
+  cardBackground: {fileID: 21300000, guid: 9ada4e440e14b914bbbaa64068458109, type: 3}
   moneyCost: 1
   timeCost: 5
   peopleHappiness: 3

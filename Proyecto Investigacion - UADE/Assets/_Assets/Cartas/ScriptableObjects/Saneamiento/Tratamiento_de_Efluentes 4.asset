@@ -19,7 +19,7 @@ MonoBehaviour:
   cardDescription: "Regulaci\xF3n. Biopl\xE1sticos. Modificar la categorizaci\xF3n
     de un producto como residuo o recurso. El estado o certificaci\xF3n del producto
     es una barrera principal."
-  cardBackground: {fileID: 21300000, guid: 58a9440da9edb5246b70825adce82f8c, type: 3}
+  cardBackground: {fileID: 21300000, guid: 9ada4e440e14b914bbbaa64068458109, type: 3}
   moneyCost: 1
   timeCost: 8
   peopleHappiness: 5

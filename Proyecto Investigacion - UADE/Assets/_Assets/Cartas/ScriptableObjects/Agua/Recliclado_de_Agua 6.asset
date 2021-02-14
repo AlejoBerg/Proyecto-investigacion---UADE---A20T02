@@ -18,7 +18,7 @@ MonoBehaviour:
   cardName: "Est\xE1ndares en el sector de alimentos y bebidas"
   cardDescription: "Regulaci\xF3n. Est\xE1ndares de la industria en el sector de
     alimentos y bebidas"
-  cardBackground: {fileID: 21300000, guid: a68142048ddd88448aae32c7a5fcbffe, type: 3}
+  cardBackground: {fileID: 21300000, guid: e7757f77a5a8f57498ab62822f369866, type: 3}
   moneyCost: 0
   timeCost: 0
   peopleHappiness: 0

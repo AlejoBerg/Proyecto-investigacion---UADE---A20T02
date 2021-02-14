@@ -19,7 +19,7 @@ MonoBehaviour:
   cardDescription: "Regulaci\xF3n. Residuos org\xE1nicos a\xF1adidos a lodos de agua
     usados. Permisos locales que permiten otros materiales adem\xE1s de los bios\xF3lidos
     como recurso"
-  cardBackground: {fileID: 21300000, guid: 3fd79bec8e10c414c94d3b633616c915, type: 3}
+  cardBackground: {fileID: 21300000, guid: 9ada4e440e14b914bbbaa64068458109, type: 3}
   moneyCost: 1
   timeCost: 2
   peopleHappiness: 3

@@ -19,7 +19,7 @@ MonoBehaviour:
   cardDescription: "Regulaci\xF3n. Eliminar la legislaci\xF3n que proh\xEDbe el uso
     de agua de lluvia y, en su lugar, permite el tratamiento del agua de lluvia a
     nivel dom\xE9stico"
-  cardBackground: {fileID: 21300000, guid: 1bc3c5b4dcd3a854ca792fb339b01080, type: 3}
+  cardBackground: {fileID: 21300000, guid: e218739f4a7d75144abb075cbe71ed0a, type: 3}
   moneyCost: 5
   timeCost: 3
   peopleHappiness: 2

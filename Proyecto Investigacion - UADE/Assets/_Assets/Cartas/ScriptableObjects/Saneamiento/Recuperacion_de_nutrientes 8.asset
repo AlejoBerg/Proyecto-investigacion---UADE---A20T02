@@ -19,7 +19,7 @@ MonoBehaviour:
   cardDescription: "Mercado. Fertilizante (no agr\xEDcola). Encontrar una soluci\xF3n
     al factor de repugnancia. Es importante tener en cuenta las oportunidades de
     nicho de mercado"
-  cardBackground: {fileID: 21300000, guid: e5a895d2128611d419fbdb757babcb27, type: 3}
+  cardBackground: {fileID: 21300000, guid: 5ceca0ccf6e867b4ba77e435934e8e08, type: 3}
   moneyCost: 1
   timeCost: 5
   peopleHappiness: 3

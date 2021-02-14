@@ -20,7 +20,7 @@ MonoBehaviour:
     de rutas alternativas de manejo / eliminaci\xF3n. Reducci\xF3n del costo de los
     vertederos al desviar los desechos org\xE1nicos a la digesti\xF3n. Bios\xF3lidos
     estabilizados para su reutilizaci\xF3n"
-  cardBackground: {fileID: 21300000, guid: 6473f286c4d4d73419ee1d35db488ec5, type: 3}
+  cardBackground: {fileID: 21300000, guid: 540ca081c4456d6448915055409bb573, type: 3}
   moneyCost: 3
   timeCost: 10
   peopleHappiness: 8

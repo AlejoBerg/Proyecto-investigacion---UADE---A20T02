@@ -16,10 +16,10 @@ MonoBehaviour:
   balance: U5
   element: 1
   cardName: Impuesto al carbono / Precio
-  cardDescription: "Palancas reguladoras. Ahorro energ\xE9tico en plantas de tratamiento
+  cardDescription: "Regulaci\xF3n. Ahorro energ\xE9tico en plantas de tratamiento
     y sistemas de distribuci\xF3n. Impuesto / fijaci\xF3n de precios al carbono.
     Incentivos para adoptar tecnolog\xEDa de ahorro de energ\xEDa"
-  cardBackground: {fileID: 21300000, guid: 6473f286c4d4d73419ee1d35db488ec5, type: 3}
+  cardBackground: {fileID: 21300000, guid: c3d66c776b8e89d4f9a8e5ebf3c3a761, type: 3}
   moneyCost: 3
   timeCost: 10
   peopleHappiness: 8
