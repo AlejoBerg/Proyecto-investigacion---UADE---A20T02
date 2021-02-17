@@ -10,7 +10,7 @@ public class BoardManager : MonoBehaviour
 
     private List<GameObject> _cardsPlayed;
 
-    public void OnFinishMatchButtonPressed()
+    public void ResetGameScene()
     {
         _cardsPlayed = new List<GameObject>();
 
@@ -38,7 +38,7 @@ public class BoardManager : MonoBehaviour
         foreach (var card in _cardsPlayed)
         {
             card.transform.parent = _playerDeckOfCards.transform;
-            card.transform.eulerAngles = new Vector3(0, card.transform.eulerAngles.y, card.transform.eulerAngles.z);
+            card.transform.eulerAngles = new Vector3(0, card.transform.eulerAngles.y, card.transform.eulerAngles.z); //Reset card rotation
             card.GetComponent<Draggable>().Played = false;
             float cardCost = card.GetComponent<CardDisplay>().CardCost;
 

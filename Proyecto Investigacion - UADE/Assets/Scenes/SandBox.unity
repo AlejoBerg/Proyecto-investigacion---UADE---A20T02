@@ -649,6 +649,7 @@ GameObject:
   - component: {fileID: 194277693}
   - component: {fileID: 194277692}
   - component: {fileID: 194277691}
+  - component: {fileID: 194277690}
   m_Layer: 5
   m_Name: FinishMatch_Button
   m_TagString: Untagged
@@ -676,6 +677,25 @@ RectTransform:
   m_AnchoredPosition: {x: -752.99, y: 518}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &194277690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194277688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f315a5b8c73af4c86569943b3dcd3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _progressBars:
+  - {fileID: 761725073}
+  - {fileID: 1973407588}
+  - {fileID: 1721829667}
+  - {fileID: 1233242039}
+  - {fileID: 1705546840}
+  - {fileID: 1749564215}
 --- !u!114 &194277691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,19 +756,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 194277691}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: FinishMatchButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GraphManager, Assembly-CSharp
-        m_MethodName: OnFinishButton
+        m_MethodName: OnChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -760,7 +768,19 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1594029492}
         m_TargetAssemblyTypeName: BoardManager, Assembly-CSharp
-        m_MethodName: OnFinishMatchButtonPressed
+        m_MethodName: ResetGameScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 194277690}
+        m_TargetAssemblyTypeName: GraphManager, Assembly-CSharp
+        m_MethodName: OnFinishButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5468,7 +5488,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1192847974}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: FinishMatchButton
+        m_MethodName: OnChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -8,19 +8,12 @@ public class ChangeScene : MonoBehaviour
     [SerializeField] private GameObject _sceneToShow;
     [SerializeField] private float _fadeTime;
 
-    public void FinishMatchButton()
+    public void OnChangeScene()
     {
         Fade();
         // 1- Hacer fade 
         // 2 - Sumar las monedas
         // 3 - Resetear los valores de la partida para cuando volves a jugar
-    }
-
-    public void PlayAgainButton()
-    {
-        Fade();
-        // 1 - Hacer fade
-        // 2 - Setear los valores de los graficos en 0
     }
 
     private void Fade()
