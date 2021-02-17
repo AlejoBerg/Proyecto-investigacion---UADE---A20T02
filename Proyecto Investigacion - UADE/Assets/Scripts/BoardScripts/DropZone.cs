@@ -8,6 +8,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
 {
     private enum DropZoneType { DECK_OF_CARDS, BOARD };
     private Draggable _draggeable = null;
+    private float _newBoardRotation = 0;
 
     [SerializeField] private GameManager _gameManagerRef;
     [SerializeField] private DropZoneType _dropZoneType = DropZoneType.BOARD;
@@ -17,6 +18,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         if (_draggeable != null) 
         {
             _draggeable.ChangeParent(this.transform);
+            _draggeable.transform.eulerAngles = new Vector3(_newBoardRotation, _draggeable.transform.eulerAngles.y, _draggeable.transform.eulerAngles.z);
         }
     }
 
@@ -24,6 +26,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
     {
         if (eventData.pointerDrag == null) return;
 
+        print("OnPointerEnter");
         _draggeable = eventData.pointerDrag.GetComponent<Draggable>();
 
         if (_draggeable != null)
@@ -39,6 +42,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
 
         if (_draggeable != null)
         {
+            _draggeable.Played = false;
             _draggeable.ChangePlaceHolderParent(this.transform);
         }
     }
@@ -49,15 +53,21 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         {
             draggeable.Played = true;
             float cardCost = draggeable.GetComponent<CardDisplay>().CardCost;
-
+            _newBoardRotation = 45;
+            print(_newBoardRotation);
             _gameManagerRef.ChangeCoins(-cardCost);
         }
         else if (draggeable.Played == true && _dropZoneType == DropZoneType.DECK_OF_CARDS)
         {
             draggeable.Played = false;
             float cardCost = draggeable.GetComponent<CardDisplay>().CardCost;
-
+            _newBoardRotation = 0;
+            print(_newBoardRotation);
             _gameManagerRef.ChangeCoins(cardCost);
+        }
+        else
+        {
+            print("entro en el else");
         }
 
     }
