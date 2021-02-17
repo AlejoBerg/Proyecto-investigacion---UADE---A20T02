@@ -38,7 +38,7 @@ public class BoardManager : MonoBehaviour
         foreach (var card in _cardsPlayed)
         {
             card.transform.parent = _playerDeckOfCards.transform;
-
+            card.transform.eulerAngles = new Vector3(0, card.transform.eulerAngles.y, card.transform.eulerAngles.z);
             card.GetComponent<Draggable>().Played = false;
             float cardCost = card.GetComponent<CardDisplay>().CardCost;
 

@@ -26,7 +26,6 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
     {
         if (eventData.pointerDrag == null) return;
 
-        print("OnPointerEnter");
         _draggeable = eventData.pointerDrag.GetComponent<Draggable>();
 
         if (_draggeable != null)
@@ -54,7 +53,6 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
             draggeable.Played = true;
             float cardCost = draggeable.GetComponent<CardDisplay>().CardCost;
             _newBoardRotation = 45;
-            print(_newBoardRotation);
             _gameManagerRef.ChangeCoins(-cardCost);
         }
         else if (draggeable.Played == true && _dropZoneType == DropZoneType.DECK_OF_CARDS)
@@ -62,13 +60,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
             draggeable.Played = false;
             float cardCost = draggeable.GetComponent<CardDisplay>().CardCost;
             _newBoardRotation = 0;
-            print(_newBoardRotation);
             _gameManagerRef.ChangeCoins(cardCost);
         }
-        else
-        {
-            print("entro en el else");
-        }
-
     }
 }
