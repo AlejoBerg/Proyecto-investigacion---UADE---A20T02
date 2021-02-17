@@ -1950,8 +1950,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 501383590}
   m_HandleRect: {fileID: 501383589}
   m_Direction: 0
-  m_Value: 0.5000029
-  m_Size: 0.5684395
+  m_Value: 0.5000022
+  m_Size: 0.5684422
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2363,6 +2363,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f2022239b1f9a74c8c6ca156f3b9c75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 0}
+  _dropZoneType: 1
 --- !u!1001 &591192097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2927,6 +2929,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f2022239b1f9a74c8c6ca156f3b9c75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 0}
+  _dropZoneType: 1
 --- !u!114 &705051275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5616,7 +5620,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0024871826, y: -0.0030517578}
+  m_AnchoredPosition: {x: 0.0024871826, y: -0.00021362305}
   m_SizeDelta: {x: -277.73462, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1118418174
@@ -7393,6 +7397,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f2022239b1f9a74c8c6ca156f3b9c75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 0}
+  _dropZoneType: 1
 --- !u!114 &1554428066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8038,6 +8044,7 @@ MonoBehaviour:
   - {fileID: 705051272}
   - {fileID: 1554428063}
   _playerDeckOfCards: {fileID: 565857300}
+  _gameManagerRef: {fileID: 0}
 --- !u!224 &1607228385 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8756731389805061416, guid: d001942406bd4db4a90552fb1df54050, type: 3}
@@ -9575,7 +9582,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1391866225}
   m_HandleRect: {fileID: 1391866223}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
