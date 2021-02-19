@@ -18,7 +18,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         if (_draggeable != null) 
         {
             _draggeable.ChangeParent(this.transform);
-            _draggeable.transform.eulerAngles = new Vector3(_newBoardRotation, _draggeable.transform.eulerAngles.y, _draggeable.transform.eulerAngles.z);
+            //_draggeable.transform.eulerAngles = new Vector3(_newBoardRotation, _draggeable.transform.eulerAngles.y, _draggeable.transform.eulerAngles.z);
         }
     }
 
