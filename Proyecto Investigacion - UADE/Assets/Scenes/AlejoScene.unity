@@ -2261,8 +2261,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skyboxRotSpeed: 5
-  _skyboxExposureSpeed: 18
-  _skyboxMaxExposure: 0.3
+  _skyboxExposureSpeed: 24
+  _skyboxMaxExposure: 0.15
 --- !u!4 &518141833
 Transform:
   m_ObjectHideFlags: 0
@@ -2358,8 +2358,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 501383590}
   m_HandleRect: {fileID: 501383589}
   m_Direction: 0
-  m_Value: 0.4999978
-  m_Size: 0.56844187
+  m_Value: 0.50000423
+  m_Size: 0.5684419
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4512,15 +4512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 0}
-  m_PreviousLayer: 0
-  m_PreviousPriority: 0
-  m_InternalProfile: {fileID: 0}
-  m_TempColliders: []
 --- !u!4 &783725317
 Transform:
   m_ObjectHideFlags: 0
@@ -6148,7 +6139,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0024871826, y: 0.0023345947}
+  m_AnchoredPosition: {x: 0.0024871826, y: 0.0024108887}
   m_SizeDelta: {x: -277.73462, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1118418174
@@ -9987,8 +9978,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1391866225}
   m_HandleRect: {fileID: 1391866223}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.9999974
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

@@ -8,17 +8,17 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
 {
     private enum DropZoneType { DECK_OF_CARDS, BOARD };
     private Draggable _draggeable = null;
-    private float _newBoardRotation = 0;
 
     [SerializeField] private GameManager _gameManagerRef;
     [SerializeField] private DropZoneType _dropZoneType = DropZoneType.BOARD;
 
     public void OnDrop(PointerEventData eventData)
     {
+        float cardCost = _draggeable.GetComponent<CardDisplay>().CardCost;
+
         if (_draggeable != null) 
         {
-            _draggeable.ChangeParent(this.transform);
-            //_draggeable.transform.eulerAngles = new Vector3(_newBoardRotation, _draggeable.transform.eulerAngles.y, _draggeable.transform.eulerAngles.z);
+            CheckCoinChanges(_draggeable, cardCost);
         }
     }
 
@@ -31,7 +31,6 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         if (_draggeable != null)
         {
             _draggeable.ChangePlaceHolderParent(this.transform.parent); // I am changing just the placeholder parent because if I change parent too, if y didnt wanted to leave the card on the other drop zone it will leave it anyway
-            CheckCoinChanges(_draggeable);
         }
     }
 
@@ -41,26 +40,26 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
 
         if (_draggeable != null)
         {
-            _draggeable.Played = false;
             _draggeable.ChangePlaceHolderParent(this.transform);
         }
     }
 
-    private void CheckCoinChanges(Draggable draggeable)
+    private void CheckCoinChanges(Draggable draggeable, float cardCost) //Coins manager condition
     {
         if(draggeable.Played == false && _dropZoneType == DropZoneType.BOARD)
         {
-            draggeable.Played = true;
-            float cardCost = draggeable.GetComponent<CardDisplay>().CardCost;
-            _newBoardRotation = 45;
-            _gameManagerRef.ChangeCoins(-cardCost);
+            if(_gameManagerRef.CurrentCoins >= cardCost)
+            {
+                draggeable.Played = true;
+                _gameManagerRef.ChangeCoins(-cardCost);
+                draggeable.ChangeParent(this.transform);
+            }
         }
         else if (draggeable.Played == true && _dropZoneType == DropZoneType.DECK_OF_CARDS)
         {
             draggeable.Played = false;
-            float cardCost = draggeable.GetComponent<CardDisplay>().CardCost;
-            _newBoardRotation = 0;
             _gameManagerRef.ChangeCoins(cardCost);
+            draggeable.ChangeParent(this.transform);
         }
     }
 }
