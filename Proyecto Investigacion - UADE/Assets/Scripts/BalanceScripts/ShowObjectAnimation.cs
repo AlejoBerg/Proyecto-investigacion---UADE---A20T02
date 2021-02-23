@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class ShowObjectAnimation : MonoBehaviour
 {
+    [SerializeField] private GameObject _helpButton;
+    [SerializeField] private GameObject _backButton;
+
     [SerializeField] private GameObject _objectToShowRef;
     [SerializeField] private Vector3 _maxSize;
+
     [SerializeField] private float _fadeInTime = 4f;
     [SerializeField] private float _fadeOutTime = 2f;
     [SerializeField] private float _rotateSpeed = 2f;
@@ -18,34 +22,11 @@ public class ShowObjectAnimation : MonoBehaviour
     private float _currentFadeOutTime = 0;
     private float _fadeOutCounter = 0;
 
+    private GameObject _nextButtonToUnhide;
+
     private void Awake()
     {
         _changeSceneRef = GetComponent<ChangeScene>();
-    }
-
-    public void OnHelpButtonPressed()
-    {
-        float diff = Mathf.Abs(_fadeOutCounter - _currentFadeOutTime);
-        if (diff <= 0.01f)
-        {
-            _changeSceneRef.OnChangeOneSceneAlpha(0);
-            _shouldRotate = true;
-            _objectToShowRef.transform.localScale = Vector3.zero;
-            _objectToShowRef.SetActive(true);
-            StartCoroutine(LerpObjectSize(Vector3.zero, _maxSize, _fadeInTime, false));
-        }
-    }
-
-    public void OnBackFromHelpButtonPressed()
-    {
-        float diff = Mathf.Abs(_fadeOutCounter - _currentFadeOutTime);
-        if (diff <= 0.01f)
-        {
-            _changeSceneRef.OnChangeOneSceneAlpha(1);
-            _shouldRotate = false;
-            StartCoroutine(LerpObjectSize(_maxSize, Vector3.zero, _fadeOutTime, true));
-        }
-        //Fade in de la game scene
     }
 
     private void Update()
@@ -53,6 +34,36 @@ public class ShowObjectAnimation : MonoBehaviour
         if (_shouldRotate == true)
         {
             RandomObjectRotation(_rotateSpeed);
+        }
+    }
+
+    public void OnHelpButtonPressed() //Fade out scene , scale graph
+    {
+        float diff = Mathf.Abs(_fadeOutCounter - _currentFadeOutTime);
+        if (diff <= 0.01f)
+        {
+            _helpButton.SetActive(false);
+            _nextButtonToUnhide = _backButton;
+
+            _changeSceneRef.OnChangeOneSceneAlpha(0);
+            _shouldRotate = true;
+            //_objectToShowRef.transform.localScale = Vector3.zero;
+            _objectToShowRef.SetActive(true);
+            StartCoroutine(LerpObjectSize(Vector3.zero, _maxSize, _fadeInTime, false));
+        }
+    }
+
+    public void OnBackFromHelpButtonPressed()//scale graph , Fade in scene  
+    {
+        float diff = Mathf.Abs(_fadeOutCounter - _currentFadeOutTime);
+        if (diff <= 0.01f)
+        {
+            _backButton.SetActive(false);
+            _nextButtonToUnhide = _helpButton;
+
+            _changeSceneRef.OnChangeOneSceneAlpha(1);
+            _shouldRotate = false;
+            StartCoroutine(LerpObjectSize(_maxSize, Vector3.zero, _fadeOutTime, true));
         }
     }
 
@@ -69,6 +80,7 @@ public class ShowObjectAnimation : MonoBehaviour
             yield return null;
         }
 
+        _nextButtonToUnhide.SetActive(true);
         if (shouldHideAfterScale) { _objectToShowRef.SetActive(false); }
     }
 
