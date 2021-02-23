@@ -6,26 +6,31 @@ public class ChangeScene : MonoBehaviour
 {
     [SerializeField] private GameObject _sceneToHide;
     [SerializeField] private GameObject _sceneToShow;
+    [SerializeField] private GameObject _sceneToFadeOnce;
     [SerializeField] private float _fadeTime;
 
-    public void OnChangeScene()
+    public void OnChangeScenes()
     {
-        Fade();
-        // 1- Hacer fade 
-        // 2 - Sumar las monedas
-        // 3 - Resetear los valores de la partida para cuando volves a jugar
+        FadeInOut();
     }
 
-    private void Fade()
+    public void OnChangeOneSceneAlpha(float endFade = 0)
     {
-        StartCoroutine(DoFade(_sceneToHide, true, 1, 0));
+        CanvasGroup sceneToChangeCanvGroup = _sceneToFadeOnce.GetComponent<CanvasGroup>();
+        StartCoroutine(DoFade(_sceneToFadeOnce, sceneToChangeCanvGroup.alpha, endFade));
+    }
+
+    private void FadeInOut() 
+    {
+        StartCoroutine(DoFade(_sceneToHide, 1, 0));
 
         _sceneToShow.SetActive(true);
-        StartCoroutine(DoFade(_sceneToShow, false, 0, 1));
+        StartCoroutine(DoFade(_sceneToShow, 0, 1));
     }
 
-    IEnumerator DoFade(GameObject sceneToChange, bool hideAfterFade, float startAlpha ,float endAlpha)
+    IEnumerator DoFade(GameObject sceneToChange, float startAlpha ,float endAlpha)
     {
+        sceneToChange.SetActive(true);
         CanvasGroup sceneToChangeCanvGroup = sceneToChange.GetComponent<CanvasGroup>();
         float counter = 0;
 
@@ -37,7 +42,7 @@ public class ChangeScene : MonoBehaviour
             yield return null;
         }
 
-        if (hideAfterFade)
+        if (sceneToChangeCanvGroup.alpha <= 0.01f)
         {
             sceneToChange.SetActive(false);
         }

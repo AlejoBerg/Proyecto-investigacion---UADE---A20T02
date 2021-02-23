@@ -10,24 +10,41 @@ public class ShowObjectAnimation : MonoBehaviour
     [SerializeField] private float _fadeOutTime = 2f;
     [SerializeField] private float _rotateSpeed = 2f;
 
+    private ChangeScene _changeSceneRef;
     private float _elapsedRotTime = 0;
     private Quaternion _newRndRotation;
     private bool _shouldRotate = false;
 
+    private float _currentFadeOutTime = 0;
+    private float _fadeOutCounter = 0;
+
+    private void Awake()
+    {
+        _changeSceneRef = GetComponent<ChangeScene>();
+    }
+
     public void OnHelpButtonPressed()
     {
-        //Fade out de la game scene
-        _objectToShowRef.transform.localScale = Vector3.zero;
-        _objectToShowRef.SetActive(true);
-        StartCoroutine(LerpObjectSize(_maxSize, _fadeInTime));
+        float diff = Mathf.Abs(_fadeOutCounter - _currentFadeOutTime);
+        if (diff <= 0.01f)
+        {
+            _changeSceneRef.OnChangeOneSceneAlpha(0);
+            _shouldRotate = true;
+            _objectToShowRef.transform.localScale = Vector3.zero;
+            _objectToShowRef.SetActive(true);
+            StartCoroutine(LerpObjectSize(Vector3.zero, _maxSize, _fadeInTime, false));
+        }
     }
 
     public void OnBackFromHelpButtonPressed()
     {
-        StartCoroutine(LerpObjectSize(Vector3.zero, _fadeOutTime)); // >> Por algun motivo el "counter / scaleTime" aca siempre se mantiene en el mismo numero, chequear eso
-
-        //Escalar el prefab mediante un lerp a 0
-        //Luego de escalar, ocultarlo
+        float diff = Mathf.Abs(_fadeOutCounter - _currentFadeOutTime);
+        if (diff <= 0.01f)
+        {
+            _changeSceneRef.OnChangeOneSceneAlpha(1);
+            _shouldRotate = false;
+            StartCoroutine(LerpObjectSize(_maxSize, Vector3.zero, _fadeOutTime, true));
+        }
         //Fade in de la game scene
     }
 
@@ -37,20 +54,22 @@ public class ShowObjectAnimation : MonoBehaviour
         {
             RandomObjectRotation(_rotateSpeed);
         }
-
-        TemporaryInputCheck();//Just for testing purpose
     }
 
-    IEnumerator LerpObjectSize(Vector3 endScaleSize, float scaleTime)
+    IEnumerator LerpObjectSize(Vector3 initialScaleSize, Vector3 endScaleSize, float scaleTime, bool shouldHideAfterScale)
     {
-        float counter = 0;
+        _currentFadeOutTime = scaleTime;
+        _fadeOutCounter = 0;
+        _objectToShowRef.transform.localScale = initialScaleSize;
 
-        while (counter < scaleTime)
+        while (_fadeOutCounter < scaleTime)
         {
-            counter += Time.deltaTime;
-            _objectToShowRef.transform.localScale = Vector3.Lerp(_objectToShowRef.transform.localScale, endScaleSize, counter / scaleTime);
+            _fadeOutCounter += Time.deltaTime;
+            _objectToShowRef.transform.localScale = Vector3.Lerp(_objectToShowRef.transform.localScale, endScaleSize, _fadeOutCounter / scaleTime);
             yield return null;
         }
+
+        if (shouldHideAfterScale) { _objectToShowRef.SetActive(false); }
     }
 
     private void RandomObjectRotation(float rotateTime)
@@ -63,23 +82,5 @@ public class ShowObjectAnimation : MonoBehaviour
 
         _objectToShowRef.transform.localRotation = Quaternion.Slerp(_objectToShowRef.transform.localRotation, _newRndRotation, Time.deltaTime * rotateTime);
         _elapsedRotTime += Time.deltaTime;
-    }
-
-    private void TemporaryInputCheck() 
-    {
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            _shouldRotate = true;
-            _objectToShowRef.transform.localScale = Vector3.zero;
-            _objectToShowRef.SetActive(true);
-            StartCoroutine(LerpObjectSize(_maxSize, _fadeInTime));
-        }
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            _shouldRotate = false;
-            StartCoroutine(LerpObjectSize(Vector3.zero, _fadeOutTime));
-        }
     }
 }
