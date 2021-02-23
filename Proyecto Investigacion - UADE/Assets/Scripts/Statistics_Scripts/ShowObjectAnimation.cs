@@ -48,6 +48,7 @@ public class ShowObjectAnimation : MonoBehaviour
             _changeSceneRef.OnChangeOneSceneAlpha(0);
             _shouldRotate = true;
             //_objectToShowRef.transform.localScale = Vector3.zero;
+            _objectToShowRef.transform.localRotation = Quaternion.Euler(-90, 0, 0);
             _objectToShowRef.SetActive(true);
             StartCoroutine(LerpObjectSize(Vector3.zero, _maxSize, _fadeInTime, false));
         }
@@ -89,7 +90,7 @@ public class ShowObjectAnimation : MonoBehaviour
         if(_elapsedRotTime > rotateTime)
         {
             _elapsedRotTime = 0;
-            _newRndRotation = Quaternion.Euler(Random.Range(0, 30), Random.Range(0, 30), Random.Range(0, 30));
+            _newRndRotation = Quaternion.Euler(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10));
         }
 
         _objectToShowRef.transform.localRotation = Quaternion.Slerp(_objectToShowRef.transform.localRotation, _newRndRotation, Time.deltaTime * rotateTime);
