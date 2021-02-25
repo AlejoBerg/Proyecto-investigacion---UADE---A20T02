@@ -11,12 +11,18 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
     [SerializeField] private GameObject _backButtonRef;
     [SerializeField] private GameObject _playGameButtonRef;
     [SerializeField] private float _delayBeforeShowingButtons = 1;
+    [SerializeField] private GameObject _blurImage;
+    
 
     public void OnPointerClick(PointerEventData eventData)
     {
         print($"clickeo sobre {this.name}");
         _cameraControllerRef.AssignNewFieldViewAndTarget(10, this.transform, this.transform);
         StartCoroutine(AdjustButtons());
+
+        _blurImage.transform.SetAsLastSibling();
+        _blurImage.SetActive(true);
+        this.transform.SetAsLastSibling();
     }
 
     public void OnPointerEnter(PointerEventData eventData)

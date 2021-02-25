@@ -180,6 +180,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &37013694
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -380,6 +381,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &86639826
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -654,6 +656,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &182754317
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -828,6 +831,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &250618330
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -1063,6 +1067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d616a9ea6678fa242b883631b8e4d92d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _blurImageRef: {fileID: 0}
 --- !u!1 &270683155
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,6 +1125,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &270683158
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -1275,6 +1281,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &278064009
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -1426,6 +1433,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &280106519
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -1563,6 +1571,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &297681425
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -1717,6 +1726,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &298969204
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -1869,6 +1879,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &315757269
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -2011,6 +2022,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &332938308
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -2165,6 +2177,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &341278321
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -2405,6 +2418,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &551281535
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -2542,6 +2556,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &649636347
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -2684,6 +2699,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &669061954
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -2817,6 +2833,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &797894102
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -3172,6 +3189,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &973852104
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -3309,6 +3327,7 @@ Transform:
   - {fileID: 2120886711}
   - {fileID: 315757267}
   - {fileID: 973852102}
+  - {fileID: 1110632951}
   m_Father: {fileID: 404119726}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3446,6 +3465,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079763430}
   m_CullTransparentMesh: 0
+--- !u!1 &1110632950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1110632951}
+  - component: {fileID: 1110632953}
+  - component: {fileID: 1110632952}
+  m_Layer: 0
+  m_Name: BlurEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1110632951
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110632950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.033922806, y: 0.012321964, z: 0.011597143}
+  m_Children: []
+  m_Father: {fileID: 1027200616}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.38, y: 14.32}
+  m_SizeDelta: {x: 2400, y: 3864.1511}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1110632952
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110632950}
+  m_CullTransparentMesh: 0
+--- !u!114 &1110632953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110632950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.8}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1138448978
 GameObject:
   m_ObjectHideFlags: 0
@@ -3973,6 +4067,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &1297010838
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -4117,6 +4212,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &1448442620
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -4620,6 +4716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d616a9ea6678fa242b883631b8e4d92d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _blurImageRef: {fileID: 1110632950}
 --- !u!1 &1828582468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4677,6 +4774,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &1828582471
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -4835,6 +4933,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &1929283490
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -5013,6 +5112,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &2066367931
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -5153,6 +5253,7 @@ MonoBehaviour:
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
+  _blurImage: {fileID: 1110632950}
 --- !u!68 &2120886713
 EdgeCollider2D:
   m_ObjectHideFlags: 0
