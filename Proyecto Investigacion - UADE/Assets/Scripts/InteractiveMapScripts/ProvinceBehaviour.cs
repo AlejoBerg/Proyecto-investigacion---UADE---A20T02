@@ -18,6 +18,9 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
     //Image Effects Variables
     [SerializeField] private GameObject _blurImage;
 
+    //Province descriptions
+    [SerializeField] private GameObject _provinceDescription;
+
     private Image _currentImage;
     private Color _currentImageColor;
     private InteractiveMapButtons _interactiveMapButtonRef;
@@ -33,6 +36,8 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
         _currentImageColor = _currentImage.color;
         _currentImageColor.a = 0;
         _currentImage.color = _currentImageColor; // Ahora, cuando vuelvas lo que vas a tener que hacer es que el cambio de alfa lo haga cada vez que te paras encima y cuando salis
+
+        _provinceDescription.SetActive(false);
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -45,6 +50,8 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
         _blurImage.transform.SetAsLastSibling();
         _blurImage.SetActive(true);
         this.transform.SetAsLastSibling();
+
+        _provinceDescription.SetActive(true);
 
         _isFocused = true;
         _currentImageColor.a = 100;
@@ -87,6 +94,8 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
     private void OnBackButtonPressedHandler()
     {
+        _provinceDescription.SetActive(false);
+
         _currentImageColor.a = 0;
         _currentImage.color = _currentImageColor;
 
