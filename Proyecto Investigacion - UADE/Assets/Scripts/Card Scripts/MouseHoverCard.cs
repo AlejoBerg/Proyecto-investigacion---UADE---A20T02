@@ -37,6 +37,10 @@ public class MouseHoverCard : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         _zoomedCardDescription = _zoomedCard.GetComponent<CardDisplay>().CardDescriptionText.text;
         Destroy(_zoomedCard.GetComponent<MouseHoverCard>());
 
+        CanvasGroup zoomedCardCanvasGroup = _zoomedCard.GetComponent<CanvasGroup>();
+        zoomedCardCanvasGroup.interactable = false;
+        zoomedCardCanvasGroup.blocksRaycasts = false;
+
         _zoomedCard.SetActive(false);
     }
 }

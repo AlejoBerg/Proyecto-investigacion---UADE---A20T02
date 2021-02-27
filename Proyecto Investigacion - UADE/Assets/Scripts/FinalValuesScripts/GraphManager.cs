@@ -24,6 +24,7 @@ public class GraphManager : MonoBehaviour
     {
         for (int i = 0; i < _progressBars.Length; i++)
         {
+            print("iteracion numero " + i + " el largo del array es de " + _progressBars.Length);
             _progressBars[i].ResetProgressBar();
         }
     }
