@@ -6,14 +6,15 @@ public class ShowObjectAnimation : MonoBehaviour
 {
     [SerializeField] private GameObject _helpButton;
     [SerializeField] private GameObject _backButton;
+    [SerializeField] private GameObject _optionsGraphsButtons;
 
-    [SerializeField] private GameObject _objectToShowRef;
     [SerializeField] private Vector3 _maxSize;
 
     [SerializeField] private float _fadeInTime = 4f;
     [SerializeField] private float _fadeOutTime = 2f;
     [SerializeField] private float _rotateSpeed = 2f;
 
+    private GameObject _currentObjectToShow;
     private ChangeScene _changeSceneRef;
     private float _elapsedRotTime = 0;
     private Quaternion _newRndRotation;
@@ -33,11 +34,11 @@ public class ShowObjectAnimation : MonoBehaviour
     {
         if (_shouldRotate == true)
         {
-            RandomObjectRotation(_rotateSpeed);
+            RandomObjectRotation(_currentObjectToShow, _rotateSpeed);
         }
     }
 
-    public void OnHelpButtonPressed() //Fade out scene , scale graph
+    public void OnHelpButtonPressed(GameObject newGraphToShow) //Fade out scene , scale graph
     {
         float diff = Mathf.Abs(_fadeOutCounter - _currentFadeOutTime);
         if (diff <= 0.01f)
@@ -47,10 +48,12 @@ public class ShowObjectAnimation : MonoBehaviour
 
             _changeSceneRef.OnChangeOneSceneAlpha(0);
             _shouldRotate = true;
-            //_objectToShowRef.transform.localScale = Vector3.zero;
-            _objectToShowRef.transform.localRotation = Quaternion.Euler(-90, 0, 0);
-            _objectToShowRef.SetActive(true);
-            StartCoroutine(LerpObjectSize(Vector3.zero, _maxSize, _fadeInTime, false));
+
+            newGraphToShow.transform.localRotation = Quaternion.Euler(-90, 0, 0);
+            newGraphToShow.SetActive(true);
+            StartCoroutine(LerpObjectSize(newGraphToShow, Vector3.zero, _maxSize, _fadeInTime, false));
+
+            _currentObjectToShow = newGraphToShow;
         }
     }
 
@@ -64,28 +67,39 @@ public class ShowObjectAnimation : MonoBehaviour
 
             _changeSceneRef.OnChangeOneSceneAlpha(1);
             _shouldRotate = false;
-            StartCoroutine(LerpObjectSize(_maxSize, Vector3.zero, _fadeOutTime, true));
+            StartCoroutine(LerpObjectSize(_currentObjectToShow, _maxSize, Vector3.zero, _fadeOutTime, true));
         }
     }
 
-    IEnumerator LerpObjectSize(Vector3 initialScaleSize, Vector3 endScaleSize, float scaleTime, bool shouldHideAfterScale)
+    public void OnChangeGraphPressed(GameObject newGraphToShow)
+    {
+        _currentObjectToShow.SetActive(false);
+
+        newGraphToShow.SetActive(true);
+        StartCoroutine(LerpObjectSize(newGraphToShow, Vector3.zero, _maxSize, _fadeInTime, false));
+        _currentObjectToShow = newGraphToShow;
+    }
+
+    IEnumerator LerpObjectSize(GameObject newGraphToShow, Vector3 initialScaleSize, Vector3 endScaleSize, float scaleTime, bool shouldHideAfterScale)
     {
         _currentFadeOutTime = scaleTime;
         _fadeOutCounter = 0;
-        _objectToShowRef.transform.localScale = initialScaleSize;
+        newGraphToShow.transform.localScale = initialScaleSize;
+
+        ManageButtonsActivation(false);
 
         while (_fadeOutCounter < scaleTime)
         {
             _fadeOutCounter += Time.deltaTime;
-            _objectToShowRef.transform.localScale = Vector3.Lerp(_objectToShowRef.transform.localScale, endScaleSize, _fadeOutCounter / scaleTime);
+            newGraphToShow.transform.localScale = Vector3.Lerp(newGraphToShow.transform.localScale, endScaleSize, _fadeOutCounter / scaleTime);
             yield return null;
         }
 
-        _nextButtonToUnhide.SetActive(true);
-        if (shouldHideAfterScale) { _objectToShowRef.SetActive(false); }
+        ManageButtonsActivation(true);
+        if (shouldHideAfterScale) { newGraphToShow.SetActive(false); }
     }
 
-    private void RandomObjectRotation(float rotateTime)
+    private void RandomObjectRotation(GameObject newGraphToShow, float rotateTime)
     {
         if(_elapsedRotTime > rotateTime)
         {
@@ -93,7 +107,23 @@ public class ShowObjectAnimation : MonoBehaviour
             _newRndRotation = Quaternion.Euler(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10));
         }
 
-        _objectToShowRef.transform.localRotation = Quaternion.Slerp(_objectToShowRef.transform.localRotation, _newRndRotation, Time.deltaTime * rotateTime);
+        newGraphToShow.transform.localRotation = Quaternion.Slerp(newGraphToShow.transform.localRotation, _newRndRotation, Time.deltaTime * rotateTime);
         _elapsedRotTime += Time.deltaTime;
+    }
+
+    private void ManageButtonsActivation(bool shouldActivate)
+    {
+        if (shouldActivate)
+        {
+            _nextButtonToUnhide.SetActive(true);
+            _optionsGraphsButtons.SetActive(true);
+            _backButton.SetActive(true);
+        }
+        else
+        {
+            _nextButtonToUnhide.SetActive(false);
+            _optionsGraphsButtons.SetActive(false);
+            _backButton.SetActive(false);
+        }
     }
 }
