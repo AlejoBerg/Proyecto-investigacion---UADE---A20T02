@@ -117,7 +117,6 @@ public class ShowObjectAnimation : MonoBehaviour
         {
             _nextButtonToUnhide.SetActive(true);
             _optionsGraphsButtons.SetActive(true);
-            _backButton.SetActive(true);
         }
         else
         {
