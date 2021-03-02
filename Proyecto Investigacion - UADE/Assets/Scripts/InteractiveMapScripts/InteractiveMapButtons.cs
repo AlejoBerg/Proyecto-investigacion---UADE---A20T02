@@ -17,6 +17,6 @@ public class InteractiveMapButtons : MonoBehaviour
 
     public void OnStartGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("GameScene");
     }
 }

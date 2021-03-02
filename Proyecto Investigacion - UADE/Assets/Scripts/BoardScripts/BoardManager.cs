@@ -39,7 +39,10 @@ public class BoardManager : MonoBehaviour
         {
             card.transform.parent = _playerDeckOfCards.transform;
             card.transform.eulerAngles = new Vector3(0, card.transform.eulerAngles.y, card.transform.eulerAngles.z); //Reset card rotation
-            card.GetComponent<Draggable>().Played = false;
+            var played = card.GetComponent<Draggable>();
+
+            if(played != null) { played.Played = false; }
+
             float cardCost = card.GetComponent<CardDisplay>().CardCost;
 
             _gameManagerRef.ChangeCoins(_cardsPlayed.Count * cardCost);
