@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MainMenuButtons : MonoBehaviour
 {
-    public void OnPlayGameButton()
+    public void OnChangeSceneButtonPressed(string sceneName = "StartScene")
     {
-        SceneManager.LoadScene("StartScene");
+        SceneManager.LoadScene(sceneName);
     }
 
     public void OnExitGameButton()
