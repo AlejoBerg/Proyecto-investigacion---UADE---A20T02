@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3fe6348cca68de2428053d48db8b8e28
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Morena
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: fc675f9518e2bde4f9803fde26e1060a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
