@@ -17,11 +17,14 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
     //Image Effects Variables
     [SerializeField] private GameObject _blurImage;
+    [SerializeField] private Sprite _whiteDotSprite;
 
     //Province descriptions
     [SerializeField] private GameObject _provinceDescription;
 
-    private Image _currentImage;
+    private Image _imageRef;
+    private Sprite _initialSprite;
+
     private Color _currentImageColor;
     private InteractiveMapButtons _interactiveMapButtonRef;
     private bool _isFocused = false;
@@ -31,13 +34,7 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
         _interactiveMapButtonRef = _backButtonRef.GetComponent<InteractiveMapButtons>();
         _interactiveMapButtonRef.OnBackButtonPressed += OnBackButtonPressedHandler;
 
-        _currentImage = this.GetComponentInChildren<Image>();
-
-        _currentImageColor = _currentImage.color;
-        _currentImageColor.a = 0;
-        _currentImage.color = _currentImageColor; // Ahora, cuando vuelvas lo que vas a tener que hacer es que el cambio de alfa lo haga cada vez que te paras encima y cuando salis
-
-        _provinceDescription.SetActive(false);
+        InitializeImageAndSprite();
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -45,7 +42,7 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
         _cameraControllerRef.AssignNewFieldViewAndTarget(10, this.transform, this.transform);
         StartCoroutine(AdjustButtons());
 
-        _currentImage.enabled = true;
+        _imageRef.enabled = true;
 
         _blurImage.transform.SetAsLastSibling();
         _blurImage.SetActive(true);
@@ -55,15 +52,18 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
         _isFocused = true;
         _currentImageColor.a = 100;
-        _currentImage.color = _currentImageColor;
+        _imageRef.color = _currentImageColor;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (!_isFocused) 
         {
+            _imageRef.sprite = _initialSprite;
+            _imageRef.SetNativeSize();
+
             _currentImageColor.a = 100;
-            _currentImage.color = _currentImageColor;
+            _imageRef.color = _currentImageColor;
         }
         
     }
@@ -73,7 +73,10 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
         if (!_isFocused)
         {
             _currentImageColor.a = 0;
-            _currentImage.color = _currentImageColor;
+            _imageRef.color = _currentImageColor;
+
+            _imageRef.sprite = _whiteDotSprite;
+            _imageRef.SetNativeSize();
         }
     }
 
@@ -97,9 +100,24 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
         _provinceDescription.SetActive(false);
 
         _currentImageColor.a = 0;
-        _currentImage.color = _currentImageColor;
+        _imageRef.color = _currentImageColor;
 
         _blurImage.SetActive(false);
         _isFocused = false;
+    }
+
+    private void InitializeImageAndSprite()
+    {
+        _imageRef = this.GetComponentInChildren<Image>();
+
+        _currentImageColor = _imageRef.color;
+        _currentImageColor.a = 0;
+        _imageRef.color = _currentImageColor; // Ahora, cuando vuelvas lo que vas a tener que hacer es que el cambio de alfa lo haga cada vez que te paras encima y cuando salis
+
+        _initialSprite = _imageRef.sprite;
+        _imageRef.sprite = _whiteDotSprite;
+        _imageRef.SetNativeSize();
+
+        _provinceDescription.SetActive(false);
     }
 }
