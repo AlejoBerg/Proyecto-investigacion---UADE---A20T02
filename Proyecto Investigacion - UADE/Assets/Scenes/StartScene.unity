@@ -958,7 +958,7 @@ RectTransform:
   m_Children:
   - {fileID: 1638638601}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1060,6 +1060,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 1638638600}
 --- !u!1 &201996461
 GameObject:
@@ -1426,7 +1427,7 @@ RectTransform:
   m_GameObject: {fileID: 254972696}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.44, y: 0.44, z: 0.44}
+  m_LocalScale: {x: 0.1872772, y: 0.1872772, z: 0.1872772}
   m_Children:
   - {fileID: 1452756644}
   m_Father: {fileID: 404119726}
@@ -1435,7 +1436,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 77.00023, y: -56.000114}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 504, y: 216}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &254972698
 MonoBehaviour:
@@ -1458,8 +1459,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.5568628, a: 1}
+    m_PressedColor: {r: 0, g: 1, b: 0.7294118, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1512,8 +1513,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 7b0678b4ccc5a6244b93426ac21b2fcc, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1576,7 +1577,7 @@ RectTransform:
   m_Children:
   - {fileID: 1327434609}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1640,6 +1641,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 1327434608}
 --- !u!68 &298940748
 EdgeCollider2D:
@@ -1887,7 +1889,7 @@ RectTransform:
   m_Children:
   - {fileID: 315725810}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 15
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1951,6 +1953,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 315725809}
 --- !u!68 &355104602
 EdgeCollider2D:
@@ -2019,7 +2022,7 @@ RectTransform:
   m_Children:
   - {fileID: 1722955760}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2133,6 +2136,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 1722955759}
 --- !u!1 &401143000
 GameObject:
@@ -2541,7 +2545,7 @@ RectTransform:
   m_Children:
   - {fileID: 482743664}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 5
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2605,6 +2609,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 482743663}
 --- !u!68 &434983175
 EdgeCollider2D:
@@ -2688,8 +2693,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294948722
+  m_fontColor: {r: 0.4481132, g: 0.71729153, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2844,7 +2849,7 @@ RectTransform:
   m_Children:
   - {fileID: 758198013}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2908,6 +2913,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 758198012}
 --- !u!68 &468726078
 EdgeCollider2D:
@@ -3984,7 +3990,7 @@ RectTransform:
   m_Children:
   - {fileID: 785414918}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4091,6 +4097,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 785414917}
 --- !u!1 &695645735
 GameObject:
@@ -4125,7 +4132,7 @@ RectTransform:
   m_Children:
   - {fileID: 1165140828}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 9
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4189,6 +4196,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 1165140827}
 --- !u!68 &695645740
 EdgeCollider2D:
@@ -4297,7 +4305,7 @@ RectTransform:
   m_Children:
   - {fileID: 1322152867}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4361,6 +4369,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 1322152866}
 --- !u!68 &728351192
 EdgeCollider2D:
@@ -4991,6 +5000,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 1123236483}
 --- !u!68 &822833027
 EdgeCollider2D:
@@ -5191,7 +5201,7 @@ RectTransform:
   m_Children:
   - {fileID: 88161098}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5255,6 +5265,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 88161097}
 --- !u!68 &888022574
 EdgeCollider2D:
@@ -5946,7 +5957,7 @@ RectTransform:
   m_Children:
   - {fileID: 933297494}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6010,6 +6021,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 933297493}
 --- !u!68 &1135428740
 EdgeCollider2D:
@@ -6083,7 +6095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 2.5}
+  m_AnchoredPosition: {x: 0, y: 12.9}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1138448980
@@ -6106,7 +6118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <- Back
+  m_text: < Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9896a180bb6baa34abc2bab7b693d73b, type: 2}
   m_sharedMaterial: {fileID: 905681685495057686, guid: 9896a180bb6baa34abc2bab7b693d73b, type: 2}
@@ -6115,8 +6127,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294890116
+  m_fontColor: {r: 0.5176471, g: 0.8235295, b: 0.9960785, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6133,7 +6145,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.75
+  m_fontSize: 71.3
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6169,7 +6181,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 87.01575, y: 69.62914, z: 89.31569, w: 59.949524}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6697,7 +6709,7 @@ RectTransform:
   m_Children:
   - {fileID: 1905887979}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6761,6 +6773,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 1905887978}
 --- !u!68 &1180229525
 EdgeCollider2D:
@@ -6804,6 +6817,7 @@ GameObject:
   - component: {fileID: 1188215628}
   - component: {fileID: 1188215631}
   - component: {fileID: 1188215632}
+  - component: {fileID: 1188215633}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: Untagged
@@ -6941,6 +6955,18 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1188215633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188215627}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b414a202a03d948419005fee417bca79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1225028320
 GameObject:
   m_ObjectHideFlags: 3
@@ -7261,6 +7287,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 1141215593}
 --- !u!68 &1281289732
 EdgeCollider2D:
@@ -7339,8 +7366,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294948722
+  m_fontColor: {r: 0.4481132, g: 0.71729153, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7805,7 +7832,7 @@ RectTransform:
   m_Children:
   - {fileID: 1132059641}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7906,6 +7933,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 1132059640}
 --- !u!1 &1327434608
 GameObject:
@@ -8282,7 +8310,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 1.2}
+  m_AnchoredPosition: {x: 0, y: 1.199997}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1452756645
@@ -8314,8 +8342,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294890116
+  m_fontColor: {r: 0.5176471, g: 0.8235295, b: 0.9960785, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8332,11 +8360,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21.9
+  m_fontSize: 48.45
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 0
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -8368,7 +8396,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 76.21509, y: 65.545006, z: 74.244675, w: 60.28123}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8415,7 +8443,7 @@ RectTransform:
   m_Children:
   - {fileID: 121465317}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8511,6 +8539,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 121465316}
 --- !u!1 &1470481884
 GameObject:
@@ -8545,7 +8574,7 @@ RectTransform:
   m_Children:
   - {fileID: 1279130228}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8651,6 +8680,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 1279130227}
 --- !u!1 &1489398412
 GameObject:
@@ -9004,7 +9034,7 @@ RectTransform:
   m_Children:
   - {fileID: 1108800105}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9068,6 +9098,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 1108800104}
 --- !u!68 &1521279279
 EdgeCollider2D:
@@ -9474,6 +9505,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 2126500585}
 --- !u!68 &1603283918
 EdgeCollider2D:
@@ -9669,8 +9701,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294948722
+  m_fontColor: {r: 0.4481132, g: 0.71729153, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9825,7 +9857,7 @@ RectTransform:
   m_Children:
   - {fileID: 1702015879}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9923,6 +9955,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 1702015878}
 --- !u!1 &1702015878
 GameObject:
@@ -10161,7 +10194,7 @@ RectTransform:
   m_GameObject: {fileID: 1779462933}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.44, y: 0.44, z: 0.44}
+  m_LocalScale: {x: 0.1872772, y: 0.1872772, z: 0.1872772}
   m_Children:
   - {fileID: 1138448979}
   m_Father: {fileID: 404119726}
@@ -10169,8 +10202,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 77.00023, y: -36.00007}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 77.00023, y: -29.9}
+  m_SizeDelta: {x: 504, y: 216}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1779462935
 MonoBehaviour:
@@ -10193,8 +10226,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.5568628, a: 1}
+    m_PressedColor: {r: 0, g: 1, b: 0.7294118, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -10271,8 +10304,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 7b0678b4ccc5a6244b93426ac21b2fcc, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -11094,7 +11127,7 @@ RectTransform:
   m_Children:
   - {fileID: 722576093}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11158,6 +11191,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 722576092}
 --- !u!68 &1934519826
 EdgeCollider2D:
@@ -11263,7 +11297,7 @@ RectTransform:
   m_Children:
   - {fileID: 1907599689}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11327,6 +11361,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 1907599688}
 --- !u!68 &1951976668
 EdgeCollider2D:
@@ -11523,29 +11558,29 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 641699407}
+  - {fileID: 355104598}
   - {fileID: 1470481885}
   - {fileID: 359535516}
   - {fileID: 1323661533}
   - {fileID: 1934519822}
-  - {fileID: 434983171}
   - {fileID: 1603283914}
   - {fileID: 822833023}
   - {fileID: 1281289728}
-  - {fileID: 695645736}
   - {fileID: 1457474420}
   - {fileID: 1521279275}
   - {fileID: 686758196}
   - {fileID: 468726074}
   - {fileID: 165054207}
-  - {fileID: 355104598}
   - {fileID: 728351188}
   - {fileID: 1135428736}
   - {fileID: 1682197435}
+  - {fileID: 434983171}
   - {fileID: 888022570}
   - {fileID: 298940744}
   - {fileID: 1180229521}
   - {fileID: 1951976664}
   - {fileID: 1984482633}
+  - {fileID: 695645736}
   - {fileID: 650843641}
   m_Father: {fileID: 404119726}
   m_RootOrder: 0
@@ -11722,7 +11757,7 @@ RectTransform:
   m_Children:
   - {fileID: 2019621870}
   m_Father: {fileID: 1984026779}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11786,6 +11821,7 @@ MonoBehaviour:
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
   _blurImage: {fileID: 650843640}
+  _whiteDotSprite: {fileID: 21300000, guid: 9c18d498f968f814183bcd31c8c90cd5, type: 3}
   _provinceDescription: {fileID: 2019621869}
 --- !u!68 &1984482637
 EdgeCollider2D:
