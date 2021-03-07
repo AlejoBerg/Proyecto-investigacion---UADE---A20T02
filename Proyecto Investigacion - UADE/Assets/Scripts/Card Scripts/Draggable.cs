@@ -9,6 +9,9 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     [SerializeField] private Transform _parentWhileDragging;
     [SerializeField] private Canvas _perspectiveCameraCanvas;
 
+    [SerializeField] private AudioSource _beginDragAudioSource;
+    [SerializeField] private AudioSource _endDragAudioSource;
+
     private bool _played = false;
     private Transform _parentToReturnTo = null;
     private CanvasGroup _canvasGroup = null;
@@ -29,6 +32,8 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
         this.transform.SetParent(_parentWhileDragging);
         _canvasGroup.blocksRaycasts = false;
+
+        _beginDragAudioSource.Play();
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -50,6 +55,8 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         _canvasGroup.blocksRaycasts = true;
 
         _placeHolder.SetActive(false);
+
+        _endDragAudioSource.Play();
     }
 
     private void SwapCardsWhenNecessary()

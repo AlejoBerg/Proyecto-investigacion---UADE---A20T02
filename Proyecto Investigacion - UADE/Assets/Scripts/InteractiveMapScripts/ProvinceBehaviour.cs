@@ -21,6 +21,9 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
     //Province descriptions
     [SerializeField] private GameObject _provinceDescription;
+    [SerializeField] private AudioClip _hoverProvinceAudio;
+    [SerializeField] private AudioClip _clickProvinceAudio;
+
 
     private Image _imageRef;
     private Sprite _initialSprite;
@@ -28,9 +31,12 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
     private Color _currentImageColor;
     private InteractiveMapButtons _interactiveMapButtonRef;
     private bool _isFocused = false;
+    private AudioSource _provinceAudioSource;
 
     private void Awake()
     {
+        _provinceAudioSource = GetComponent<AudioSource>();
+
         _interactiveMapButtonRef = _backButtonRef.GetComponent<InteractiveMapButtons>();
         _interactiveMapButtonRef.OnBackButtonPressed += OnBackButtonPressedHandler;
 
@@ -53,6 +59,9 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
         _isFocused = true;
         _currentImageColor.a = 100;
         _imageRef.color = _currentImageColor;
+
+        _provinceAudioSource.clip = _clickProvinceAudio;
+        _provinceAudioSource.Play();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -64,8 +73,10 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
             _currentImageColor.a = 100;
             _imageRef.color = _currentImageColor;
+
+            _provinceAudioSource.clip = _hoverProvinceAudio;
+            _provinceAudioSource.Play();
         }
-        
     }
 
     public void OnPointerExit(PointerEventData eventData)
