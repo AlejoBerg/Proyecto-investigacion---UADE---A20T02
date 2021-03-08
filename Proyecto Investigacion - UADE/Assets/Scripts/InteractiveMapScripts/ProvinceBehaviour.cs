@@ -45,23 +45,26 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        _cameraControllerRef.AssignNewFieldViewAndTarget(10, this.transform, this.transform);
-        StartCoroutine(AdjustButtons());
+        if (!_isFocused)
+        {
+            _cameraControllerRef.AssignNewFieldViewAndTarget(10, this.transform, this.transform);
+            StartCoroutine(AdjustButtons());
 
-        _imageRef.enabled = true;
+            _imageRef.enabled = true;
 
-        _blurImage.transform.SetAsLastSibling();
-        _blurImage.SetActive(true);
-        this.transform.SetAsLastSibling();
+            _blurImage.transform.SetAsLastSibling();
+            _blurImage.SetActive(true);
+            this.transform.SetAsLastSibling();
 
-        _provinceDescription.SetActive(true);
+            _provinceDescription.SetActive(true);
 
-        _isFocused = true;
-        _currentImageColor.a = 100;
-        _imageRef.color = _currentImageColor;
+            _isFocused = true;
+            _currentImageColor.a = 100;
+            _imageRef.color = _currentImageColor;
 
-        _provinceAudioSource.clip = _clickProvinceAudio;
-        _provinceAudioSource.Play();
+            _provinceAudioSource.clip = _clickProvinceAudio;
+            _provinceAudioSource.Play();
+        }        
     }
 
     public void OnPointerEnter(PointerEventData eventData)
