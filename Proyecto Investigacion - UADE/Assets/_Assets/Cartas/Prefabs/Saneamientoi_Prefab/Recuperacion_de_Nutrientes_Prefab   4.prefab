@@ -338,6 +338,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _parentWhileDragging: {fileID: 0}
   _perspectiveCameraCanvas: {fileID: 0}
+  _beginDragAudioSource: {fileID: 0}
+  _endDragAudioSource: {fileID: 0}
 --- !u!1 &5389179574008898255
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,6 +774,7 @@ GameObject:
   - component: {fileID: 815995178864140428}
   - component: {fileID: 5188355635974775669}
   - component: {fileID: 2744983304432059146}
+  - component: {fileID: 1054856992090606521}
   m_Layer: 5
   m_Name: CardNameText
   m_TagString: Untagged
@@ -895,6 +898,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1054856992090606521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6932110458557045194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e994fffe7d194c4b85351aaf19b0dd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: 
 --- !u!1 &7035925264501460596
 GameObject:
   m_ObjectHideFlags: 0
