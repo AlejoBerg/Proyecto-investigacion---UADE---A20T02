@@ -15,4 +15,9 @@ public class TextMeshProTranslator : MonoBehaviour
 	{
 		GetComponent <TMP_Text> ().text = GameMultiLang.GetTraduction (key);
 	}
+
+    public void ChangeKey(string newkey)
+    {
+        key = newkey;
+    }
 }
