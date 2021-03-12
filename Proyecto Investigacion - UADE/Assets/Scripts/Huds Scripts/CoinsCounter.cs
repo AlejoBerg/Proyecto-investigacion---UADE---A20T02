@@ -6,12 +6,12 @@ using TMPro;
 public class CoinsCounter : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _coinsText;
-    [SerializeField] private GameManager _gameManagerRef;
     [SerializeField] private float _coinsHudTimer = 0.2f;
 
+    private GameManager _gameManagerRef;
     private float t = 0f;
 
-    private void Awake()
+    private void Start()
     {
         CacheGameManager();
 

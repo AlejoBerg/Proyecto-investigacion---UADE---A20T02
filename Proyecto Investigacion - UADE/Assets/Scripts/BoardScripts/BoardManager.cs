@@ -6,9 +6,14 @@ public class BoardManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] _boardLines;//TopLine and Button line 
     [SerializeField] private GameObject _playerDeckOfCards;//TopLine and Button line 
-    [SerializeField] private GameManager _gameManagerRef;
+    private GameManager _gameManagerRef;
 
     private List<GameObject> _cardsPlayed;
+
+    private void Start()
+    {
+        CacheGameManager();
+    }
 
     public void ResetGameScene()
     {
@@ -47,5 +52,11 @@ public class BoardManager : MonoBehaviour
 
             _gameManagerRef.ChangeCoins(_cardsPlayed.Count * cardCost);
         }
+    }
+
+    private void CacheGameManager()
+    {
+        var gameManager = GameObject.FindGameObjectWithTag("GameManager");
+        _gameManagerRef = gameManager.GetComponent<GameManager>();
     }
 }

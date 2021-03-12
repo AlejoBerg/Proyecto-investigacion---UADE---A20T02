@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private string[] _cardsIDsToActivate;
     [SerializeField] private int _amountOfPlays = 5;
 
-    private float _currentPlayed = 0;
+    private int _currentPlayed = 0;
     private float _currentCoins = 0;
     private string _gameplayCaseID = "";
 
@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
 
     public float CurrentCoins { get => _currentCoins; }
     public string[] CardsIDsToActivate { get => _cardsIDsToActivate; set => _cardsIDsToActivate = value; }
+    public int AmountOfPlays { get => _amountOfPlays; }
+    public int CurrentPlayed { get => _currentPlayed; }
 
     private void Awake()
     {
@@ -43,6 +45,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            _currentPlayed += 1;
             OnFinishPlays?.Invoke();
         }
     }
