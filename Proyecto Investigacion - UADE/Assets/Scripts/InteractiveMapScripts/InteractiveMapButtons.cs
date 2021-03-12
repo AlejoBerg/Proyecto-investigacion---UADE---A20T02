@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class InteractiveMapButtons : MonoBehaviour
 {
     [SerializeField] private GameObject _blurImageRef;
+    [SerializeField] private GameManager _gameManagerRef;
     public event Action OnBackButtonPressed;
 
     public void OnBackFromProvince(InteractiveMapCameraController cameraRef)
@@ -17,6 +18,7 @@ public class InteractiveMapButtons : MonoBehaviour
 
     public void OnStartGame()
     {
+        //Completar la lista de cardsIDsToActivate del game manager
         SceneManager.LoadScene("GameScene");
     }
 }

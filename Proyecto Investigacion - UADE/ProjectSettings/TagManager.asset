@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DragParent
   - Cards
+  - GameManager
   layers:
   - Default
   - TransparentFX

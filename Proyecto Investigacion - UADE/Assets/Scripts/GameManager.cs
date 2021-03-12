@@ -5,14 +5,23 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private string[] _cardsIDsToActivate;
+    [SerializeField] private int _amountOfPlays = 5;
+
+    private float _currentPlayed = 0;
+    private float _currentCoins = 0;
+    private string _gameplayCaseID = "";
+
     public event Action OnCoinsChange;
     public event Action OnFinishPlays;
 
-    [SerializeField] private int _amountOfPlays = 5;
-    private float _currentPlayed = 0;
-    private float _currentCoins = 5;
-    
     public float CurrentCoins { get => _currentCoins; }
+    public string[] CardsIDsToActivate { get => _cardsIDsToActivate; set => _cardsIDsToActivate = value; }
+
+    private void Awake()
+    {
+        InitGameManagerEntity();
+    }
 
     public void ChangeCoins(float coinsAmount)
     {
@@ -36,6 +45,26 @@ public class GameManager : MonoBehaviour
         {
             OnFinishPlays?.Invoke();
         }
+    }
+
+    private void InitGameManagerEntity()
+    {
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("GameManager");
+
+        if (objs.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+    public void InitGameManagerProperties(ProvinceProperties provinceValues)
+    {
+        _amountOfPlays = provinceValues.AmountOfPlays;
+        _cardsIDsToActivate = provinceValues.CardsIDs;
+        _currentCoins = provinceValues.InitialGameCoins;
+        _gameplayCaseID = provinceValues.GameplayCaseID;
     }
 
 }

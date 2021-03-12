@@ -18,6 +18,7 @@ public class CardDisplay : MonoBehaviour
 
     public TextMeshProUGUI CardDescriptionText { get => dummyCardDescriptionText;}
     public float CardCost { get => card.MoneyCost; }
+    public Card Card { get => card; }
 
     private void Awake()
     {

@@ -1387,7 +1387,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 4c9650ea740214147bf67a7fdcb7c720, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -2267,6 +2269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _blurImageRef: {fileID: 0}
+  _gameManagerRef: {fileID: 0}
 --- !u!1 &261386714
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,7 +2791,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 2d4acb4a2dc0aac408f558fda39504ef, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -3762,7 +3767,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: e75d23bb91796a64bb3da3c4044a451b, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -4044,7 +4051,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: d01fca09baba54e46988818a3ea2d6cf, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -5443,7 +5452,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 5a68936b74e77d84bac3e3957bad4a06, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -6290,7 +6301,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 848ab56751993ba45a833af94c7d4e24, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -7716,6 +7729,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614036251}
   m_CullTransparentMesh: 0
+--- !u!1 &627229004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 627229006}
+  - component: {fileID: 627229005}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GameManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &627229005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627229004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2225b77238a7e07409264b9bfea98fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cardsIDsToActivate: []
+  _amountOfPlays: 3
+--- !u!4 &627229006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627229004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &639190106
 GameObject:
   m_ObjectHideFlags: 0
@@ -8858,7 +8916,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 080b098612edf37419117ab706afe050, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -9190,7 +9250,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 5e941634670773944b955c9c6775b360, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -9466,7 +9528,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 4ab7e9824f6a52a4fa8067173498de1c, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -10760,7 +10824,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 5f6f36521846b7947853396fed1a8ed3, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -11615,7 +11681,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: ee0acb260a7219f43bf0b6dcb5ef7ae7, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -14247,7 +14315,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 572cccd12cfa59b4e985ffd9a8f2277c, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -15411,7 +15481,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: fec092d92930e8f4b85aaa11527abbd3, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -16712,7 +16784,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: d894e2cf0f86ca646ab6f0df28a8cb81, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -17470,7 +17544,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 35a2f1ba35ec5ed48955f1024a3602cd, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -18827,7 +18903,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 107521a25aa6ace41bf673a568976536, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -19067,7 +19145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 9581b15e055b1e54581a609a90d6c61c, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -19847,7 +19927,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 007fe187eaf32ea4c8b0b2b2d55da653, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -20939,7 +21021,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 0069ddb5a3434074db86d133d791186c, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -22071,7 +22155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: ac55caf8e0a4aa144bf3efda2cd41a7a, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -23424,6 +23510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _blurImageRef: {fileID: 650843640}
+  _gameManagerRef: {fileID: 0}
 --- !u!1 &1780357855
 GameObject:
   m_ObjectHideFlags: 0
@@ -25141,7 +25228,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: 84ad5fa85a7651543821c1583dc9d32d, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -25544,7 +25633,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: e3e42bc224ef98049b2cf5e6dd321d7d, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}
@@ -26667,7 +26758,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261b4f6e21d01f44b9fdce06179afc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameManagerRef: {fileID: 627229005}
   _cameraControllerRef: {fileID: 1610376955}
+  _provincePropertiesScriptable: {fileID: 11400000, guid: b6b658ed23c14b04cbea5ca7c74edb93, type: 2}
   _backButtonOffset: {x: 49, y: -34, z: 0}
   _playButtonOffset: {x: 51, y: 33, z: 0}
   _backButtonRef: {fileID: 1779462933}

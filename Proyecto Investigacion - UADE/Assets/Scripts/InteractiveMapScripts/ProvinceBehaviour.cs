@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
+    [SerializeField] private GameManager _gameManagerRef;
     [SerializeField] private InteractiveMapCameraController _cameraControllerRef;
+    [SerializeField] private ProvinceProperties _provincePropertiesScriptable;
 
     //Buttons Variables
     [SerializeField] private Vector3 _backButtonOffset;
@@ -61,6 +63,8 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
             _isFocused = true;
             _currentImageColor.a = 100;
             _imageRef.color = _currentImageColor;
+
+            _gameManagerRef.InitGameManagerProperties(_provincePropertiesScriptable);
 
             _provinceAudioSource.clip = _clickProvinceAudio;
             _provinceAudioSource.Play();

@@ -13,6 +13,8 @@ public class CoinsCounter : MonoBehaviour
 
     private void Awake()
     {
+        CacheGameManager();
+
         _gameManagerRef.OnCoinsChange += OnCoinsChangeHandler;
 
         t = _gameManagerRef.CurrentCoins;
@@ -33,5 +35,11 @@ public class CoinsCounter : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    private void CacheGameManager()
+    {
+        var gameManager = GameObject.FindGameObjectWithTag("GameManager");
+        _gameManagerRef = gameManager.GetComponent<GameManager>();
     }
 }
