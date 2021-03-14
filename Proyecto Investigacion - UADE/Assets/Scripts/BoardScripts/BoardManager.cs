@@ -5,7 +5,9 @@ using UnityEngine;
 public class BoardManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] _boardLines;//TopLine and Button line 
-    [SerializeField] private GameObject _playerDeckOfCards;//TopLine and Button line 
+    [SerializeField] private GameObject _playerDeckOfCards;
+    [SerializeField] private GameObject _usedCardsContainer; 
+    [SerializeField] private float _sizeOfUsedCards = 0.8f;
     private GameManager _gameManagerRef;
 
     private List<GameObject> _cardsPlayed;
@@ -20,7 +22,8 @@ public class BoardManager : MonoBehaviour
         _cardsPlayed = new List<GameObject>();
 
         GetCardsPlayed();
-        ReturnCardsPlayedToDeck();
+        SendPlayedCardsToUsed();
+        //ReturnCardsPlayedToDeck();
     }
 
     private List<GameObject> GetCardsPlayed()
@@ -50,6 +53,23 @@ public class BoardManager : MonoBehaviour
 
             float cardCost = card.GetComponent<CardDisplay>().CardCost;
 
+            _gameManagerRef.ChangeCoins(_cardsPlayed.Count * cardCost);
+        }
+    }
+
+    private void SendPlayedCardsToUsed()
+    {
+        foreach (var card in _cardsPlayed)
+        {
+            card.transform.localScale = card.transform.localScale * _sizeOfUsedCards;
+            card.transform.parent = _usedCardsContainer.transform;
+            card.transform.eulerAngles = new Vector3(0, card.transform.eulerAngles.y, card.transform.eulerAngles.z); //Reset card rotation
+            var played = card.GetComponent<Draggable>();
+
+            if (played != null) { played.Played = false; }
+            Destroy(played);//Removes Draggeable component
+
+            float cardCost = card.GetComponent<CardDisplay>().CardCost;
             _gameManagerRef.ChangeCoins(_cardsPlayed.Count * cardCost);
         }
     }

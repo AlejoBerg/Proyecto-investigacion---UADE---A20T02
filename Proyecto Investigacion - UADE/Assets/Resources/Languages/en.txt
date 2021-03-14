@@ -32,6 +32,7 @@ LOW=Low
 MEDIUM=Medium
 HIGH=High
 END_MATCH=End Match
+USED=Used:
 MATCH_LEFT=Matches Left:
 HELP=Help!
 PLAY_AGAIN=Play Again

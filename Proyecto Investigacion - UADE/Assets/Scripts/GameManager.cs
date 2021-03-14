@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int _amountOfPlays = 5;
 
     private int _currentPlayed = 0;
-    private float _currentCoins = 0;
+    public float _currentCoins = 0;
     private string _gameplayCaseID = "";
 
     public event Action OnCoinsChange;
@@ -70,4 +70,10 @@ public class GameManager : MonoBehaviour
         _gameplayCaseID = provinceValues.GameplayCaseID;
     }
 
+    public void ResetInitValues()
+    {
+        _currentCoins = 0;
+        _amountOfPlays = 0;
+        _currentPlayed = 0;
+    }
 }

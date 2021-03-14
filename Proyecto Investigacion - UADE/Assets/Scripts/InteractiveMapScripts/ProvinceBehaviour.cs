@@ -64,6 +64,7 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
             _currentImageColor.a = 100;
             _imageRef.color = _currentImageColor;
 
+            _gameManagerRef.ResetInitValues();
             _gameManagerRef.InitGameManagerProperties(_provincePropertiesScriptable);
 
             _provinceAudioSource.clip = _clickProvinceAudio;
