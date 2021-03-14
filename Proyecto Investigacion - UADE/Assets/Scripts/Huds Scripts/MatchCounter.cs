@@ -6,11 +6,13 @@ using TMPro;
 public class MatchCounter : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _matchesLeftText;
+    [SerializeField] private FindGameManager _gameManagerFinder;
+
     private GameManager _gameManagerRef;
 
     private void Start()
     {
-        CacheGameManager();
+        _gameManagerRef = _gameManagerFinder.GetGameManagerReference();
         SetText();
     }
 
@@ -18,12 +20,6 @@ public class MatchCounter : MonoBehaviour
     {
         _gameManagerRef.IncreaseCurrentPlayed();
         SetText();
-    }
-
-    private void CacheGameManager()
-    {
-        var gameManager = GameObject.FindGameObjectWithTag("GameManager");
-        _gameManagerRef = gameManager.GetComponent<GameManager>();
     }
 
     private void SetText()

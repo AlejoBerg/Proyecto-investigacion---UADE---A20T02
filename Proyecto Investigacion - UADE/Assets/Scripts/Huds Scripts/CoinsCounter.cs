@@ -7,13 +7,14 @@ public class CoinsCounter : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _coinsText;
     [SerializeField] private float _coinsHudTimer = 0.2f;
+    [SerializeField] private FindGameManager _gameManagerFinder;
 
     private GameManager _gameManagerRef;
     private float t = 0f;
 
     private void Start()
     {
-        CacheGameManager();
+        _gameManagerRef = _gameManagerFinder.GetGameManagerReference();
 
         _gameManagerRef.OnCoinsChange += OnCoinsChangeHandler;
 
@@ -35,11 +36,5 @@ public class CoinsCounter : MonoBehaviour
 
             yield return null;
         }
-    }
-
-    private void CacheGameManager()
-    {
-        var gameManager = GameObject.FindGameObjectWithTag("GameManager");
-        _gameManagerRef = gameManager.GetComponent<GameManager>();
     }
 }

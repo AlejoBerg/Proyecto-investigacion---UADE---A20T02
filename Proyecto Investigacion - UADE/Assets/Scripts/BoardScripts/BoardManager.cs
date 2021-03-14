@@ -8,13 +8,15 @@ public class BoardManager : MonoBehaviour
     [SerializeField] private GameObject _playerDeckOfCards;
     [SerializeField] private GameObject _usedCardsContainer; 
     [SerializeField] private float _sizeOfUsedCards = 0.8f;
+    [SerializeField] private FindGameManager _gameManagerFinder;
+
     private GameManager _gameManagerRef;
 
     private List<GameObject> _cardsPlayed;
 
     private void Start()
     {
-        CacheGameManager();
+        _gameManagerRef = _gameManagerFinder.GetGameManagerReference();
     }
 
     public void ResetGameScene()

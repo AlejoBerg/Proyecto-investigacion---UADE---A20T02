@@ -1910,6 +1910,7 @@ MonoBehaviour:
   _playerDeckOfCards: {fileID: 334760445}
   _usedCardsContainer: {fileID: 278757613}
   _sizeOfUsedCards: 0.9
+  _gameManagerFinder: {fileID: 210650899}
 --- !u!224 &80912889
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3074,6 +3075,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 724385678}
   m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &210650898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 210650900}
+  - component: {fileID: 210650899}
+  m_Layer: 0
+  m_Name: GameManagerFinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &210650899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210650898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed84a4764956284fa6176e01f6e9ae1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &210650900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210650898}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 558.05145, y: 169.26013, z: -21.830692}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &218640500
 GameObject:
@@ -5714,6 +5758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dropZoneType: 0
+  _gameManagerFinder: {fileID: 210650899}
 --- !u!114 &334760447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6219,6 +6264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dropZoneType: 1
+  _gameManagerFinder: {fileID: 210650899}
 --- !u!114 &339812761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8213,6 +8259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dropZoneType: 1
+  _gameManagerFinder: {fileID: 210650899}
 --- !u!114 &429995307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17055,6 +17102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _matchesLeftText: {fileID: 926864687}
+  _gameManagerFinder: {fileID: 210650899}
 --- !u!114 &926864687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35071,6 +35119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _coinsText: {fileID: 1992031936}
   _coinsHudTimer: 0.2
+  _gameManagerFinder: {fileID: 210650899}
 --- !u!114 &1992031936
 MonoBehaviour:
   m_ObjectHideFlags: 0
