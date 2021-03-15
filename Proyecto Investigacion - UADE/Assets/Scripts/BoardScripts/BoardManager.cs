@@ -60,11 +60,11 @@ public class BoardManager : MonoBehaviour
         }
     }
 
-    private void OnResetBoardHandler()
-    {
-        GetCardsPlayed();
-        ReturnCardsPlayedToDeck();
-    }
+    //private void OnResetBoardHandler()
+    //{
+    //    GetCardsPlayed();
+    //    ReturnCardsPlayedToDeck();
+    //}
 
     private void ReturnCardsPlayedToDeck()
     {
