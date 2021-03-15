@@ -9527,8 +9527,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 502}
-  m_SizeDelta: {x: 1186.9, y: 50}
+  m_AnchoredPosition: {x: 0, y: 494}
+  m_SizeDelta: {x: 1672, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1943359906
 MonoBehaviour:
@@ -9550,7 +9550,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ecosystem
+  m_text: CircleSystem
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9896a180bb6baa34abc2bab7b693d73b, type: 2}
   m_sharedMaterial: {fileID: 905681685495057686, guid: 9896a180bb6baa34abc2bab7b693d73b, type: 2}
