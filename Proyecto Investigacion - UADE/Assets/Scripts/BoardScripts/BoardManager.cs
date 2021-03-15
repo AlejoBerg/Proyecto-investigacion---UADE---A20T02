@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,7 +26,6 @@ public class BoardManager : MonoBehaviour
 
         GetCardsPlayed();
         SendPlayedCardsToUsed();
-        //ReturnCardsPlayedToDeck();
     }
 
     private List<GameObject> GetCardsPlayed()
@@ -41,22 +41,6 @@ public class BoardManager : MonoBehaviour
             }
         }
         return _cardsPlayed;
-    }
-
-    private void ReturnCardsPlayedToDeck()
-    {
-        foreach (var card in _cardsPlayed)
-        {
-            card.transform.parent = _playerDeckOfCards.transform;
-            card.transform.eulerAngles = new Vector3(0, card.transform.eulerAngles.y, card.transform.eulerAngles.z); //Reset card rotation
-            var played = card.GetComponent<Draggable>();
-
-            if(played != null) { played.Played = false; }
-
-            float cardCost = card.GetComponent<CardDisplay>().CardCost;
-
-            _gameManagerRef.ChangeCoins(_cardsPlayed.Count * cardCost);
-        }
     }
 
     private void SendPlayedCardsToUsed()
@@ -76,9 +60,25 @@ public class BoardManager : MonoBehaviour
         }
     }
 
-    private void CacheGameManager()
+    private void OnResetBoardHandler()
     {
-        var gameManager = GameObject.FindGameObjectWithTag("GameManager");
-        _gameManagerRef = gameManager.GetComponent<GameManager>();
+        GetCardsPlayed();
+        ReturnCardsPlayedToDeck();
+    }
+
+    private void ReturnCardsPlayedToDeck()
+    {
+        foreach (var card in _cardsPlayed)
+        {
+            card.transform.parent = _playerDeckOfCards.transform;
+            card.transform.eulerAngles = new Vector3(0, card.transform.eulerAngles.y, card.transform.eulerAngles.z); //Reset card rotation
+            var played = card.GetComponent<Draggable>();
+
+            if (played != null) { played.Played = false; }
+
+            float cardCost = card.GetComponent<CardDisplay>().CardCost;
+
+            _gameManagerRef.ChangeCoins(_cardsPlayed.Count * cardCost);
+        }
     }
 }

@@ -28,4 +28,10 @@ public class MatchCounter : MonoBehaviour
         string currentPlayed = _gameManagerRef.CurrentPlayed.ToString();
         _matchesLeftText.text = currentPlayed + "/" + amountOfPlays;
     }
+
+    private void CacheGameManager()
+    {
+        var gameManager = GameObject.FindGameObjectWithTag("GameManager");
+        _gameManagerRef = gameManager.GetComponent<GameManager>();
+    }
 }

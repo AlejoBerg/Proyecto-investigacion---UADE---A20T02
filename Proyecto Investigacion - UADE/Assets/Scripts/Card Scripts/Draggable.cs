@@ -20,6 +20,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     private void Awake()
     {
         _canvasGroup = GetComponent<CanvasGroup>();
+        print($"el estado de Played la carta {this.gameObject.name} es {_played}");
     }
 
     public void OnBeginDrag(PointerEventData eventData)
