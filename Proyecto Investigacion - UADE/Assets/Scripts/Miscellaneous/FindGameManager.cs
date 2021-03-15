@@ -14,7 +14,10 @@ public class FindGameManager : MonoBehaviour
 
     private void CacheGameManager()
     {
-        var gameManager = GameObject.FindGameObjectWithTag("GameManager");
-        _gameManagerRef = gameManager.GetComponent<GameManager>();
+        if(_gameManagerRef == null)
+        {
+            var gameManager = GameObject.FindGameObjectWithTag("GameManager");
+            _gameManagerRef = gameManager.GetComponent<GameManager>();
+        }
     }
 }
