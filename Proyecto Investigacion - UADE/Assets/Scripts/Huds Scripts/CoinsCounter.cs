@@ -16,13 +16,11 @@ public class CoinsCounter : MonoBehaviour
     {
         _gameManagerRef = _gameManagerFinder.GetGameManagerReference();
 
-        _gameManagerRef.OnCoinsChange += OnCoinsChangeHandler;
-
         t = _gameManagerRef.CurrentCoins;
         _coinsText.text = Mathf.Round(t).ToString();
     }
 
-    private void OnCoinsChangeHandler()
+    public void ChangeCoins()
     {
         StartCoroutine(LerpTextCounterEffect());        
     }

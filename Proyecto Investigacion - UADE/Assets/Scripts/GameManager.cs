@@ -9,8 +9,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int _amountOfPlays = 5;
 
     private int _currentPlayed = 0;
-    public float _currentCoins = 0;
+    private float _currentCoins = 0;
     private string _gameplayCaseID = "";
+    private CoinsCounter _coinsCounterRef;
 
     public event Action OnCoinsChange;
     public event Action OnFinishPlays;
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
         }
         else { _currentCoins = 0; }
 
-        OnCoinsChange?.Invoke();
+        ChangeCoinsCounter();
     }
 
     public void IncreaseCurrentPlayed() 
@@ -75,5 +76,15 @@ public class GameManager : MonoBehaviour
         _currentCoins = 0;
         _amountOfPlays = 0;
         _currentPlayed = 0;
+    }
+
+    private void ChangeCoinsCounter()
+    {
+        if (_coinsCounterRef == null)
+        {
+            _coinsCounterRef = GameObject.FindGameObjectWithTag("CoinsCounter").GetComponent<CoinsCounter>();
+        }
+
+        _coinsCounterRef.ChangeCoins();
     }
 }

@@ -20296,7 +20296,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 912339931}
   m_HandleRect: {fileID: 912339930}
   m_Direction: 3
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -29355,8 +29355,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 300468618}
   m_HandleRect: {fileID: 300468616}
   m_Direction: 0
-  m_Value: 0.5
-  m_Size: 0.5033423
+  m_Value: 0.50000066
+  m_Size: 0.5033424
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -35081,7 +35081,7 @@ GameObject:
   - component: {fileID: 1992031935}
   m_Layer: 5
   m_Name: CoinsCounter
-  m_TagString: Untagged
+  m_TagString: CoinsCounter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

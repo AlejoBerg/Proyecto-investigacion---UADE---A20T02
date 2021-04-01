@@ -80,7 +80,7 @@ public class ProvinceBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (!_isFocused) 
+        if (!_isFocused)
         {
             _imageRef.sprite = _initialSprite;
             _imageRef.SetNativeSize();
