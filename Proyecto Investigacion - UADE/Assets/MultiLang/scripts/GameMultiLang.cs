@@ -60,7 +60,7 @@ public class GameMultiLang : MonoBehaviour
 	public static string GetTraduction (string key)
 	{
 		if (!Fields.ContainsKey (key)) {
-			Debug.LogError ("There is no key with name: [" + key + "] in your text files");
+			Debug.Log ("There is no key with name: [" + key + "] in your text files");
 			return null;
 		}
 

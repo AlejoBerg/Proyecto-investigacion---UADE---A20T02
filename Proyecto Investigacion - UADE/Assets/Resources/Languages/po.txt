@@ -33,6 +33,7 @@ MEDIUM=Médio
 HIGH=Alto
 END_MATCH=Fim da partida
 USED=Usava:
+MATCH_LEFT=Jogos restantes:
 HELP=Ajuda!
 PLAY_AGAIN=Jogar de novo
 END_GAME=Fim do jogo
