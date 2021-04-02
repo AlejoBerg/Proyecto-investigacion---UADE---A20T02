@@ -204,7 +204,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 285388186}
   m_HandleRect: {fileID: 285388185}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2738,11 +2738,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd434172ec99bce4c90b1404cef19da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotationSpeed: 20
-  _minClampX: -100
-  _maxClampX: -30
-  _minClampY: -40
-  _maxClampY: 40
 --- !u!65 &143487004
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7377,11 +7372,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1379751314}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
-        m_Mode: 1
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9079,11 +9074,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd434172ec99bce4c90b1404cef19da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotationSpeed: 20
-  _minClampX: -100
-  _maxClampX: -30
-  _minClampY: -40
-  _maxClampY: 40
 --- !u!65 &481973706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20358,7 +20348,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 912339931}
   m_HandleRect: {fileID: 912339930}
   m_Direction: 3
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -28423,11 +28413,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd434172ec99bce4c90b1404cef19da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotationSpeed: 20
-  _minClampX: -100
-  _maxClampX: -30
-  _minClampY: -40
-  _maxClampY: 40
 --- !u!65 &1578155491
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29448,8 +29433,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 300468618}
   m_HandleRect: {fileID: 300468616}
   m_Direction: 0
-  m_Value: 0.50000054
-  m_Size: 0.5033423
+  m_Value: 0.50000024
+  m_Size: 0.50334215
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -32908,11 +32893,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd434172ec99bce4c90b1404cef19da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotationSpeed: 20
-  _minClampX: -100
-  _maxClampX: -30
-  _minClampY: -40
-  _maxClampY: 40
 --- !u!65 &1798414329
 BoxCollider:
   m_ObjectHideFlags: 0
