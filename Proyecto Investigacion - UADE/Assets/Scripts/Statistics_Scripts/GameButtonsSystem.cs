@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShowObjectAnimation : MonoBehaviour
+public class GameButtonsSystem : MonoBehaviour
 {
     [SerializeField] private GameObject _helpButton;
     [SerializeField] private GameObject _backButton;
+    [SerializeField] private GameObject _finishMatchButton;
     [SerializeField] private GameObject _optionsGraphsButtons;
 
     [SerializeField] private Vector3 _maxSize;
@@ -15,13 +16,11 @@ public class ShowObjectAnimation : MonoBehaviour
 
     private GameObject _currentObjectToShow;
     private ChangeScene _changeSceneRef;
-    private float _elapsedRotTime = 0;
-    private Quaternion _newRndRotation;
 
     private float _currentFadeOutTime = 0;
     private float _fadeOutCounter = 0;
 
-    private GameObject _nextButtonToUnhide;
+    public List<GameObject> _nextButtonsToUnhide;
 
     private void Awake()
     {
@@ -30,39 +29,40 @@ public class ShowObjectAnimation : MonoBehaviour
 
     public void OnHelpButtonPressed(GameObject newGraphToShow) //Fade out scene , scale graph
     {
-        float diff = Mathf.Abs(_fadeOutCounter - _currentFadeOutTime);
-        if (diff <= 0.01f)
-        {
-            _helpButton.SetActive(false);
-            _nextButtonToUnhide = _backButton;
+        _helpButton.SetActive(false);
 
-            _changeSceneRef.OnChangeOneSceneAlpha(0);
+        _nextButtonsToUnhide.Clear();
+        _nextButtonsToUnhide.Add(_backButton);
+        _nextButtonsToUnhide.Add(_optionsGraphsButtons);
 
-            newGraphToShow.transform.localRotation = Quaternion.Euler(-90, 0, 0);
-            newGraphToShow.SetActive(true);
-            StartCoroutine(LerpObjectSize(newGraphToShow, Vector3.zero, _maxSize, _fadeInTime, false));
-            _optionsGraphsButtons.SetActive(true);
-            _currentObjectToShow = newGraphToShow;
-        }
+        _changeSceneRef.OnChangeOneSceneAlpha(0);
+
+        newGraphToShow.transform.localRotation = Quaternion.Euler(-90, 0, 0);
+        newGraphToShow.SetActive(true);
+        StartCoroutine(LerpObjectSize(newGraphToShow, Vector3.zero, _maxSize, _fadeInTime, false));
+
+        _currentObjectToShow = newGraphToShow;
     }
 
     public void OnBackFromHelpButtonPressed()//scale graph , Fade in scene  
     {
-        float diff = Mathf.Abs(_fadeOutCounter - _currentFadeOutTime);
-        if (diff <= 0.01f)
-        {
-            _backButton.SetActive(false);
-            _nextButtonToUnhide = _helpButton;
+        _backButton.SetActive(false);
 
-            _changeSceneRef.OnChangeOneSceneAlpha(1);
-            StartCoroutine(LerpObjectSize(_currentObjectToShow, _maxSize, Vector3.zero, _fadeOutTime, true));
-            _optionsGraphsButtons.SetActive(false);
-        }
+        _nextButtonsToUnhide.Clear();
+        _nextButtonsToUnhide.Add(_helpButton);
+        _nextButtonsToUnhide.Add(_finishMatchButton);
+
+        _changeSceneRef.OnChangeOneSceneAlpha(1);
+        StartCoroutine(LerpObjectSize(_currentObjectToShow, _maxSize, Vector3.zero, _fadeOutTime, true));
+        _optionsGraphsButtons.SetActive(false);
     }
 
     public void OnChangeGraphPressed(GameObject newGraphToShow)
     {
         _currentObjectToShow.SetActive(false);
+
+        _nextButtonsToUnhide.Clear();
+        _nextButtonsToUnhide.Add(_backButton);
 
         newGraphToShow.SetActive(true);
         StartCoroutine(LerpObjectSize(newGraphToShow, Vector3.zero, _maxSize, _fadeInTime, false));
@@ -75,7 +75,7 @@ public class ShowObjectAnimation : MonoBehaviour
         _fadeOutCounter = 0;
         newGraphToShow.transform.localScale = initialScaleSize;
 
-        ManageButtonsActivationWithDelay(false);
+        ManageButtonsActivation(false);
 
         while (_fadeOutCounter < scaleTime)
         {
@@ -84,20 +84,26 @@ public class ShowObjectAnimation : MonoBehaviour
             yield return null;
         }
 
-        ManageButtonsActivationWithDelay(true);
+        ManageButtonsActivation(true);
+        _nextButtonsToUnhide.Clear();
         if (shouldHideAfterScale) { newGraphToShow.SetActive(false); }
     }
 
-    private void ManageButtonsActivationWithDelay(bool shouldActivate)
+    private void ManageButtonsActivation(bool shouldActivate)
     {
         if (shouldActivate)
         {
-            _nextButtonToUnhide.SetActive(true);
+            foreach (var button in _nextButtonsToUnhide)
+            {
+                button.SetActive(true);
+            }
         }
         else
         {
-            _nextButtonToUnhide.SetActive(false);
-            _backButton.SetActive(false);
+            foreach (var button in _nextButtonsToUnhide)
+            {
+                button.SetActive(false);
+            }
         }
     }
 }

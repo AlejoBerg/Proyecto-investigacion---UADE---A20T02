@@ -10602,7 +10602,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 629.0005, y: 497.0003}
+  m_AnchoredPosition: {x: 668, y: 493}
   m_SizeDelta: {x: 199, y: 239}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &518772141
@@ -35206,7 +35206,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 300468616}
   m_Direction: 0
   m_Value: 0.50000006
-  m_Size: 0.07993983
+  m_Size: 0.079939835
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -39623,10 +39623,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _helpButton: {fileID: 405220524}
   _backButton: {fileID: 1663524567}
+  _finishMatchButton: {fileID: 415640266}
   _optionsGraphsButtons: {fileID: 1754040968}
   _maxSize: {x: 15, y: 15, z: 15}
   _fadeInTime: 4
   _fadeOutTime: 2
+  _nextButtonsToUnhide: []
 --- !u!4 &1852346741
 Transform:
   m_ObjectHideFlags: 0
@@ -42118,7 +42120,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 723.10034, y: 496.5603}
+  m_AnchoredPosition: {x: 762.09985, y: 492.56012}
   m_SizeDelta: {x: 236.65305, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1992031935
@@ -42156,7 +42158,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1000
+  m_text: 100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f802ed1155ba44ab2e8d6d8d8523a9, type: 2}
   m_sharedMaterial: {fileID: 1448329530822784360, guid: b3f802ed1155ba44ab2e8d6d8d8523a9, type: 2}
