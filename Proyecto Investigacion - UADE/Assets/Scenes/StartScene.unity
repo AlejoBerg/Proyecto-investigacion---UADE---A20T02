@@ -3803,8 +3803,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 4c9650ea740214147bf67a7fdcb7c720, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -7265,8 +7265,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 2d4acb4a2dc0aac408f558fda39504ef, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -8827,8 +8827,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: e75d23bb91796a64bb3da3c4044a451b, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -9111,8 +9111,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: d01fca09baba54e46988818a3ea2d6cf, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -11400,8 +11400,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 5a68936b74e77d84bac3e3957bad4a06, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -13137,8 +13137,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 848ab56751993ba45a833af94c7d4e24, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -18337,8 +18337,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 080b098612edf37419117ab706afe050, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -18671,8 +18671,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 5e941634670773944b955c9c6775b360, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -19091,8 +19091,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 4ab7e9824f6a52a4fa8067173498de1c, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -21573,8 +21573,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 5f6f36521846b7947853396fed1a8ed3, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -23748,8 +23748,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: ee0acb260a7219f43bf0b6dcb5ef7ae7, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -29630,7 +29630,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92.5, y: -8.9}
+  m_AnchoredPosition: {x: -91.4, y: 4.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1132059640
@@ -29924,8 +29924,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 572cccd12cfa59b4e985ffd9a8f2277c, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -31735,7 +31735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -41.8, y: 6.63}
+  m_AnchoredPosition: {x: -93.7, y: 5.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1165302266
@@ -31980,8 +31980,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: fec092d92930e8f4b85aaa11527abbd3, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -33856,8 +33856,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: d894e2cf0f86ca646ab6f0df28a8cb81, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -34920,8 +34920,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 35a2f1ba35ec5ed48955f1024a3602cd, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -37452,7 +37452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25.500168, y: 41.000164}
+  m_AnchoredPosition: {x: -12.2, y: 41}
   m_SizeDelta: {x: 118.5, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1437337114
@@ -37509,7 +37509,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -37541,7 +37541,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1437337115
@@ -38345,8 +38345,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 107521a25aa6ace41bf673a568976536, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -38869,8 +38869,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 9581b15e055b1e54581a609a90d6c61c, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -39947,8 +39947,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 007fe187eaf32ea4c8b0b2b2d55da653, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -42063,8 +42063,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 0069ddb5a3434074db86d133d791186c, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -44684,8 +44684,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: ac55caf8e0a4aa144bf3efda2cd41a7a, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -49736,7 +49736,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -93, y: 9.6}
+  m_AnchoredPosition: {x: -87.8, y: 9.6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1916182825
@@ -50129,8 +50129,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: 84ad5fa85a7651543821c1583dc9d32d, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -50534,8 +50534,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: e3e42bc224ef98049b2cf5e6dd321d7d, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
@@ -51802,8 +51802,8 @@ MonoBehaviour:
   _gameManagerFinder: {fileID: 28490857}
   _cameraControllerRef: {fileID: 1610376955}
   _provincePropertiesScriptable: {fileID: 11400000, guid: b6b658ed23c14b04cbea5ca7c74edb93, type: 2}
-  _backButtonOffset: {x: 49, y: -34, z: 0}
-  _playButtonOffset: {x: 51, y: 33, z: 0}
+  _backButtonOffset: {x: 49, y: -31.5, z: 0}
+  _playButtonOffset: {x: 51, y: 30, z: 0}
   _backButtonRef: {fileID: 1779462933}
   _playGameButtonRef: {fileID: 254972696}
   _delayBeforeShowingButtons: 1.4
