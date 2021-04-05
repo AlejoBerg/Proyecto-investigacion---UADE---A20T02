@@ -21,10 +21,9 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
 
     public void OnDrop(PointerEventData eventData)
     {
-        float cardCost = _draggeable.GetComponent<CardDisplay>().CardCost;
-
         if (_draggeable != null) 
         {
+            float cardCost = _draggeable.GetComponent<CardDisplay>().CardCost;
             CheckCoinChanges(_draggeable, cardCost);
         }
     }
