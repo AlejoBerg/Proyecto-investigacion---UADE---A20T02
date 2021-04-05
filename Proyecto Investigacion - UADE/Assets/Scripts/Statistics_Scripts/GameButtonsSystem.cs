@@ -1,30 +1,54 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameButtonsSystem : MonoBehaviour
 {
+    [SerializeField] private FindGameManager _gameManagerFinder;
+
     [SerializeField] private GameObject _helpButton;
     [SerializeField] private GameObject _backButton;
     [SerializeField] private GameObject _finishMatchButton;
     [SerializeField] private GameObject _optionsGraphsButtons;
+    [SerializeField] private GameObject _endGameButtonRef;
+
+    [SerializeField] private GameObject _playAgainButton;
+    [SerializeField] private float _delayToShowPlayAgainButton = 2.3f;
 
     [SerializeField] private Vector3 _maxSize;
 
     [SerializeField] private float _fadeInTime = 4f;
     [SerializeField] private float _fadeOutTime = 2f;
 
+    [SerializeField] private CanvasGroup _gameSceneCanvasGroup;
+    [SerializeField] private CanvasGroup _statsSceneCanvasGroup;
+    [SerializeField] private CanvasGroup _helpSceneCanvasGroup;
+
+    private GameManager _gameManagerRef;
     private GameObject _currentObjectToShow;
-    private ChangeScene _changeSceneRef;
+    [SerializeField] private ChangeScene _changeSceneRef;
 
     private float _currentFadeOutTime = 0;
     private float _fadeOutCounter = 0;
-
     public List<GameObject> _nextButtonsToUnhide;
 
     private void Awake()
     {
-        _changeSceneRef = GetComponent<ChangeScene>();
+        _gameManagerRef = _gameManagerFinder.GetGameManagerReference();
+        _gameManagerRef.OnFinishPlays += OnFinishPlaysHandler;
+    }
+
+    public void OnPlayAgainButtonPressed()
+    {
+        _statsSceneCanvasGroup.blocksRaycasts = false;
+        StartCoroutine(DelayToBlockRaycast(_gameSceneCanvasGroup, _delayToShowPlayAgainButton));
+    }
+
+    public void OnEndMatchButtonPressed()
+    {
+        _gameSceneCanvasGroup.blocksRaycasts = false;
+        StartCoroutine(DelayToBlockRaycast(_statsSceneCanvasGroup, _delayToShowPlayAgainButton));
     }
 
     public void OnHelpButtonPressed(GameObject newGraphToShow) //Fade out scene , scale graph
@@ -39,7 +63,7 @@ public class GameButtonsSystem : MonoBehaviour
 
         newGraphToShow.transform.localRotation = Quaternion.Euler(-90, 0, 0);
         newGraphToShow.SetActive(true);
-        StartCoroutine(LerpObjectSize(newGraphToShow, Vector3.zero, _maxSize, _fadeInTime, false));
+        StartCoroutine(LerpGraphSize(newGraphToShow, Vector3.zero, _maxSize, _fadeInTime, false));
 
         _currentObjectToShow = newGraphToShow;
     }
@@ -53,7 +77,7 @@ public class GameButtonsSystem : MonoBehaviour
         _nextButtonsToUnhide.Add(_finishMatchButton);
 
         _changeSceneRef.OnChangeOneSceneAlpha(1);
-        StartCoroutine(LerpObjectSize(_currentObjectToShow, _maxSize, Vector3.zero, _fadeOutTime, true));
+        StartCoroutine(LerpGraphSize(_currentObjectToShow, _maxSize, Vector3.zero, _fadeOutTime, true));
         _optionsGraphsButtons.SetActive(false);
     }
 
@@ -65,11 +89,20 @@ public class GameButtonsSystem : MonoBehaviour
         _nextButtonsToUnhide.Add(_backButton);
 
         newGraphToShow.SetActive(true);
-        StartCoroutine(LerpObjectSize(newGraphToShow, Vector3.zero, _maxSize, _fadeInTime, false));
+        StartCoroutine(LerpGraphSize(newGraphToShow, Vector3.zero, _maxSize, _fadeInTime, false));
         _currentObjectToShow = newGraphToShow;
     }
 
-    IEnumerator LerpObjectSize(GameObject newGraphToShow, Vector3 initialScaleSize, Vector3 endScaleSize, float scaleTime, bool shouldHideAfterScale)
+    private void OnFinishPlaysHandler()
+    {
+        _playAgainButton.SetActive(false);
+
+        _endGameButtonRef.SetActive(true);
+        _statsSceneCanvasGroup.blocksRaycasts = false;
+        StartCoroutine(DelayToBlockRaycast(_statsSceneCanvasGroup, _delayToShowPlayAgainButton));
+    }
+
+    IEnumerator LerpGraphSize(GameObject newGraphToShow, Vector3 initialScaleSize, Vector3 endScaleSize, float scaleTime, bool shouldHideAfterScale)
     {
         _currentFadeOutTime = scaleTime;
         _fadeOutCounter = 0;
@@ -105,5 +138,12 @@ public class GameButtonsSystem : MonoBehaviour
                 button.SetActive(false);
             }
         }
+    }
+
+    IEnumerator DelayToBlockRaycast(CanvasGroup canvasToBlockRaycast, float time)
+    {
+        canvasToBlockRaycast.blocksRaycasts = false;
+        yield return new WaitForSeconds(time);
+        canvasToBlockRaycast.blocksRaycasts = true;
     }
 }

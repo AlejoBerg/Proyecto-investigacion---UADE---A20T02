@@ -7785,8 +7785,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1852346740}
-        m_TargetAssemblyTypeName: ShowObjectAnimation, Assembly-CSharp
+      - m_Target: {fileID: 1249968880}
+        m_TargetAssemblyTypeName: GameButtonsSystem, Assembly-CSharp
         m_MethodName: OnHelpButtonPressed
         m_Mode: 2
         m_Arguments:
@@ -8284,7 +8284,6 @@ GameObject:
   - component: {fileID: 415640271}
   - component: {fileID: 415640270}
   - component: {fileID: 415640269}
-  - component: {fileID: 415640268}
   - component: {fileID: 415640275}
   - component: {fileID: 415640274}
   - component: {fileID: 415640273}
@@ -8315,25 +8314,6 @@ RectTransform:
   m_AnchoredPosition: {x: -753, y: 526}
   m_SizeDelta: {x: 504, y: 216}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &415640268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415640266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39f315a5b8c73af4c86569943b3dcd3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _progressBars:
-  - {fileID: 42839272}
-  - {fileID: 1373736930}
-  - {fileID: 1565232226}
-  - {fileID: 1769761991}
-  - {fileID: 1561617134}
-  - {fileID: 1175474505}
 --- !u!114 &415640269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8417,7 +8397,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 415640268}
+      - m_Target: {fileID: 877447094}
         m_TargetAssemblyTypeName: GraphManager, Assembly-CSharp
         m_MethodName: OnFinishButton
         m_Mode: 1
@@ -8444,6 +8424,18 @@ MonoBehaviour:
       - m_Target: {fileID: 926864686}
         m_TargetAssemblyTypeName: MatchCounter, Assembly-CSharp
         m_MethodName: OnEndMatchPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1249968880}
+        m_TargetAssemblyTypeName: GameButtonsSystem, Assembly-CSharp
+        m_MethodName: OnEndMatchButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16508,7 +16500,6 @@ GameObject:
   - component: {fileID: 854466349}
   - component: {fileID: 854466348}
   - component: {fileID: 854466347}
-  - component: {fileID: 854466346}
   - component: {fileID: 854466353}
   - component: {fileID: 854466352}
   - component: {fileID: 854466351}
@@ -16539,25 +16530,6 @@ RectTransform:
   m_AnchoredPosition: {x: -639, y: 378}
   m_SizeDelta: {x: 504, y: 216}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &854466346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 854466344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39f315a5b8c73af4c86569943b3dcd3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _progressBars:
-  - {fileID: 42839272}
-  - {fileID: 1373736930}
-  - {fileID: 1565232226}
-  - {fileID: 1769761991}
-  - {fileID: 1561617134}
-  - {fileID: 1175474505}
 --- !u!114 &854466347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16629,7 +16601,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 854466346}
+      - m_Target: {fileID: 877447094}
         m_TargetAssemblyTypeName: GraphManager, Assembly-CSharp
         m_MethodName: ResetGraphs
         m_Mode: 1
@@ -16645,6 +16617,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1249968880}
+        m_TargetAssemblyTypeName: GameButtonsSystem, Assembly-CSharp
+        m_MethodName: OnPlayAgainButtonPressed
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -17164,6 +17148,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876183006}
   m_CullTransparentMesh: 0
+--- !u!1 &877447093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 877447095}
+  - component: {fileID: 877447094}
+  m_Layer: 0
+  m_Name: GraphManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &877447094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877447093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f315a5b8c73af4c86569943b3dcd3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _progressBars:
+  - {fileID: 42839272}
+  - {fileID: 1373736930}
+  - {fileID: 1565232226}
+  - {fileID: 1769761991}
+  - {fileID: 1561617134}
+  - {fileID: 1175474505}
+--- !u!4 &877447095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877447093}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 775.2564, y: 454.23264, z: 476.6571}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &879311798
 GameObject:
   m_ObjectHideFlags: 0
@@ -19132,8 +19166,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1852346740}
-        m_TargetAssemblyTypeName: ShowObjectAnimation, Assembly-CSharp
+      - m_Target: {fileID: 1249968880}
+        m_TargetAssemblyTypeName: GameButtonsSystem, Assembly-CSharp
         m_MethodName: OnChangeGraphPressed
         m_Mode: 2
         m_Arguments:
@@ -24385,7 +24419,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 912339931}
   m_HandleRect: {fileID: 912339930}
   m_Direction: 3
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -25537,6 +25571,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ffd2abfdf1c8294e8cf85feb6aa2024, type: 3}
+--- !u!1 &1249968879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1249968881}
+  - component: {fileID: 1249968880}
+  m_Layer: 0
+  m_Name: GameButtonsSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1249968880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249968879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad3e0b2f97c2844095fa0c9365e4626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameManagerFinder: {fileID: 210650899}
+  _helpButton: {fileID: 405220524}
+  _backButton: {fileID: 1663524567}
+  _finishMatchButton: {fileID: 415640266}
+  _optionsGraphsButtons: {fileID: 1754040968}
+  _endGameButtonRef: {fileID: 1588005866}
+  _playAgainButton: {fileID: 854466344}
+  _delayToShowPlayAgainButton: 2.3
+  _maxSize: {x: 15, y: 15, z: 15}
+  _fadeInTime: 4
+  _fadeOutTime: 2
+  _gameSceneCanvasGroup: {fileID: 909900357}
+  _statsSceneCanvasGroup: {fileID: 1573318313}
+  _helpSceneCanvasGroup: {fileID: 2053112242}
+  _changeSceneRef: {fileID: 1852346742}
+  _nextButtonsToUnhide: []
+--- !u!4 &1249968881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249968879}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 782.92377, y: 481.8036, z: 472.38495}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1250877348
 GameObject:
   m_ObjectHideFlags: 0
@@ -27514,14 +27607,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330770335}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8cdc5e72a50e024e92be65c07972fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManagerRef: {fileID: 0}
   _playAgainButtonRef: {fileID: 854466344}
   _endGameButtonRef: {fileID: 1588005866}
+  _gameManagerFinder: {fileID: 210650899}
+  _delayToShowFinishButton: 2.3
 --- !u!1 &1337289076
 GameObject:
   m_ObjectHideFlags: 0
@@ -28549,8 +28643,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1852346740}
-        m_TargetAssemblyTypeName: ShowObjectAnimation, Assembly-CSharp
+      - m_Target: {fileID: 1249968880}
+        m_TargetAssemblyTypeName: GameButtonsSystem, Assembly-CSharp
         m_MethodName: OnChangeGraphPressed
         m_Mode: 2
         m_Arguments:
@@ -30550,8 +30644,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1852346740}
-        m_TargetAssemblyTypeName: ShowObjectAnimation, Assembly-CSharp
+      - m_Target: {fileID: 1249968880}
+        m_TargetAssemblyTypeName: GameButtonsSystem, Assembly-CSharp
         m_MethodName: OnChangeGraphPressed
         m_Mode: 2
         m_Arguments:
@@ -32597,8 +32691,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1852346740}
-        m_TargetAssemblyTypeName: ShowObjectAnimation, Assembly-CSharp
+      - m_Target: {fileID: 1249968880}
+        m_TargetAssemblyTypeName: GameButtonsSystem, Assembly-CSharp
         m_MethodName: OnChangeGraphPressed
         m_Mode: 2
         m_Arguments:
@@ -36477,8 +36571,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1852346740}
-        m_TargetAssemblyTypeName: ShowObjectAnimation, Assembly-CSharp
+      - m_Target: {fileID: 1249968880}
+        m_TargetAssemblyTypeName: GameButtonsSystem, Assembly-CSharp
         m_MethodName: OnBackFromHelpButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -39600,35 +39694,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1852346741}
-  - component: {fileID: 1852346740}
   - component: {fileID: 1852346742}
   m_Layer: 0
-  m_Name: BalanceGraphManager
+  m_Name: GraphSceneChanger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1852346740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1852346739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ad3e0b2f97c2844095fa0c9365e4626, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _helpButton: {fileID: 405220524}
-  _backButton: {fileID: 1663524567}
-  _finishMatchButton: {fileID: 415640266}
-  _optionsGraphsButtons: {fileID: 1754040968}
-  _maxSize: {x: 15, y: 15, z: 15}
-  _fadeInTime: 4
-  _fadeOutTime: 2
-  _nextButtonsToUnhide: []
 --- !u!4 &1852346741
 Transform:
   m_ObjectHideFlags: 0
@@ -43201,6 +43274,7 @@ GameObject:
   - component: {fileID: 2053112240}
   - component: {fileID: 2053112239}
   - component: {fileID: 2053112238}
+  - component: {fileID: 2053112242}
   m_Layer: 5
   m_Name: HelpCanvas
   m_TagString: Untagged
@@ -43290,6 +43364,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!225 &2053112242
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053112237}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &2064604934
 PrefabInstance:
   m_ObjectHideFlags: 0

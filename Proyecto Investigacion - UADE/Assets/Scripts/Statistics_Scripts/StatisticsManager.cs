@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class StatisticsManager : MonoBehaviour
 {
-    [SerializeField] private GameManager _gameManagerRef;
     [SerializeField] private GameObject _playAgainButtonRef;
     [SerializeField] private GameObject _endGameButtonRef;
+    [SerializeField] private FindGameManager _gameManagerFinder;
+    [SerializeField] private float _delayToShowFinishButton = 2.3f;
+
+    private GameManager _gameManagerRef;
 
     private void Start()
     {
-        CacheGameManager();
+        _gameManagerRef = _gameManagerFinder.GetGameManagerReference();
         _gameManagerRef.OnFinishPlays += OnFinishPlaysHandler;
     }
 
@@ -18,6 +21,11 @@ public class StatisticsManager : MonoBehaviour
     {
         _playAgainButtonRef.SetActive(false);
         _endGameButtonRef.SetActive(true);
+    }
+
+    IEnumerator DelayToUnhide()
+    {
+        yield return new WaitForSeconds(_delayToShowFinishButton);
     }
 
     private void CacheGameManager()
