@@ -61,7 +61,7 @@ public class GameButtonsSystem : MonoBehaviour
 
         _changeSceneRef.OnChangeOneSceneAlpha(0);
 
-        newGraphToShow.transform.localRotation = Quaternion.Euler(-90, 0, 0);
+        //newGraphToShow.transform.localRotation = Quaternion.Euler(0, 0, 0);
         newGraphToShow.SetActive(true);
         StartCoroutine(LerpGraphSize(newGraphToShow, Vector3.zero, _maxSize, _fadeInTime, false));
 
