@@ -204,7 +204,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 285388186}
   m_HandleRect: {fileID: 285388185}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -418,6 +418,7 @@ GameObject:
   - component: {fileID: 17803439}
   - component: {fileID: 17803438}
   - component: {fileID: 17803437}
+  - component: {fileID: 17803443}
   m_Layer: 5
   m_Name: Button (13)
   m_TagString: Untagged
@@ -437,7 +438,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -484,6 +485,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 17803443}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -679,6 +692,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17803435}
   m_CullTransparentMesh: 0
+--- !u!114 &17803443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17803435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &28558497
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,6 +1194,7 @@ GameObject:
   - component: {fileID: 43642765}
   - component: {fileID: 43642764}
   - component: {fileID: 43642763}
+  - component: {fileID: 43642769}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -1186,7 +1214,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1233,6 +1261,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 43642769}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -1428,6 +1468,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43642761}
   m_CullTransparentMesh: 0
+--- !u!114 &43642769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43642761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &43763929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2623,6 +2677,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: U10
       objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HelpGraphButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 86714308}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AssignCardsToSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
 --- !u!224 &86714305 stripped
@@ -2635,6 +2717,28 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5896948817888648537, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
   m_PrefabInstance: {fileID: 86714304}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &86714307 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5896948817888648538, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+  m_PrefabInstance: {fileID: 86714304}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &86714308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86714307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs:
+  - {fileID: 6384048719825911485, guid: 3770aff4df62d83499fdc169656507ae, type: 3}
+  - {fileID: 2580823346250826062, guid: f7b488231f6a0674686a440bf7ba5ca0, type: 3}
+  - {fileID: 2580823346250826062, guid: a5bd85cdabba720418317d5ea31cf871, type: 3}
+  _cardsSlider: {fileID: 842670362}
 --- !u!224 &87115153 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2580823346250826063, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
@@ -2815,6 +2919,7 @@ GameObject:
   - component: {fileID: 128347271}
   - component: {fileID: 128347270}
   - component: {fileID: 128347269}
+  - component: {fileID: 128347275}
   m_Layer: 5
   m_Name: Button (8)
   m_TagString: Untagged
@@ -2834,7 +2939,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2881,6 +2986,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 128347275}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -3076,6 +3193,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128347267}
   m_CullTransparentMesh: 0
+--- !u!114 &128347275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128347267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &142236506
 GameObject:
   m_ObjectHideFlags: 0
@@ -3349,6 +3480,7 @@ GameObject:
   - component: {fileID: 152721570}
   - component: {fileID: 152721569}
   - component: {fileID: 152721568}
+  - component: {fileID: 152721574}
   m_Layer: 5
   m_Name: Button (10)
   m_TagString: Untagged
@@ -3368,7 +3500,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3415,6 +3547,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 152721574}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -3610,6 +3754,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152721566}
   m_CullTransparentMesh: 0
+--- !u!114 &152721574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152721566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1001 &160953024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3774,6 +3932,7 @@ GameObject:
   - component: {fileID: 187006694}
   - component: {fileID: 187006693}
   - component: {fileID: 187006692}
+  - component: {fileID: 187006698}
   m_Layer: 5
   m_Name: U5
   m_TagString: Untagged
@@ -3841,6 +4000,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 187006698}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -4036,6 +4207,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187006690}
   m_CullTransparentMesh: 0
+--- !u!114 &187006698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187006690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs:
+  - {fileID: 2580823346250826062, guid: 59b4f8ba752a25249872f09f2efb9ce0, type: 3}
+  - {fileID: 1942244548720440549, guid: 3848d93086d1e5b4cad0afe3f5857523, type: 3}
+  - {fileID: 7919342143672593371, guid: bf41fc4f2ff98474a8e8174edde1d7a3, type: 3}
+  _cardsSlider: {fileID: 842670362}
 --- !u!1001 &190275183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4585,6 +4773,7 @@ GameObject:
   - component: {fileID: 206314787}
   - component: {fileID: 206314786}
   - component: {fileID: 206314785}
+  - component: {fileID: 206314791}
   m_Layer: 5
   m_Name: Button (12)
   m_TagString: Untagged
@@ -4604,7 +4793,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 2009382766}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4651,6 +4840,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 206314791}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -4846,6 +5047,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 206314783}
   m_CullTransparentMesh: 0
+--- !u!114 &206314791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206314783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &210650898
 GameObject:
   m_ObjectHideFlags: 0
@@ -4904,6 +5119,7 @@ GameObject:
   - component: {fileID: 217513228}
   - component: {fileID: 217513227}
   - component: {fileID: 217513226}
+  - component: {fileID: 217513232}
   m_Layer: 5
   m_Name: Button (11)
   m_TagString: Untagged
@@ -4923,7 +5139,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4970,6 +5186,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 217513232}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -5165,6 +5393,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217513224}
   m_CullTransparentMesh: 0
+--- !u!114 &217513232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217513224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &228044212
 GameObject:
   m_ObjectHideFlags: 0
@@ -5533,6 +5775,7 @@ GameObject:
   - component: {fileID: 257356982}
   - component: {fileID: 257356981}
   - component: {fileID: 257356980}
+  - component: {fileID: 257356986}
   m_Layer: 5
   m_Name: Button (13)
   m_TagString: Untagged
@@ -5552,7 +5795,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5599,6 +5842,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 257356986}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -5794,6 +6049,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257356978}
   m_CullTransparentMesh: 0
+--- !u!114 &257356986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257356978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &271155853
 GameObject:
   m_ObjectHideFlags: 0
@@ -5889,6 +6158,7 @@ GameObject:
   - component: {fileID: 276895115}
   - component: {fileID: 276895114}
   - component: {fileID: 276895113}
+  - component: {fileID: 276895119}
   m_Layer: 5
   m_Name: Button (7)
   m_TagString: Untagged
@@ -5908,7 +6178,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5955,6 +6225,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 276895119}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -6150,6 +6432,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276895111}
   m_CullTransparentMesh: 0
+--- !u!114 &276895119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276895111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &278757613
 GameObject:
   m_ObjectHideFlags: 0
@@ -6675,7 +6971,7 @@ Transform:
   m_LocalScale: {x: 10.167823, y: 10.167823, z: 10.167823}
   m_Children: []
   m_Father: {fileID: 2009382766}
-  m_RootOrder: 6
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: -180.002, z: 0}
 --- !u!212 &294989544
 SpriteRenderer:
@@ -6971,8 +7267,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326152079}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.3, y: -23.9, z: 0}
-  m_LocalScale: {x: 1.01, y: 1.01, z: 1.01}
+  m_LocalPosition: {x: -17.7, y: -23.9, z: 0}
+  m_LocalScale: {x: 0.9250186, y: 0.9250186, z: 0.9250186}
   m_Children:
   - {fileID: 1661724839}
   m_Father: {fileID: 1852346741}
@@ -7415,6 +7711,7 @@ GameObject:
   - component: {fileID: 340720963}
   - component: {fileID: 340720962}
   - component: {fileID: 340720961}
+  - component: {fileID: 340720967}
   m_Layer: 5
   m_Name: U8
   m_TagString: Untagged
@@ -7482,6 +7779,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 340720967}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -7677,6 +7986,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340720959}
   m_CullTransparentMesh: 0
+--- !u!114 &340720967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340720959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &343450590
 GameObject:
   m_ObjectHideFlags: 0
@@ -7692,6 +8015,7 @@ GameObject:
   - component: {fileID: 343450594}
   - component: {fileID: 343450593}
   - component: {fileID: 343450592}
+  - component: {fileID: 343450598}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -7758,6 +8082,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 343450598}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -7953,6 +8289,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343450590}
   m_CullTransparentMesh: 0
+--- !u!114 &343450598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343450590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1001 &349314818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8352,6 +8702,7 @@ GameObject:
   - component: {fileID: 390735685}
   - component: {fileID: 390735684}
   - component: {fileID: 390735683}
+  - component: {fileID: 390735689}
   m_Layer: 5
   m_Name: Button (12)
   m_TagString: Untagged
@@ -8371,7 +8722,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8418,6 +8769,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 390735689}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -8613,6 +8976,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390735681}
   m_CullTransparentMesh: 0
+--- !u!114 &390735689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390735681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &395027455
 GameObject:
   m_ObjectHideFlags: 0
@@ -11330,6 +11707,7 @@ GameObject:
   - component: {fileID: 533029028}
   - component: {fileID: 533029027}
   - component: {fileID: 533029026}
+  - component: {fileID: 533029032}
   m_Layer: 5
   m_Name: Button (6)
   m_TagString: Untagged
@@ -11349,7 +11727,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 2009382766}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11396,6 +11774,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 533029032}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -11591,6 +11981,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533029024}
   m_CullTransparentMesh: 0
+--- !u!114 &533029032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533029024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!114 &542164806 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4637167853307523809, guid: 91a1115fa891d414b8c74354e0c93312, type: 3}
@@ -12416,6 +12820,7 @@ GameObject:
   - component: {fileID: 590799012}
   - component: {fileID: 590799011}
   - component: {fileID: 590799010}
+  - component: {fileID: 590799016}
   m_Layer: 5
   m_Name: U4
   m_TagString: Untagged
@@ -12483,6 +12888,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 590799016}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -12677,6 +13094,141 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590799008}
+  m_CullTransparentMesh: 0
+--- !u!114 &590799016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590799008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
+--- !u!1 &592247306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 592247307}
+  - component: {fileID: 592247311}
+  - component: {fileID: 592247310}
+  - component: {fileID: 592247309}
+  - component: {fileID: 592247308}
+  m_Layer: 5
+  m_Name: Content_Scroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &592247307
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592247306}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 842670357}
+  m_Father: {fileID: 1419341732}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -269.4, y: -325.8}
+  m_SizeDelta: {x: 245.6695, y: 413.682}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &592247308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592247306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
+--- !u!114 &592247309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592247306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 842670357}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 1368002381}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &592247310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592247306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &592247311
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592247306}
   m_CullTransparentMesh: 0
 --- !u!114 &594539063 stripped
 MonoBehaviour:
@@ -13918,6 +14470,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1716287180, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
+--- !u!1 &704588791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6384048719825911485, guid: ccc72db0153381644883ba7c5a24301f, type: 3}
+  m_PrefabInstance: {fileID: 704588790}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &707286108
 GameObject:
   m_ObjectHideFlags: 0
@@ -13933,6 +14490,7 @@ GameObject:
   - component: {fileID: 707286112}
   - component: {fileID: 707286111}
   - component: {fileID: 707286110}
+  - component: {fileID: 707286116}
   m_Layer: 5
   m_Name: U1
   m_TagString: Untagged
@@ -14000,6 +14558,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 707286116}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -14195,6 +14765,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707286108}
   m_CullTransparentMesh: 0
+--- !u!114 &707286116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707286108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs:
+  - {fileID: 704588791}
+  - {fileID: 7919342143672593371, guid: 11dd727a7c47b3441aee38e5937cc9d5, type: 3}
+  - {fileID: 7919342143672593371, guid: dfa5de665b37a194baee95bca8139ddd, type: 3}
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &716672850
 GameObject:
   m_ObjectHideFlags: 0
@@ -14210,6 +14797,7 @@ GameObject:
   - component: {fileID: 716672854}
   - component: {fileID: 716672853}
   - component: {fileID: 716672852}
+  - component: {fileID: 716672858}
   m_Layer: 5
   m_Name: Button (5)
   m_TagString: Untagged
@@ -14229,7 +14817,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 2009382766}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14276,6 +14864,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 716672858}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -14471,6 +15071,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716672850}
   m_CullTransparentMesh: 0
+--- !u!114 &716672858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716672850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &724676541
 GameObject:
   m_ObjectHideFlags: 0
@@ -15113,11 +15727,11 @@ RectTransform:
   m_LocalScale: {x: 0.72110397, y: 0.7990611, z: 0.7795719}
   m_Children: []
   m_Father: {fileID: 1754040969}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 783, y: -313}
+  m_AnchoredPosition: {x: 792, y: -314}
   m_SizeDelta: {x: 504, y: 576}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &786751632
@@ -15705,6 +16319,7 @@ GameObject:
   - component: {fileID: 839852909}
   - component: {fileID: 839852908}
   - component: {fileID: 839852907}
+  - component: {fileID: 839852913}
   m_Layer: 5
   m_Name: Button (12)
   m_TagString: Untagged
@@ -15724,7 +16339,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15771,6 +16386,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 839852913}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -15966,6 +16593,153 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839852905}
   m_CullTransparentMesh: 0
+--- !u!114 &839852913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839852905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
+--- !u!1 &842670356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 842670357}
+  - component: {fileID: 842670361}
+  - component: {fileID: 842670360}
+  - component: {fileID: 842670359}
+  - component: {fileID: 842670358}
+  - component: {fileID: 842670362}
+  m_Layer: 5
+  m_Name: Content_UsedCards
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &842670357
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842670356}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 592247307}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &842670358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842670356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &842670359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842670356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 105.53
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &842670360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842670356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &842670361
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842670356}
+  m_CullTransparentMesh: 0
+--- !u!114 &842670362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842670356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f815c1b3dc6a914099e1771cbea321a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentClickedButton: {fileID: 0}
+  _currentCardsParent: {fileID: 0}
+  _currentSliderCards: []
 --- !u!1 &842953636
 GameObject:
   m_ObjectHideFlags: 0
@@ -17806,6 +18580,7 @@ GameObject:
   - component: {fileID: 918038859}
   - component: {fileID: 918038858}
   - component: {fileID: 918038857}
+  - component: {fileID: 918038863}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -17825,7 +18600,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17872,6 +18647,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 918038863}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -18067,6 +18854,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918038855}
   m_CullTransparentMesh: 0
+--- !u!114 &918038863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918038855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1001 &924656409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18320,7 +19121,7 @@ RectTransform:
   m_GameObject: {fileID: 924873795}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5227298, y: 0.7890497, z: 0.7890497}
+  m_LocalScale: {x: 0.5227298, y: 0.7890498, z: 0.78904974}
   m_Children:
   - {fileID: 1003441032}
   m_Father: {fileID: 1754040969}
@@ -18328,7 +19129,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 786.0007, y: -194.76021}
+  m_AnchoredPosition: {x: 795.001, y: -195.76048}
   m_SizeDelta: {x: 504, y: 216}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &924873797
@@ -18381,6 +19182,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 1197124832}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 842670362}
+        m_TargetAssemblyTypeName: HelpCardsSlider, Assembly-CSharp
+        m_MethodName: RemoveOldCardsFromSlider
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -18995,6 +19808,7 @@ GameObject:
   - component: {fileID: 964608976}
   - component: {fileID: 964608975}
   - component: {fileID: 964608974}
+  - component: {fileID: 964608980}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -19014,7 +19828,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 2009382766}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19061,6 +19875,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 964608980}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -19256,6 +20082,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964608972}
   m_CullTransparentMesh: 0
+--- !u!114 &964608980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964608972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!114 &965155119 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8155034877055947039, guid: f60bac0eca5c16047a6a045caeb25655, type: 3}
@@ -19581,6 +20421,7 @@ GameObject:
   - component: {fileID: 980177033}
   - component: {fileID: 980177032}
   - component: {fileID: 980177031}
+  - component: {fileID: 980177037}
   m_Layer: 5
   m_Name: Button (10)
   m_TagString: Untagged
@@ -19600,7 +20441,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19647,6 +20488,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 980177037}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -19842,6 +20695,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980177029}
   m_CullTransparentMesh: 0
+--- !u!114 &980177037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980177029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &981944581
 GameObject:
   m_ObjectHideFlags: 0
@@ -19888,6 +20755,7 @@ GameObject:
   - component: {fileID: 984005298}
   - component: {fileID: 984005297}
   - component: {fileID: 984005296}
+  - component: {fileID: 984005302}
   m_Layer: 5
   m_Name: U9
   m_TagString: Untagged
@@ -19955,6 +20823,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 984005302}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -20150,6 +21030,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984005294}
   m_CullTransparentMesh: 0
+--- !u!114 &984005302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984005294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &991559217
 GameObject:
   m_ObjectHideFlags: 0
@@ -21635,6 +22529,81 @@ Transform:
   m_Father: {fileID: 909900358}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1056968717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1056968718}
+  - component: {fileID: 1056968719}
+  - component: {fileID: 1056968720}
+  m_Layer: 5
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1056968718
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056968717}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.49140626, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1245284644}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1056968719
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056968717}
+  m_CullTransparentMesh: 0
+--- !u!114 &1056968720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056968717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.8235295, b: 0.9490197, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 3.17
 --- !u!1 &1062677091
 GameObject:
   m_ObjectHideFlags: 0
@@ -22384,6 +23353,7 @@ GameObject:
   - component: {fileID: 1131196003}
   - component: {fileID: 1131196002}
   - component: {fileID: 1131196001}
+  - component: {fileID: 1131196007}
   m_Layer: 5
   m_Name: Button (10)
   m_TagString: Untagged
@@ -22403,7 +23373,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 2009382766}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -22450,6 +23420,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1131196007}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -22645,6 +23627,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131195999}
   m_CullTransparentMesh: 0
+--- !u!114 &1131196007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131195999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1134151070
 GameObject:
   m_ObjectHideFlags: 0
@@ -22740,6 +23736,7 @@ GameObject:
   - component: {fileID: 1137255429}
   - component: {fileID: 1137255428}
   - component: {fileID: 1137255427}
+  - component: {fileID: 1137255433}
   m_Layer: 5
   m_Name: U2
   m_TagString: Untagged
@@ -22760,7 +23757,7 @@ RectTransform:
   m_Children:
   - {fileID: 1002658354}
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -22807,6 +23804,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1137255433}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -23002,6 +24011,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137255425}
   m_CullTransparentMesh: 0
+--- !u!114 &1137255433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137255425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1141030400
 GameObject:
   m_ObjectHideFlags: 0
@@ -23807,7 +24830,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180448787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.2, y: -25.1, z: 0}
+  m_LocalPosition: {x: -24, y: -24.6, z: 0}
   m_LocalScale: {x: 0.91586, y: 0.91586, z: 0.91586}
   m_Children:
   - {fileID: 2009382766}
@@ -23838,8 +24861,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197124832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.7, y: -18.9, z: 0}
-  m_LocalScale: {x: 0.8411914, y: 0.8411914, z: 0.8411914}
+  m_LocalPosition: {x: -30, y: -18, z: 0}
+  m_LocalScale: {x: 0.73586, y: 0.73586, z: 0.73586}
   m_Children:
   - {fileID: 86714305}
   m_Father: {fileID: 1852346741}
@@ -23926,7 +24949,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 912339931}
   m_HandleRect: {fileID: 912339930}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -24894,6 +25917,7 @@ GameObject:
   - component: {fileID: 1235685723}
   - component: {fileID: 1235685722}
   - component: {fileID: 1235685721}
+  - component: {fileID: 1235685727}
   m_Layer: 5
   m_Name: U4
   m_TagString: Untagged
@@ -24914,7 +25938,7 @@ RectTransform:
   m_Children:
   - {fileID: 1766421624}
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -24961,6 +25985,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1235685727}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -25156,6 +26192,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235685719}
   m_CullTransparentMesh: 0
+--- !u!114 &1235685727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235685719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1001 &1239108896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25289,6 +26339,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ffd2abfdf1c8294e8cf85feb6aa2024, type: 3}
+--- !u!1 &1245284643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1245284644}
+  m_Layer: 5
+  m_Name: Sliding Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1245284644
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245284643}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1056968718}
+  m_Father: {fileID: 1368002384}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: -20}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1249968879
 GameObject:
   m_ObjectHideFlags: 0
@@ -25326,7 +26412,7 @@ MonoBehaviour:
   _endGameButtonRef: {fileID: 1588005866}
   _playAgainButton: {fileID: 854466344}
   _delayToShowPlayAgainButton: 2.3
-  _maxSize: {x: 1, y: 1, z: 1}
+  _maxSize: {x: 0.74, y: 0.74, z: 0.74}
   _fadeInTime: 4
   _fadeOutTime: 2
   _gameSceneCanvasGroup: {fileID: 909900357}
@@ -25466,6 +26552,7 @@ GameObject:
   - component: {fileID: 1267276274}
   - component: {fileID: 1267276273}
   - component: {fileID: 1267276272}
+  - component: {fileID: 1267276278}
   m_Layer: 5
   m_Name: U6
   m_TagString: Untagged
@@ -25533,6 +26620,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1267276278}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -25728,6 +26827,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267276270}
   m_CullTransparentMesh: 0
+--- !u!114 &1267276278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267276270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs:
+  - {fileID: 7919342143672593371, guid: 2b064d21f30585f4e99070c597312292, type: 3}
+  - {fileID: 7919342143672593371, guid: 6ffd2abfdf1c8294e8cf85feb6aa2024, type: 3}
+  - {fileID: 2019660015580180259, guid: 6295b12fc6ead634fa1cf0e2e3cd6b3b, type: 3}
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1267872703
 GameObject:
   m_ObjectHideFlags: 0
@@ -25743,6 +26859,7 @@ GameObject:
   - component: {fileID: 1267872707}
   - component: {fileID: 1267872706}
   - component: {fileID: 1267872705}
+  - component: {fileID: 1267872711}
   m_Layer: 5
   m_Name: Button (7)
   m_TagString: Untagged
@@ -25762,7 +26879,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25809,6 +26926,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1267872711}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -26004,6 +27133,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267872703}
   m_CullTransparentMesh: 0
+--- !u!114 &1267872711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267872703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1268773536
 GameObject:
   m_ObjectHideFlags: 0
@@ -26188,6 +27331,7 @@ GameObject:
   - component: {fileID: 1278542839}
   - component: {fileID: 1278542838}
   - component: {fileID: 1278542837}
+  - component: {fileID: 1278542843}
   m_Layer: 5
   m_Name: Button (6)
   m_TagString: Untagged
@@ -26207,7 +27351,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26254,6 +27398,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1278542843}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -26449,6 +27605,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278542835}
   m_CullTransparentMesh: 0
+--- !u!114 &1278542843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278542835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1282455494
 GameObject:
   m_ObjectHideFlags: 0
@@ -26512,6 +27682,7 @@ GameObject:
   - component: {fileID: 1288307751}
   - component: {fileID: 1288307750}
   - component: {fileID: 1288307749}
+  - component: {fileID: 1288307755}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -26531,7 +27702,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26578,6 +27749,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1288307755}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -26773,6 +27956,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288307747}
   m_CullTransparentMesh: 0
+--- !u!114 &1288307755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288307747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!114 &1290606114 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1252233203152408569, guid: 8e800a573a345914bacd4bae119f1600, type: 3}
@@ -27492,6 +28689,131 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cf3e2999db839a43b0c4c8271264e40, type: 3}
+--- !u!1 &1368002380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1368002384}
+  - component: {fileID: 1368002383}
+  - component: {fileID: 1368002382}
+  - component: {fileID: 1368002381}
+  m_Layer: 5
+  m_Name: UsedCards_Scrollbar (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1368002381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368002380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1056968720}
+  m_HandleRect: {fileID: 1056968718}
+  m_Direction: 2
+  m_Value: 1
+  m_Size: 1
+  m_NumberOfSteps: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1368002382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368002380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.7294118, b: 0.83921576, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 0
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 4
+--- !u!222 &1368002383
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368002380}
+  m_CullTransparentMesh: 0
+--- !u!224 &1368002384
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368002380}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9606252, y: 2.2096946, z: 1}
+  m_Children:
+  - {fileID: 1245284644}
+  m_Father: {fileID: 1703171825}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 95.999084, y: 193}
+  m_SizeDelta: {x: 20, y: 160}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1370238683 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8155034877055947039, guid: e46b3d70dc2265446886ef3865fb8c62, type: 3}
@@ -27768,6 +29090,191 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab61036dd695b844a940d56696eb585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1416033016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1416033017}
+  - component: {fileID: 1416033020}
+  - component: {fileID: 1416033019}
+  - component: {fileID: 1416033018}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1416033017
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416033016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1419341732}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -259, y: -94}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1416033018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416033016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e994fffe7d194c4b85351aaf19b0dd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: USED
+--- !u!114 &1416033019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416033016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Cards:'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f2c5ba6e472797442b6d422e516167a9, type: 2}
+  m_sharedMaterial: {fileID: 2558623992027034757, guid: f2c5ba6e472797442b6d422e516167a9, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967207
+  m_fontColor: {r: 0.654902, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 61.95
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -15.538597, y: -16.982283, z: 1.8277969, w: -3.6559238}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1416033020
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416033016}
+  m_CullTransparentMesh: 0
+--- !u!1 &1419341731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1419341732}
+  m_Layer: 5
+  m_Name: UsedCards_Board (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1419341732
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419341731}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 592247307}
+  - {fileID: 1416033017}
+  m_Father: {fileID: 1703171825}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 263.29974, y: 518.0006}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1423974572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28675,6 +30182,7 @@ GameObject:
   - component: {fileID: 1460030245}
   - component: {fileID: 1460030244}
   - component: {fileID: 1460030243}
+  - component: {fileID: 1460030249}
   m_Layer: 5
   m_Name: Button (9)
   m_TagString: Untagged
@@ -28694,7 +30202,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 2009382766}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -28741,6 +30249,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1460030249}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -28936,6 +30456,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460030241}
   m_CullTransparentMesh: 0
+--- !u!114 &1460030249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460030241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!224 &1461621442 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2580823346250826063, guid: f7b488231f6a0674686a440bf7ba5ca0, type: 3}
@@ -28972,7 +30506,7 @@ RectTransform:
   m_GameObject: {fileID: 1465379686}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5227298, y: 0.78905, z: 0.78905}
+  m_LocalScale: {x: 0.5227298, y: 0.78905004, z: 0.78905004}
   m_Children:
   - {fileID: 385750803}
   m_Father: {fileID: 1754040969}
@@ -28980,7 +30514,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 786.0007, y: -309.00015}
+  m_AnchoredPosition: {x: 795.001, y: -309.99982}
   m_SizeDelta: {x: 504, y: 216}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1465379688
@@ -29033,6 +30567,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 1180448787}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 842670362}
+        m_TargetAssemblyTypeName: HelpCardsSlider, Assembly-CSharp
+        m_MethodName: RemoveOldCardsFromSlider
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -30019,6 +31565,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 842670362}
+        m_TargetAssemblyTypeName: HelpCardsSlider, Assembly-CSharp
+        m_MethodName: RemoveOldCardsFromSlider
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1534507155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30066,7 +31624,7 @@ RectTransform:
   m_GameObject: {fileID: 1534507153}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5227298, y: 0.78905, z: 0.78905}
+  m_LocalScale: {x: 0.5227298, y: 0.78905004, z: 0.78905004}
   m_Children:
   - {fileID: 1572961950}
   m_Father: {fileID: 1754040969}
@@ -30074,7 +31632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 786.0007, y: -424.00015}
+  m_AnchoredPosition: {x: 795.001, y: -425.0002}
   m_SizeDelta: {x: 504, y: 216}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1534507158
@@ -30495,7 +32053,7 @@ Transform:
   m_LocalScale: {x: 10.61836, y: 10.61836, z: 10.61836}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 7
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: -180.002, z: 0}
 --- !u!212 &1566302449
 SpriteRenderer:
@@ -30563,6 +32121,7 @@ GameObject:
   - component: {fileID: 1567282341}
   - component: {fileID: 1567282340}
   - component: {fileID: 1567282339}
+  - component: {fileID: 1567282345}
   m_Layer: 5
   m_Name: Button (8)
   m_TagString: Untagged
@@ -30582,7 +32141,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30629,6 +32188,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1567282345}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -30824,6 +32395,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567282337}
   m_CullTransparentMesh: 0
+--- !u!114 &1567282345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567282337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1570217169
 GameObject:
   m_ObjectHideFlags: 0
@@ -30839,6 +32424,7 @@ GameObject:
   - component: {fileID: 1570217173}
   - component: {fileID: 1570217172}
   - component: {fileID: 1570217171}
+  - component: {fileID: 1570217177}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -30858,7 +32444,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30905,6 +32491,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1570217177}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -31100,6 +32698,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570217169}
   m_CullTransparentMesh: 0
+--- !u!114 &1570217177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570217169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1001 &1570402861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31863,6 +33475,7 @@ GameObject:
   - component: {fileID: 1593464497}
   - component: {fileID: 1593464496}
   - component: {fileID: 1593464495}
+  - component: {fileID: 1593464501}
   m_Layer: 5
   m_Name: Button (11)
   m_TagString: Untagged
@@ -31882,7 +33495,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -31929,6 +33542,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1593464501}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -32124,6 +33749,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593464493}
   m_CullTransparentMesh: 0
+--- !u!114 &1593464501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593464493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1597785748
 GameObject:
   m_ObjectHideFlags: 0
@@ -32309,6 +33948,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab61036dd695b844a940d56696eb585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1614370678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1614370679}
+  - component: {fileID: 1614370681}
+  - component: {fileID: 1614370680}
+  m_Layer: 5
+  m_Name: UsedCards_Outline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1614370679
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614370678}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7846458, y: 0.42726627, z: 0.8452056}
+  m_Children: []
+  m_Father: {fileID: 1703171825}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 48.000244, y: 180}
+  m_SizeDelta: {x: 432, y: 1368}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1614370680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614370678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f138d9d2d72b44942a515671df2c7839, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1614370681
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614370678}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1617834960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32503,8 +34217,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 300468618}
   m_HandleRect: {fileID: 300468616}
   m_Direction: 0
-  m_Value: 0.5000001
-  m_Size: 0.079939835
+  m_Value: 0.50000006
+  m_Size: 0.07993983
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -32582,6 +34296,7 @@ GameObject:
   - component: {fileID: 1622229753}
   - component: {fileID: 1622229752}
   - component: {fileID: 1622229751}
+  - component: {fileID: 1622229757}
   m_Layer: 5
   m_Name: U3
   m_TagString: Untagged
@@ -32649,6 +34364,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1622229757}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -32844,6 +34571,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622229749}
   m_CullTransparentMesh: 0
+--- !u!114 &1622229757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622229749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs:
+  - {fileID: 7919342143672593371, guid: 2b064d21f30585f4e99070c597312292, type: 3}
+  - {fileID: 7919342143672593371, guid: 0e0af787481342d43998b864b13deff1, type: 3}
+  - {fileID: 3725535301277820498, guid: 964cf185d21267d4bada2d20a783a8f9, type: 3}
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1625524391
 GameObject:
   m_ObjectHideFlags: 0
@@ -33148,6 +34892,7 @@ GameObject:
   - component: {fileID: 1652111167}
   - component: {fileID: 1652111166}
   - component: {fileID: 1652111165}
+  - component: {fileID: 1652111171}
   m_Layer: 5
   m_Name: U5
   m_TagString: Untagged
@@ -33168,7 +34913,7 @@ RectTransform:
   m_Children:
   - {fileID: 1986320180}
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -33215,6 +34960,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1652111171}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -33410,6 +35167,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652111163}
   m_CullTransparentMesh: 0
+--- !u!114 &1652111171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652111163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1654629787
 GameObject:
   m_ObjectHideFlags: 0
@@ -33778,6 +35549,34 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HelpGraphButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1661724842}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AssignCardsToSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
 --- !u!224 &1661724839 stripped
@@ -33790,6 +35589,25 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5896948817888648537, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
   m_PrefabInstance: {fileID: 1661724838}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1661724841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5896948817888648538, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+  m_PrefabInstance: {fileID: 1661724838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1661724842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661724841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1663524567
 GameObject:
   m_ObjectHideFlags: 0
@@ -34374,6 +36192,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab61036dd695b844a940d56696eb585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1703171824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1703171825}
+  m_Layer: 5
+  m_Name: Cards_List
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1703171825
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703171824}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1368002384}
+  - {fileID: 1419341732}
+  - {fileID: 1614370679}
+  m_Father: {fileID: 1754040969}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 797, y: -54.999947}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1708958369
 GameObject:
   m_ObjectHideFlags: 0
@@ -34389,6 +36245,7 @@ GameObject:
   - component: {fileID: 1708958373}
   - component: {fileID: 1708958372}
   - component: {fileID: 1708958371}
+  - component: {fileID: 1708958377}
   m_Layer: 5
   m_Name: U6
   m_TagString: Untagged
@@ -34456,6 +36313,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1708958377}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -34651,6 +36520,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708958369}
   m_CullTransparentMesh: 0
+--- !u!114 &1708958377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708958369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1712710074
 GameObject:
   m_ObjectHideFlags: 0
@@ -35471,10 +37354,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 786751631}
+  - {fileID: 1703171825}
   - {fileID: 924873796}
   - {fileID: 1465379687}
   - {fileID: 1534507157}
+  - {fileID: 786751631}
   m_Father: {fileID: 2053112241}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35523,7 +37407,7 @@ Transform:
   m_LocalScale: {x: 10.682314, y: 10.682314, z: 10.682314}
   m_Children: []
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 2
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -180.002, z: 0}
 --- !u!212 &1763301655
 SpriteRenderer:
@@ -36069,6 +37953,7 @@ GameObject:
   - component: {fileID: 1817942605}
   - component: {fileID: 1817942604}
   - component: {fileID: 1817942603}
+  - component: {fileID: 1817942609}
   m_Layer: 5
   m_Name: Button (5)
   m_TagString: Untagged
@@ -36088,7 +37973,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -36135,6 +38020,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1817942609}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -36330,6 +38227,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817942601}
   m_CullTransparentMesh: 0
+--- !u!114 &1817942609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817942601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!114 &1820273267 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1939115131511986602, guid: 1a851c0df5d778b498e6c7f4d8b2e1e9, type: 3}
@@ -36367,6 +38278,7 @@ GameObject:
   - component: {fileID: 1832852394}
   - component: {fileID: 1832852393}
   - component: {fileID: 1832852392}
+  - component: {fileID: 1832852398}
   m_Layer: 5
   m_Name: Button (9)
   m_TagString: Untagged
@@ -36386,7 +38298,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -36433,6 +38345,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1832852398}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -36628,6 +38552,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832852390}
   m_CullTransparentMesh: 0
+--- !u!114 &1832852398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832852390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1833356908
 GameObject:
   m_ObjectHideFlags: 0
@@ -36907,6 +38845,7 @@ GameObject:
   - component: {fileID: 1835265757}
   - component: {fileID: 1835265756}
   - component: {fileID: 1835265755}
+  - component: {fileID: 1835265761}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -36926,7 +38865,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -36973,6 +38912,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1835265761}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -37168,6 +39119,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835265753}
   m_CullTransparentMesh: 0
+--- !u!114 &1835265761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835265753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1837070781
 GameObject:
   m_ObjectHideFlags: 0
@@ -37258,6 +39223,7 @@ GameObject:
   - component: {fileID: 1837573993}
   - component: {fileID: 1837573992}
   - component: {fileID: 1837573991}
+  - component: {fileID: 1837573997}
   m_Layer: 5
   m_Name: Button (6)
   m_TagString: Untagged
@@ -37277,7 +39243,7 @@ RectTransform:
   m_LocalScale: {x: 0.00801598, y: 0.00801598, z: 0.00801598}
   m_Children: []
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -37324,6 +39290,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1837573997}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -37519,6 +39497,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837573989}
   m_CullTransparentMesh: 0
+--- !u!114 &1837573997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837573989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1847778013
 GameObject:
   m_ObjectHideFlags: 0
@@ -37534,6 +39526,7 @@ GameObject:
   - component: {fileID: 1847778017}
   - component: {fileID: 1847778016}
   - component: {fileID: 1847778015}
+  - component: {fileID: 1847778021}
   m_Layer: 5
   m_Name: U4
   m_TagString: Untagged
@@ -37601,6 +39594,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1847778021}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -37796,6 +39801,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847778013}
   m_CullTransparentMesh: 0
+--- !u!114 &1847778021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847778013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs:
+  - {fileID: 7919342143672593371, guid: ed573c0e5f64da14c97e91940f54b3f3, type: 3}
+  - {fileID: 7919342143672593371, guid: 6ffd2abfdf1c8294e8cf85feb6aa2024, type: 3}
+  - {fileID: 3725535301277820498, guid: cc1b20d48e8fa914291b3c6bb262a522, type: 3}
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1849960331
 GameObject:
   m_ObjectHideFlags: 0
@@ -38131,6 +40153,7 @@ GameObject:
   - component: {fileID: 1861797507}
   - component: {fileID: 1861797506}
   - component: {fileID: 1861797505}
+  - component: {fileID: 1861797511}
   m_Layer: 5
   m_Name: U5
   m_TagString: Untagged
@@ -38198,6 +40221,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1861797511}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -38393,6 +40428,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861797503}
   m_CullTransparentMesh: 0
+--- !u!114 &1861797511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861797503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1866204777
 GameObject:
   m_ObjectHideFlags: 0
@@ -38486,6 +40535,7 @@ GameObject:
   - component: {fileID: 1866838514}
   - component: {fileID: 1866838513}
   - component: {fileID: 1866838512}
+  - component: {fileID: 1866838518}
   m_Layer: 5
   m_Name: Button (11)
   m_TagString: Untagged
@@ -38505,7 +40555,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 2009382766}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -38552,6 +40602,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1866838518}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -38747,6 +40809,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866838510}
   m_CullTransparentMesh: 0
+--- !u!114 &1866838518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866838510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1001 &1867184187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39254,6 +41330,7 @@ GameObject:
   - component: {fileID: 1917683155}
   - component: {fileID: 1917683154}
   - component: {fileID: 1917683153}
+  - component: {fileID: 1917683159}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -39273,7 +41350,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -39320,6 +41397,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1917683159}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -39515,6 +41604,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917683151}
   m_CullTransparentMesh: 0
+--- !u!114 &1917683159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917683151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1928162976
 GameObject:
   m_ObjectHideFlags: 0
@@ -39678,6 +41781,7 @@ GameObject:
   - component: {fileID: 1928897720}
   - component: {fileID: 1928897719}
   - component: {fileID: 1928897718}
+  - component: {fileID: 1928897724}
   m_Layer: 5
   m_Name: Button (5)
   m_TagString: Untagged
@@ -39697,7 +41801,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 1661724839}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -39744,6 +41848,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1928897724}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -39939,6 +42055,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928897716}
   m_CullTransparentMesh: 0
+--- !u!114 &1928897724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928897716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!224 &1934116536 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3330865414333796476, guid: 1c0f61e690326b34b8b41e4a31761f32, type: 3}
@@ -40093,6 +42223,7 @@ GameObject:
   - component: {fileID: 1944301700}
   - component: {fileID: 1944301699}
   - component: {fileID: 1944301698}
+  - component: {fileID: 1944301704}
   m_Layer: 5
   m_Name: Button (9)
   m_TagString: Untagged
@@ -40112,7 +42243,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -40159,6 +42290,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1944301704}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -40354,6 +42497,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944301696}
   m_CullTransparentMesh: 0
+--- !u!114 &1944301704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944301696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1948485698
 GameObject:
   m_ObjectHideFlags: 0
@@ -40517,6 +42674,7 @@ GameObject:
   - component: {fileID: 1957471944}
   - component: {fileID: 1957471943}
   - component: {fileID: 1957471942}
+  - component: {fileID: 1957471948}
   m_Layer: 5
   m_Name: Button (15)
   m_TagString: Untagged
@@ -40536,7 +42694,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -40583,6 +42741,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1957471948}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -40778,6 +42948,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957471940}
   m_CullTransparentMesh: 0
+--- !u!114 &1957471948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957471940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &1958405332
 GameObject:
   m_ObjectHideFlags: 0
@@ -41912,6 +44096,34 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HelpGraphButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2009382769}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AssignCardsToSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896948817888648541, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
 --- !u!224 &2009382766 stripped
@@ -41924,6 +44136,25 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5896948817888648537, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
   m_PrefabInstance: {fileID: 2009382765}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2009382768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5896948817888648538, guid: 84d30bc56d123fd40aa94a6db7b237d8, type: 3}
+  m_PrefabInstance: {fileID: 2009382765}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2009382769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009382768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &2015922881
 GameObject:
   m_ObjectHideFlags: 0
@@ -42168,6 +44399,7 @@ GameObject:
   - component: {fileID: 2033264249}
   - component: {fileID: 2033264248}
   - component: {fileID: 2033264247}
+  - component: {fileID: 2033264253}
   m_Layer: 5
   m_Name: Button (14)
   m_TagString: Untagged
@@ -42187,7 +44419,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -42234,6 +44466,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2033264253}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -42429,6 +44673,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033264245}
   m_CullTransparentMesh: 0
+--- !u!114 &2033264253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033264245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!114 &2039136115 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8155034877055947039, guid: aeb4c4f728158b9489eea17181f808af, type: 3}
@@ -42455,6 +44713,7 @@ GameObject:
   - component: {fileID: 2042664456}
   - component: {fileID: 2042664455}
   - component: {fileID: 2042664454}
+  - component: {fileID: 2042664460}
   m_Layer: 5
   m_Name: Button (8)
   m_TagString: Untagged
@@ -42474,7 +44733,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 2009382766}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -42521,6 +44780,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2042664460}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -42716,6 +44987,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042664452}
   m_CullTransparentMesh: 0
+--- !u!114 &2042664460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042664452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &2053112237
 GameObject:
   m_ObjectHideFlags: 0
@@ -42845,6 +45130,7 @@ GameObject:
   - component: {fileID: 2064033696}
   - component: {fileID: 2064033695}
   - component: {fileID: 2064033694}
+  - component: {fileID: 2064033700}
   m_Layer: 5
   m_Name: Button (7)
   m_TagString: Untagged
@@ -42864,7 +45150,7 @@ RectTransform:
   m_LocalScale: {x: 0.00868, y: 0.00868, z: 0.00868}
   m_Children: []
   m_Father: {fileID: 2009382766}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -42911,6 +45197,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2064033700}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -43106,6 +45404,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064033692}
   m_CullTransparentMesh: 0
+--- !u!114 &2064033700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064033692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1001 &2064604934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43942,6 +46254,7 @@ GameObject:
   - component: {fileID: 2109014394}
   - component: {fileID: 2109014393}
   - component: {fileID: 2109014392}
+  - component: {fileID: 2109014398}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -43961,7 +46274,7 @@ RectTransform:
   m_LocalScale: {x: 0.008683949, y: 0.008683949, z: 0.008683949}
   m_Children: []
   m_Father: {fileID: 86714305}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.983}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -44008,6 +46321,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2109014398}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -44203,6 +46528,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2109014390}
   m_CullTransparentMesh: 0
+--- !u!114 &2109014398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109014390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs: []
+  _cardsSlider: {fileID: 842670362}
 --- !u!1001 &2118469632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44431,6 +46770,7 @@ GameObject:
   - component: {fileID: 2128775460}
   - component: {fileID: 2128775459}
   - component: {fileID: 2128775458}
+  - component: {fileID: 2128775464}
   m_Layer: 5
   m_Name: U2
   m_TagString: Untagged
@@ -44498,6 +46838,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: 311ac398ff6950c41a5acfa2cf4d12db, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2128775464}
+          m_TargetAssemblyTypeName: HelpGraphButton, Assembly-CSharp
+          m_MethodName: AssignCardsToSlider
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -44693,6 +47045,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128775456}
   m_CullTransparentMesh: 0
+--- !u!114 &2128775464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128775456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b9344d497cb48a46e7b84b0bbff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonCardsPrefabs:
+  - {fileID: 2580823346250826062, guid: 59b4f8ba752a25249872f09f2efb9ce0, type: 3}
+  - {fileID: 2580823346250826062, guid: 1a3cd9debbe90014c821aad8609fe09c, type: 3}
+  - {fileID: 3725535301277820498, guid: 474f6103417312748aa0c35d0bdd6fd7, type: 3}
+  _cardsSlider: {fileID: 842670362}
 --- !u!1 &2133004597
 GameObject:
   m_ObjectHideFlags: 0
