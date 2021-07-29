@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
+  m_Name: Control_del_Recurso 10
+  m_EditorClassIdentifier: 
+  cardID: 75
+  balance: U2
+  element: 0
+  cardName: "Incluir Saneamiento sin redes (NSS) en la prestaci\xF3n de serviciosto
+    Inclusivo"
+  cardDescription: "Facilitar la actualizaci\xF3n y reconfiguraci\xF3n de los est\xE1ndares,
+    normas y estatutos de calidad de servicio para facilitar la realizaci\xF3n progresiva
+    de NSS, incluidos los pozos / tanques accesibles y vaciables, adem\xE1s del saneamiento
+    con redes."
+  cardBackground: {fileID: 21300000, guid: e7757f77a5a8f57498ab62822f369866, type: 3}
+  moneyCost: 5
+  timeCost: 3
+  peopleHappiness: 2
