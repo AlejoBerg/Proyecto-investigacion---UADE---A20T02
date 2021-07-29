@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd894529d6671449ba7bf3011dad68c, type: 3}
+  m_Name: Control_del_Recurso 15
+  m_EditorClassIdentifier: 
+  cardID: 83
+  balance: U2
+  element: 0
+  cardName: Interactuar con los clientes ciudadanos
+  cardDescription: "Promover el valor y los beneficios del saneamiento, as\xED como
+    el conocimiento, la conciencia y la comprensi\xF3n del sector del saneamiento
+    con y sin redes."
+  cardBackground: {fileID: 21300000, guid: e7757f77a5a8f57498ab62822f369866, type: 3}
+  moneyCost: 5
+  timeCost: 3
+  peopleHappiness: 2
